@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="container ">
+      <div class="navbar flex1">
+        <nav class="flex1">
+          <ul id="menuitem">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="product.html">SHOP</a></li>
+            <li><a href="index.html">FEATURED</a></li>
+            <li><a href="contact.html">PAGES</a></li>
+            <li><a href="account.html">BLOG</a></li>
+            <li><a href="account.html">Account</a></li>
+          </ul>
+
+          <span class="fa fa-bars" onclick="menutoggle()"></span>
+
+          <div class="logo flex">
+            <img src="https://img.icons8.com/pastel-glyph/50/FF7A00/dog--v4.png" />
+            <h1>Petiza</h1>
+          </div>
+        </nav>
+
+        <div class="account flex">
+          <i class="far fa-search"></i>
+          <i class="far fa-user"></i>
+          <i class="far fa-heart"></i>
+          <i class="far fa-shopping-bag"></i>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <script>
+    var menuitem = document.getElementById("menuitem");
+    menuitem.style.maxHeight = "0px";
+
+    function menutoggle() {
+      if (menuitem.style.maxHeight == '0px') {
+        menuitem.style.maxHeight = "200px"
+      } else {
+        menuitem.style.maxHeight = "0px"
+      }
+    }
+
+    window.addEventListener("scroll", function() {
+      var header = document.querySelector("header");
+      header.classList.toggle("sticky", window.scrollY > 50);
+    })
+  </script>
+
+
+  <section class="home">
+    <div class="container flex">
+      <div class="box_left">
+        <div class="left">
+          <h5>Style Destination</h5>
+          <h1>For All Pet</h1>
+          <span>Style Destination</span> <br>
+          <button>Shop now</button>
+        </div>
+        <div class="right">
+          <img src="image/home1.jpg" alt="">
+        </div>
+      </div>
+      <div class="box_right">
+        <div class="img">
+          <img src="image/home2.jpg" alt="">
+        </div>
+        <div class="img">
+          <img src="image/home3.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="offer top">
+    <div class="container flex">
+      <div class="left">
+        <div class="text">
+          <h1>New Product</h1>
+          <h5>DAILY ESSENTIALS</h5>
+          <a href="#">Explore all</a>
+        </div>
+        <div class="img">
+          <img src="image/o1.jpg" alt="">
+        </div>
+      </div>
+      <div class="right">
+        <div class="text">
+          <h1>New Product</h1>
+          <h5>DAILY ESSENTIALS</h5>
+          <a href="#">Explore all</a>
+        </div>
+        <div class="img">
+          <img src="image/o2.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="product mtop">
+    <div class="container">
+      <h2>New Product</h2>
+
+      <div class="content grid mtop">
+        <div class="box">
+          <div class="image">
+            <div class="img">
+              <img src="image/p1.jpg" alt="">
+            </div>
+            <div class="overlay">
+              <i class="far fa-search"></i>
+              <i class="far fa-user"></i>
+              <i class="far fa-shopping-bag"></i>
+            </div>
+          </div>
+          <div class="text">
+            <h4>Rocco Classic</h4>
+            <h4> <span>$26.00</span> $25.00</h4>
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <div class="img">
+              <img src="image/p2.jpg" alt="">
+            </div>
+            <div class="overlay">
+              <i class="far fa-search"></i>
+              <i class="far fa-user"></i>
+              <i class="far fa-shopping-bag"></i>
+            </div>
+          </div>
+          <div class="text">
+            <h4>Rocco Classic</h4>
+            <h4> <span>$26.00</span> $25.00</h4>
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <div class="img">
+              <img src="image/p3.jpg" alt="">
+            </div>
+            <div class="overlay">
+              <i class="far fa-search"></i>
+              <i class="far fa-user"></i>
+              <i class="far fa-shopping-bag"></i>
+            </div>
+          </div>
+          <div class="text">
+            <h4>Rocco Classic</h4>
+            <h4> <span>$26.00</span> $25.00</h4>
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <div class="img">
+              <img src="image/p4.jpg" alt="">
+            </div>
+            <div class="overlay">
+              <i class="far fa-search"></i>
+              <i class="far fa-user"></i>
+              <i class="far fa-shopping-bag"></i>
+            </div>
+          </div>
+          <div class="text">
+            <h4>Rocco Classic</h4>
+            <h4> <span>$26.00</span> $25.00</h4>
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <div class="img">
+              <img src="image/p5.jpg" alt="">
+            </div>
+            <div class="overlay">
+              <i class="far fa-search"></i>
+              <i class="far fa-user"></i>
+              <i class="far fa-shopping-bag"></i>
+            </div>
+          </div>
+          <div class="text">
+            <h4>Rocco Classic</h4>
+            <h4> <span>$26.00</span> $25.00</h4>
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <div class="img">
+              <img src="image/p6.jpg" alt="">
+            </div>
+            <div class="overlay">
+              <i class="far fa-search"></i>
+              <i class="far fa-user"></i>
+              <i class="far fa-shopping-bag"></i>
+            </div>
+          </div>
+          <div class="text">
+            <h4>Rocco Classic</h4>
+            <h4> <span>$26.00</span> $25.00</h4>
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <div class="img">
+              <img src="image/p7.jpg" alt="">
+            </div>
+            <div class="overlay">
+              <i class="far fa-search"></i>
+              <i class="far fa-user"></i>
+              <i class="far fa-shopping-bag"></i>
+            </div>
+          </div>
+          <div class="text">
+            <h4>Rocco Classic</h4>
+            <h4> <span>$26.00</span> $25.00</h4>
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <div class="img">
+              <img src="image/p8.jpg" alt="">
+            </div>
+            <div class="overlay">
+              <i class="far fa-search"></i>
+              <i class="far fa-user"></i>
+              <i class="far fa-shopping-bag"></i>
+            </div>
+          </div>
+          <div class="text">
+            <h4>Rocco Classic</h4>
+            <h4> <span>$26.00</span> $25.00</h4>
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <div class="img">
+              <img src="image/p9.jpg" alt="">
+            </div>
+            <div class="overlay">
+              <i class="far fa-search"></i>
+              <i class="far fa-user"></i>
+              <i class="far fa-shopping-bag"></i>
+            </div>
+          </div>
+          <div class="text">
+            <h4>Rocco Classic</h4>
+            <h4> <span>$26.00</span> $25.00</h4>
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <div class="img">
+              <img src="image/p10.jpg" alt="">
+            </div>
+            <div class="overlay">
+              <i class="far fa-search"></i>
+              <i class="far fa-user"></i>
+              <i class="far fa-shopping-bag"></i>
+            </div>
+          </div>
+          <div class="text">
+            <h4>Rocco Classic</h4>
+            <h4> <span>$26.00</span> $25.00</h4>
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <div class="img">
+              <img src="image/p11.jpg" alt="">
+            </div>
+            <div class="overlay">
+              <i class="far fa-search"></i>
+              <i class="far fa-user"></i>
+              <i class="far fa-shopping-bag"></i>
+            </div>
+          </div>
+          <div class="text">
+            <h4>Rocco Classic</h4>
+            <h4> <span>$26.00</span> $25.00</h4>
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <div class="img">
+              <img src="image/p12.jpg" alt="">
+            </div>
+            <div class="overlay">
+              <i class="far fa-search"></i>
+              <i class="far fa-user"></i>
+              <i class="far fa-shopping-bag"></i>
+            </div>
+          </div>
+          <div class="text">
+            <h4>Rocco Classic</h4>
+            <h4> <span>$26.00</span> $25.00</h4>
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <div class="img">
+              <img src="image/p13.jpg" alt="">
+            </div>
+            <div class="overlay">
+              <i class="far fa-search"></i>
+              <i class="far fa-user"></i>
+              <i class="far fa-shopping-bag"></i>
+            </div>
+          </div>
+          <div class="text">
+            <h4>Rocco Classic</h4>
+            <h4> <span>$26.00</span> $25.00</h4>
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <div class="img">
+              <img src="image/p14.jpg" alt="">
+            </div>
+            <div class="overlay">
+              <i class="far fa-search"></i>
+              <i class="far fa-user"></i>
+              <i class="far fa-shopping-bag"></i>
+            </div>
+          </div>
+          <div class="text">
+            <h4>Rocco Classic</h4>
+            <h4> <span>$26.00</span> $25.00</h4>
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <div class="img">
+              <img src="image/p15.jpg" alt="">
+            </div>
+            <div class="overlay">
+              <i class="far fa-search"></i>
+              <i class="far fa-user"></i>
+              <i class="far fa-shopping-bag"></i>
+            </div>
+          </div>
+          <div class="text">
+            <h4>Rocco Classic</h4>
+            <h4> <span>$26.00</span> $25.00</h4>
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <div class="img">
+              <img src="image/p16.jpg" alt="">
+            </div>
+            <div class="overlay">
+              <i class="far fa-search"></i>
+              <i class="far fa-user"></i>
+              <i class="far fa-shopping-bag"></i>
+            </div>
+          </div>
+          <div class="text">
+            <h4>Rocco Classic</h4>
+            <h4> <span>$26.00</span> $25.00</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="sale top">
+    <div class="container flex1">
+      <div class="left">
+        <div class="img">
+          <img src="image/s1.jpg" alt="">
+        </div>
+      </div>
+      <div class="right">
+        <div class="img">
+          <img src="image/s2.jpg" alt="">
+        </div>
+        <div class="text">
+          <h2>SALE 20%</h2>
+        </div>
+        <div class="para">
+          <h1>Collection New</h1>
+          <h5>JUST FOR YOU PET</h5>
+          <a href="#">MEN COLLECTION</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="blog mtop">
+    <div class="container">
+      <h1>from our blog.</h1>
+      <div class="content grid">
+        <div class="box">
+          <div class="img">
+            <img src="image/b1.jpg" alt="">
+          </div>
+          <div class="text flex">
+            <div class="date">
+              <h4>17 <br>
+                <hr> MAR
+              </h4>
+            </div>
+            <div class="para">
+              <h5>NEWS</h5>
+              <h3>Spring Summer Fashion</h3>
+              <p> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img">
+            <img src="image/b2.jpg" alt="">
+          </div>
+          <div class="text flex">
+            <div class="date">
+              <h4>17 <br>
+                <hr> MAR
+              </h4>
+            </div>
+            <div class="para">
+              <h5>NEWS</h5>
+              <h3>Spring Summer Fashion</h3>
+              <p> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img">
+            <img src="image/b3.jpg" alt="">
+          </div>
+          <div class="text flex">
+            <div class="date">
+              <h4>17 <br>
+                <hr> MAR
+              </h4>
+            </div>
+            <div class="para">
+              <h5>NEWS</h5>
+              <h3>Spring Summer Fashion</h3>
+              <p> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer>
+    <div class="container top">
+      <div class="head flex1">
+        <span>Petiza Online Store</span>
+        <ul>
+          <li>ABOUT US </li>
+          <li>CONTACT US </li>
+          <li>FAQS </li>
+        </ul>
+
+
+        <ul>
+          <li> <i class="fab fa-facebook-f"></i> </li>
+          <li> <i class="fab fa-instagram"></i> </li>
+          <li> <i class="fab fa-twitter"></i> </li>
+          <li> <i class="fab fa-youtube"></i> </li>
+        </ul>
+      </div>
+
+      <div class="text">
+        <h3>LIKE BEING FIRST?</h3>
+        <p>Then get your can't-miss style news, before everybody else</p>
+      </div>
+      <div class="input flex1">
+        <input type="text" placeholder="Enter your email">
+        <label>SUBSCRIBE</label>
+      </div>
+    </div>
+  </footer>
+
+  <div class="legal">
+    <p>Copyright (c) 2021 Copyright Holder All Rights Reserved.</p>
+  </div>
+</body>
+
+</html>

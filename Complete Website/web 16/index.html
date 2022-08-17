@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.css">
+  <title>Autolist</title>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="navbar">
+        <div class="logo flex">
+          <img src="https://img.icons8.com/ios/50/c9dcee/wheel.png" />
+          <h2>Autolist</h2>
+        </div>
+
+        <nav>
+          <ul id="menuitem">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="product.html">PRODUCTS</a></li>
+            <li><a href="index.html">ABOUT</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+            <li><a href="account.html">ACCOUNT</a></li>
+          </ul>
+        </nav>
+        <span class="fa fa-bars" onclick="menutoggle()"></span>
+      </div>
+    </div>
+  </header>
+
+
+  <script>
+    var menuitem = document.getElementById("menuitem");
+    menuitem.style.maxHeight = "0px";
+
+    function menutoggle() {
+      if (menuitem.style.maxHeight == '0px') {
+        menuitem.style.maxHeight = "200px"
+      } else {
+        menuitem.style.maxHeight = "0px"
+      }
+    }
+
+    window.addEventListener("scroll", function() {
+      var header = document.querySelector("header");
+      header.classList.toggle("sticky", window.scrollY > 0);
+    })
+  </script>
+
+
+  <section class="home">
+    <div class="homebg">
+      <div class="container flex">
+        <div class="left top">
+          <h1>Book <span>Your Car</span> <br> For Your Safe Journey </h1>
+          <p> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <div class="flex">
+            <button>View More</button>
+            <button class="btn">Contact Us</button>
+          </div>
+        </div>
+
+        <div class="right top">
+          <div class="heading">
+            <h2>Search For Car</h2>
+          </div>
+          <form class="" action="index.html" method="post">
+            <select>
+              <option>Choose Make</option>
+              <option>Lamborghini</option>
+              <option>Tarragon</option>
+              <option>Specter</option>
+              <option>Chinnka Digit</option>
+            </select>
+            <div class="input flex">
+              <i class="fas fa-map-marker-alt"></i> <input type="text" placeholder="Pickup Location">
+            </div>
+            <div class="input flex">
+              <i class="fas fa-map-marker-alt"></i> <input type="text" placeholder="Drop Location">
+            </div>
+            <div class="input flex">
+              <i class="fa fa-calendar"></i>
+              <input type="text" placeholder="08-12/2021 - 08/12/2021">
+            </div>
+            <input type="submit" value="Book Car">
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="brand top center">
+    <div class="container">
+      <div class="heading">
+        <h1>Top Car Brands</h1>
+      </div>
+      <p> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+      <div class="content grid mtop">
+        <div class="box">
+          <img src="image/b1.png" alt="">
+          <h3>Marquette</h3>
+        </div>
+        <div class="box">
+          <img src="image/b2.png" alt="">
+          <h3>Herkimer</h3>
+        </div>
+        <div class="box">
+          <img src="image/b3.png" alt="">
+          <h3>Quibusdam</h3>
+        </div>
+        <div class="box">
+          <img src="image/b4.png" alt="">
+          <h3>Perspiciatis</h3>
+        </div>
+        <div class="box">
+          <img src="image/b5.png" alt="">
+          <h3>Tortosie</h3>
+        </div>
+        <div class="box">
+          <img src="image/b6.png" alt="">
+          <h3>Steuben</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="car_type mtop center">
+    <div class="container">
+      <div class="heading ">
+        <h2>Avaliable Car Types</h2>
+      </div>
+      <p> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+      <div class="content grid1 mtop">
+        <div class="box">
+          <div class="img">
+            <img src="image/t1.png" alt="">
+          </div>
+          <div class="text">
+            <h2> <span>Classic</span> Cars </h2>
+            <a>45</a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img">
+            <img src="image/t2.png" alt="">
+          </div>
+          <div class="text">
+            <h2> <span>Sports</span> Cars </h2>
+            <a>23</a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img">
+            <img src="image/t3.png" alt="">
+          </div>
+          <div class="text">
+            <h2> <span>Convertible</span> Cars </h2>
+            <a>48</a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img">
+            <img src="image/t4.png" alt="">
+          </div>
+          <div class="text">
+            <h2> <span>Modal</span> Cars </h2>
+            <a>15</a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img">
+            <img src="image/t5.png" alt="">
+          </div>
+          <div class="text">
+            <h2> <span>Luxary</span> Cars </h2>
+            <a>12</a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img">
+            <img src="image/t6.png" alt="">
+          </div>
+          <div class="text">
+            <h2> <span>Mini</span> Cars </h2>
+            <a>23</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <section class="about top center">
+    <div class="aboutbg">
+      <div class="container">
+        <div class="heading">
+          <h2>What We Does?</h2>
+        </div>
+        <p> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+        <div class="content flex">
+          <div class="left">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <ul>
+              <li>Classic Cars</li>
+              <li>Sports Cars</li>
+              <li>Convertible Cars</li>
+              <li>Luxary Cars</li>
+            </ul>
+            <div class="button flex">
+              <button>Book a Car</button>
+              <button class="btn">Register Now</button>
+            </div>
+          </div>
+          <div class="right">
+            <div class="img">
+              <img src="image/a2.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="product top center">
+    <div class="container">
+      <div class="heading">
+        <h1>Featured Product</h1>
+      </div>
+      <p> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+
+      <div class="content  grid1 mtop">
+        <div class="box">
+          <div class="img_text flex1">
+            <div class="icon2">
+              <i class="fas fa-bolt"></i>
+            </div>
+            <div class="icon flex">
+              <span class="fas fa-dharmachakra"></span>
+              <span class="fa fa-heart"></span>
+            </div>
+          </div>
+          <div class="img">
+            <img src="image/p1.jpg" alt="">
+          </div>
+          <div class="text">
+            <h3>Cheyenne</h3>
+            <div class="para para1 flex">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Kathmandu, Neplai</span>
+              <h4>$20/day</h4>
+            </div>
+            <p> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <div class="para flex1">
+              <a>4.0/5</a>
+              <div class="rate flex">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <span>(5Reviews)</span>
+              </div>
+            </div>
+            <button>Book Now</button>
+
+            <div class="detalis flex">
+              <div class="detalis_text flex">
+                <i class="fa fa-car"></i>
+                <h4>Auto</h4>
+              </div>
+              <div class="detalis_text flex">
+                <i class="fa fa-tachometer"></i>
+                <h4>2000</h4>
+              </div>
+              <div class="detalis_text flex">
+                <i class="fa fa-gas-pump"></i>
+                <h4>Petrol</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img_text flex1">
+            <div class="icon2">
+              <i class="fas fa-bolt"></i>
+            </div>
+            <div class="icon flex">
+              <span class="fas fa-dharmachakra"></span>
+              <span class="fa fa-heart"></span>
+            </div>
+          </div>
+          <div class="img">
+            <img src="image/p2.jpg" alt="">
+          </div>
+          <div class="text">
+            <h3>Cheyenne</h3>
+            <div class="para para1 flex">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Kathmandu, Neplai</span>
+              <h4>$20/day</h4>
+            </div>
+            <p> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <div class="para flex1">
+              <a>4.0/5</a>
+              <div class="rate flex">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <span>(5Reviews)</span>
+              </div>
+            </div>
+            <button>Book Now</button>
+
+            <div class="detalis flex">
+              <div class="detalis_text flex">
+                <i class="fa fa-car"></i>
+                <h4>Auto</h4>
+              </div>
+              <div class="detalis_text flex">
+                <i class="fa fa-tachometer"></i>
+                <h4>2000</h4>
+              </div>
+              <div class="detalis_text flex">
+                <i class="fa fa-gas-pump"></i>
+                <h4>Petrol</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img_text flex1">
+            <div class="icon2">
+              <i class="fas fa-bolt"></i>
+            </div>
+            <div class="icon flex">
+              <span class="fas fa-dharmachakra"></span>
+              <span class="fa fa-heart"></span>
+            </div>
+          </div>
+          <div class="img">
+            <img src="image/p3.jpg" alt="">
+          </div>
+          <div class="text">
+            <h3>Cheyenne</h3>
+            <div class="para para1 flex">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Kathmandu, Neplai</span>
+              <h4>$20/day</h4>
+            </div>
+            <p> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <div class="para flex1">
+              <a>4.0/5</a>
+              <div class="rate flex">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <span>(5Reviews)</span>
+              </div>
+            </div>
+            <button>Book Now</button>
+
+            <div class="detalis flex">
+              <div class="detalis_text flex">
+                <i class="fa fa-car"></i>
+                <h4>Auto</h4>
+              </div>
+              <div class="detalis_text flex">
+                <i class="fa fa-tachometer"></i>
+                <h4>2000</h4>
+              </div>
+              <div class="detalis_text flex">
+                <i class="fa fa-gas-pump"></i>
+                <h4>Petrol</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <section class="testimonials center top">
+    <div class="container">
+      <div class="heading">
+        <h1>Testimonials</h1>
+      </div>
+      <p> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+
+      <div class="box mtop">
+        <div class="img">
+          <img src="image/c1.jpg" alt="">
+        </div>
+        <div class="text">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div class="detalis">
+          <h2>Elizabeth</h2>
+          <label>Vechicle Agent 1</label>
+          <div class="rate">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <button>View All Testimonials</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <section class="about top center Subscribe">
+    <div class="aboutbg">
+      <div class="container">
+        <div class="heading">
+          <h2>Subscribe</h2>
+        </div>
+        <p> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+        <div class="input flex mtop">
+          <input type="text" placeholder="Enter Your Email">
+          <button>Subscribe</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="car mtop center">
+    <div class="container">
+      <div class="heading">
+        <h2>Popular Cars By Body Types</h2>
+      </div>
+      <p> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+
+      <div class="grid mtop">
+        <div class="box">
+          <div class="img">
+            <img src="image/pc1.png" alt="">
+          </div>
+          <div class="text">
+            <h3>SUV</h3>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img">
+            <img src="image/pc2.png" alt="">
+          </div>
+          <div class="text">
+            <h3>SUV</h3>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img">
+            <img src="image/pc2.png" alt="">
+          </div>
+          <div class="text">
+            <h3>SUV</h3>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img">
+            <img src="image/pc3.png" alt="">
+          </div>
+          <div class="text">
+            <h3>SUV</h3>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img">
+            <img src="image/pc4.png" alt="">
+          </div>
+          <div class="text">
+            <h3>SUV</h3>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img">
+            <img src="image/pc5.png" alt="">
+          </div>
+          <div class="text">
+            <h3>SUV</h3>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img">
+            <img src="image/pc5.png" alt="">
+          </div>
+          <div class="text">
+            <h3>SUV</h3>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img">
+            <img src="image/pc6.png" alt="">
+          </div>
+          <div class="text">
+            <h3>SUV</h3>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img">
+            <img src="image/pc1.png" alt="">
+          </div>
+          <div class="text">
+            <h3>SUV</h3>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img">
+            <img src="image/pc3.png" alt="">
+          </div>
+          <div class="text">
+            <h3>SUV</h3>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img">
+            <img src="image/pc5.png" alt="">
+          </div>
+          <div class="text">
+            <h3>SUV</h3>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img">
+            <img src="image/pc6.png" alt="">
+          </div>
+          <div class="text">
+            <h3>SUV</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <section class="product top center lastest_car">
+    <div class="container">
+      <div class="heading">
+        <h1>Latest Car</h1>
+      </div>
+      <p> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+
+      <div class="content  grid1 mtop">
+        <div class="box">
+          <div class="img_text">
+            <h3>Offer</h3>
+          </div>
+          <div class="icon">
+            <a href="#">$322.89</a>
+          </div>
+
+          <div class="img">
+            <img src="image/p1.jpg" alt="">
+          </div>
+
+          <div class="text">
+            <h3>Cheyenne</h3>
+            <div class="para para1 flex1">
+              <span class="far fa-eye"> 22 Views</span>
+              <span>Kathmandu, Neplai</span>
+            </div>
+            <div class="para para1 flex1">
+              <span class="far fa-calendar-week">5 Hours ago</span>
+              <span class="fas fa-phone"> +977 9813253082</span>
+            </div>
+
+            <p> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <div class="para flex1">
+              <a>4.0/5</a>
+              <div class="rate flex">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <span>(5Reviews)</span>
+              </div>
+            </div>
+            <button>Book Now</button>
+
+            <div class="detalis flex">
+              <div class="detalis_text flex">
+                <i class="fa fa-car"></i>
+                <h4>Auto</h4>
+              </div>
+              <div class="detalis_text flex">
+                <i class="fa fa-tachometer"></i>
+                <h4>2000</h4>
+              </div>
+              <div class="detalis_text flex">
+                <i class="fa fa-gas-pump"></i>
+                <h4>Petrol</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img_text">
+            <h3>Offer</h3>
+          </div>
+          <div class="icon">
+            <a href="#">$322.89</a>
+          </div>
+
+          <div class="img">
+            <img src="image/p2.jpg" alt="">
+          </div>
+
+          <div class="text">
+            <h3>Cheyenne</h3>
+            <div class="para para1 flex1">
+              <span class="far fa-eye"> 22 Views</span>
+              <span>Kathmandu, Neplai</span>
+            </div>
+            <div class="para para1 flex1">
+              <span class="far fa-calendar-week">5 Hours ago</span>
+              <span class="fas fa-phone"> +977 9813253082</span>
+            </div>
+
+            <p> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <div class="para flex1">
+              <a>4.0/5</a>
+              <div class="rate flex">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <span>(5Reviews)</span>
+              </div>
+            </div>
+            <button>Book Now</button>
+
+            <div class="detalis flex">
+              <div class="detalis_text flex">
+                <i class="fa fa-car"></i>
+                <h4>Auto</h4>
+              </div>
+              <div class="detalis_text flex">
+                <i class="fa fa-tachometer"></i>
+                <h4>2000</h4>
+              </div>
+              <div class="detalis_text flex">
+                <i class="fa fa-gas-pump"></i>
+                <h4>Petrol</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img_text">
+            <h3>Offer</h3>
+          </div>
+          <div class="icon">
+            <a href="#">$322.89</a>
+          </div>
+
+          <div class="img">
+            <img src="image/p4.jpg" alt="">
+          </div>
+
+          <div class="text">
+            <h3>Cheyenne</h3>
+            <div class="para para1 flex1">
+              <span class="far fa-eye"> 22 Views</span>
+              <span>Kathmandu, Neplai</span>
+            </div>
+            <div class="para para1 flex1">
+              <span class="far fa-calendar-week">5 Hours ago</span>
+              <span class="fas fa-phone"> +977 9813253082</span>
+            </div>
+
+            <p> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <div class="para flex1">
+              <a>4.0/5</a>
+              <div class="rate flex">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <span>(5Reviews)</span>
+              </div>
+            </div>
+            <button>Book Now</button>
+
+            <div class="detalis flex">
+              <div class="detalis_text flex">
+                <i class="fa fa-car"></i>
+                <h4>Auto</h4>
+              </div>
+              <div class="detalis_text flex">
+                <i class="fa fa-tachometer"></i>
+                <h4>2000</h4>
+              </div>
+              <div class="detalis_text flex">
+                <i class="fa fa-gas-pump"></i>
+                <h4>Petrol</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="wrapper top">
+    <div class="container flex">
+      <div class="box">
+        <div class="heading">
+          <h3>Do You Want to sell A Car?</h3>
+        </div>
+        <p> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <button>Sell a Car</button>
+      </div>
+      <div class="box">
+        <div class="heading">
+          <h3>Do You Want to sell A Car?</h3>
+        </div>
+        <p> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <button class="btn">Buy a Car</button>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="latest_post top">
+    <div class="container">
+      <div class="heading">
+        <h3>Latest Posts</h3>
+      </div>
+
+      <div class="content grid1 mtop">
+        <div class="box flex">
+          <div class="img">
+            <img src="image/p1.jpg" alt="">
+          </div>
+          <div class="text">
+            <h4>Best New Car</h4>
+            <i class="fas fa-calendar-week"> 20th Jun 2021</i>
+            <div class="flex">
+              <label>Price:</label>
+              <p>$245 <span>$354</span> </p>
+            </div>
+          </div>
+        </div>
+        <div class="box flex">
+          <div class="img">
+            <img src="image/p2.jpg" alt="">
+          </div>
+          <div class="text">
+            <h4>Best New Car</h4>
+            <i class="fas fa-calendar-week"> 20th Jun 2021</i>
+            <div class="flex">
+              <label>Price:</label>
+              <p>$245 <span>$354</span> </p>
+            </div>
+          </div>
+        </div>
+        <div class="box flex">
+          <div class="img">
+            <img src="image/p3.jpg" alt="">
+          </div>
+          <div class="text">
+            <h4>Best New Car</h4>
+            <i class="fas fa-calendar-week"> 20th Jun 2021</i>
+            <div class="flex">
+              <label>Price:</label>
+              <p>$245 <span>$354</span> </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <footer>
+    <div class="container">
+      <div class="content grid1">
+        <div class="box">
+          <div class="heading">
+            <h3>Resources</h3>
+          </div>
+          <ul>
+            <li>Our team</li>
+            <li>contact us</li>
+            <li>about</li>
+            <li>servcies</li>
+            <li>blog</li>
+            <li>terms and condition</li>
+          </ul>
+        </div>
+        <div class="box address">
+          <div class="heading">
+            <h3>Contact</h3>
+          </div>
+          <ul>
+            <li> <i class="fa fa-car"> </i> New York,NY10012,US</li>
+            <li> <i class="fa fa-envelope"> </i> youremail@gmail.com</li>
+            <li> <i class="fa fa-phone"> </i> +977 9813253084</li>
+            <li> <i class="fa fa-fax"> </i>+ 01 123 456 789 </li>
+          </ul>
+        </div>
+
+        <div class="box">
+          <div class="heading">
+            <h3>Download App</h3>
+          </div>
+          <div class="app">
+            <ul>
+              <li> <i class="fab fa-google-play"> Play Store</i></li>
+              <li> <i class="fab fa-app-store-ios"> App Store</i></li>
+            </ul>
+          </div>
+
+          <div class="heading">
+            <h3>Payments </h3>
+          </div>
+          <ul class="pay">
+            <li> <i class="fab fa-cc-mastercard"></i></li>
+            <li> <i class="fab fa-cc-visa"></i></li>
+            <li> <i class="fab fa-cc-amex"></i></li>
+            <li> <i class="fab fa-cc-paypal"></i></li>
+            <li> <i class="fab fa-cc-discover"></i></li>
+          </ul>
+        </div>
+
+        <div class="box">
+          <div class="heading">
+            <h3>Subscribe </h3>
+          </div>
+          <div class="input flex">
+            <input type="text" placeholder="Email">
+            <input type="submit" value="Subscribe">
+          </div>
+
+          <div class="heading">
+            <h3>Follow Us </h3>
+          </div>
+          <ul class="media">
+            <li><i class="fab fa-facebook"></i> </li>
+            <li><i class="fab fa-twitter"></i></li>
+            <li><i class="fab fa-youtube"></i></li>
+            <li><i class="fab fa-instagram"></i></li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+      <div class="legal">
+        <p>Copyright (c) 2021 Copyright Holder All Rights Reserved | This template is made by <i class="fa fa-heart"></i> Dot Studio.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.css">
+
+
+  <!-- owl css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+  <!-- owl css -->
+
+
+
+
+  <!-- jquery -->
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <!-- jquery -->
+</head>
+
+<body>
+  <header>
+    <nav class="flex1">
+      <div class="logo">
+        <h2>Flower <span>Sun</span> </h2>
+      </div>
+
+      <ul class="flex">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Pages</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <div class="menu-bars" id="toggle">
+        <input type="checkbox">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <div class="account">
+        <i class="fas fa-shopping-cart"></i>
+        <i class="fas fa-search"></i>
+        <i class="fas fa-bars"></i>
+      </div>
+    </nav>
+  </header>
+  <script>
+    const menuToggle = document.querySelector(".menu-bars");
+    const nav = document.querySelector("nav ul");
+
+    menuToggle.addEventListener("click", () => {
+      nav.classList.toggle("slide");
+    });
+  </script>
+
+
+  <section class="home">
+    <div class="owl-carousel owl-theme">
+      <div class="item">
+        <div class="img">
+          <img src="image/flow1.jpg" alt="">
+        </div>
+        <div class="text">
+          <h1>Welcome</h1>
+          <h2>2021 Flower Trend</h2>
+          <button>Shop Collection</button>
+        </div>
+      </div>
+      <div class="item">
+        <div class="img">
+          <img src="image/flow2.jpg" alt="">
+        </div>
+        <div class="text">
+          <h1>Welcome</h1>
+          <h2>2021 Flower Trend</h2>
+          <button>Shop Collection</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+  <script>
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 0,
+      nav: true,
+      dots: false,
+      navText: ["<i class='far fa-long-arrow-alt-left'></i>", "<i class='far fa-long-arrow-alt-right'></i>"],
+      responsive: {
+        0: {
+          items: 1
+        },
+        768: {
+          items: 1,
+          navText: flase,
+          dots: true,
+        },
+        1000: {
+          items: 1
+        }
+      }
+    })
+  </script>
+
+
+  <section class="about">
+    <div class="container">
+      <div class="box flex1">
+        <div class="left top">
+          <h5> Flowers for the</h5>
+          <h2>BIRTHDAY & GIFTS</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+          <button class="btn1">Shop Collection</button>
+        </div>
+
+        <div class="right">
+          <div class="img">
+            <img src="image/a1.jpg" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="box flex1">
+        <div class="left top">
+          <h5> Flowers for the</h5>
+          <h2>BIRTHDAY & GIFTS</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+          <button class="btn1">Shop Collection</button>
+        </div>
+
+        <div class="right">
+          <div class="img">
+            <img src="image/a2.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="product">
+    <div class="container">
+      <div class="heading">
+        <h5>Wonderful gift</h5>
+        <h2>FEATURED PRODUCTS</h2>
+      </div>
+      <div class="owl-carousel owl-theme">
+        <div class="content grid">
+          <div class="box">
+            <div class="img">
+              <img src="image/p1.2.jpg">
+              <img src="image/p1.1.jpg" class="image_over">
+            </div>
+            <div class="text">
+              <h4>Summy product name</h4>
+              <div class="star">
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <p> $99 </p>
+            </div>
+            <div class="overlay">
+              <div class="icon">
+                <i class="fas fa-recycle"></i>
+                <i class="far fa-heart"></i>
+                <i class="far fa-eye"></i>
+              </div>
+              <div class="cart">
+                <span>ADD TO CART</span>
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <div class="img">
+              <img src="image/p2.1.jpg">
+              <img src="image/p1.2.jpg" class="image_over">
+            </div>
+            <div class="text">
+              <h4>Summy product name</h4>
+              <div class="star">
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <p> $99 </p>
+            </div>
+            <div class="overlay">
+              <div class="icon">
+                <i class="fas fa-recycle"></i>
+                <i class="far fa-heart"></i>
+                <i class="far fa-eye"></i>
+              </div>
+              <div class="cart">
+                <span>ADD TO CART</span>
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <div class="img">
+              <img src="image/p2.2.jpg">
+              <img src="image/p1.1.jpg" class="image_over">
+            </div>
+            <div class="text">
+              <h4>Summy product name</h4>
+              <div class="star">
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <p> $99 </p>
+            </div>
+            <div class="overlay">
+              <div class="icon">
+                <i class="fas fa-recycle"></i>
+                <i class="far fa-heart"></i>
+                <i class="far fa-eye"></i>
+              </div>
+              <div class="cart">
+                <span>ADD TO CART</span>
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <div class="img">
+              <img src="image/p3.1.jpg">
+              <img src="image/p3.2.jpg" class="image_over">
+            </div>
+            <div class="text">
+              <h4>Summy product name</h4>
+              <div class="star">
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <p> $99 </p>
+            </div>
+            <div class="overlay">
+              <div class="icon">
+                <i class="fas fa-recycle"></i>
+                <i class="far fa-heart"></i>
+                <i class="far fa-eye"></i>
+              </div>
+              <div class="cart">
+                <span>ADD TO CART</span>
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <div class="img">
+              <img src="image/p4.jpg">
+              <img src="image/p1.1.jpg" class="image_over">
+            </div>
+            <div class="text">
+              <h4>Summy product name</h4>
+              <div class="star">
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <p> $99 </p>
+            </div>
+            <div class="overlay">
+              <div class="icon">
+                <i class="fas fa-recycle"></i>
+                <i class="far fa-heart"></i>
+                <i class="far fa-eye"></i>
+              </div>
+              <div class="cart">
+                <span>ADD TO CART</span>
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <div class="img">
+              <img src="image/p4.1.jpg">
+              <img src="image/p3.1.jpg" class="image_over">
+            </div>
+            <div class="text">
+              <h4>Summy product name</h4>
+              <div class="star">
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <p> $99 </p>
+            </div>
+            <div class="overlay">
+              <div class="icon">
+                <i class="fas fa-recycle"></i>
+                <i class="far fa-heart"></i>
+                <i class="far fa-eye"></i>
+              </div>
+              <div class="cart">
+                <span>ADD TO CART</span>
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <div class="img">
+              <img src="image/p5.jpg">
+              <img src="image/p1.2.jpg" class="image_over">
+            </div>
+            <div class="text">
+              <h4>Summy product name</h4>
+              <div class="star">
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <p> $99 </p>
+            </div>
+            <div class="overlay">
+              <div class="icon">
+                <i class="fas fa-recycle"></i>
+                <i class="far fa-heart"></i>
+                <i class="far fa-eye"></i>
+              </div>
+              <div class="cart">
+                <span>ADD TO CART</span>
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <div class="img">
+              <img src="image/p3.2.jpg">
+              <img src="image/p2.2.jpg" class="image_over">
+            </div>
+            <div class="text">
+              <h4>Summy product name</h4>
+              <div class="star">
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <p> $99 </p>
+            </div>
+            <div class="overlay">
+              <div class="icon">
+                <i class="fas fa-recycle"></i>
+                <i class="far fa-heart"></i>
+                <i class="far fa-eye"></i>
+              </div>
+              <div class="cart">
+                <span>ADD TO CART</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content grid">
+          <div class="box">
+            <div class="img">
+              <img src="image/p1.2.jpg">
+              <img src="image/p1.1.jpg" class="image_over">
+            </div>
+            <div class="text">
+              <h4>Summy product name</h4>
+              <div class="star">
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <p> $99 </p>
+            </div>
+            <div class="overlay">
+              <div class="icon">
+                <i class="fas fa-recycle"></i>
+                <i class="far fa-heart"></i>
+                <i class="far fa-eye"></i>
+              </div>
+              <div class="cart">
+                <span>ADD TO CART</span>
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <div class="img">
+              <img src="image/p2.1.jpg">
+              <img src="image/p1.2.jpg" class="image_over">
+            </div>
+            <div class="text">
+              <h4>Summy product name</h4>
+              <div class="star">
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <p> $99 </p>
+            </div>
+            <div class="overlay">
+              <div class="icon">
+                <i class="fas fa-recycle"></i>
+                <i class="far fa-heart"></i>
+                <i class="far fa-eye"></i>
+              </div>
+              <div class="cart">
+                <span>ADD TO CART</span>
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <div class="img">
+              <img src="image/p2.2.jpg">
+              <img src="image/p1.1.jpg" class="image_over">
+            </div>
+            <div class="text">
+              <h4>Summy product name</h4>
+              <div class="star">
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <p> $99 </p>
+            </div>
+            <div class="overlay">
+              <div class="icon">
+                <i class="fas fa-recycle"></i>
+                <i class="far fa-heart"></i>
+                <i class="far fa-eye"></i>
+              </div>
+              <div class="cart">
+                <span>ADD TO CART</span>
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <div class="img">
+              <img src="image/p3.1.jpg">
+              <img src="image/p3.2.jpg" class="image_over">
+            </div>
+            <div class="text">
+              <h4>Summy product name</h4>
+              <div class="star">
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <p> $99 </p>
+            </div>
+            <div class="overlay">
+              <div class="icon">
+                <i class="fas fa-recycle"></i>
+                <i class="far fa-heart"></i>
+                <i class="far fa-eye"></i>
+              </div>
+              <div class="cart">
+                <span>ADD TO CART</span>
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <div class="img">
+              <img src="image/p4.jpg">
+              <img src="image/p1.1.jpg" class="image_over">
+            </div>
+            <div class="text">
+              <h4>Summy product name</h4>
+              <div class="star">
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <p> $99 </p>
+            </div>
+            <div class="overlay">
+              <div class="icon">
+                <i class="fas fa-recycle"></i>
+                <i class="far fa-heart"></i>
+                <i class="far fa-eye"></i>
+              </div>
+              <div class="cart">
+                <span>ADD TO CART</span>
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <div class="img">
+              <img src="image/p4.1.jpg">
+              <img src="image/p3.1.jpg" class="image_over">
+            </div>
+            <div class="text">
+              <h4>Summy product name</h4>
+              <div class="star">
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <p> $99 </p>
+            </div>
+            <div class="overlay">
+              <div class="icon">
+                <i class="fas fa-recycle"></i>
+                <i class="far fa-heart"></i>
+                <i class="far fa-eye"></i>
+              </div>
+              <div class="cart">
+                <span>ADD TO CART</span>
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <div class="img">
+              <img src="image/p5.jpg">
+              <img src="image/p1.2.jpg" class="image_over">
+            </div>
+            <div class="text">
+              <h4>Summy product name</h4>
+              <div class="star">
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <p> $99 </p>
+            </div>
+            <div class="overlay">
+              <div class="icon">
+                <i class="fas fa-recycle"></i>
+                <i class="far fa-heart"></i>
+                <i class="far fa-eye"></i>
+              </div>
+              <div class="cart">
+                <span>ADD TO CART</span>
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <div class="img">
+              <img src="image/p3.2.jpg">
+              <img src="image/p2.2.jpg" class="image_over">
+            </div>
+            <div class="text">
+              <h4>Summy product name</h4>
+              <div class="star">
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <p> $99 </p>
+            </div>
+            <div class="overlay">
+              <div class="icon">
+                <i class="fas fa-recycle"></i>
+                <i class="far fa-heart"></i>
+                <i class="far fa-eye"></i>
+              </div>
+              <div class="cart">
+                <span>ADD TO CART</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 0,
+      nav: false,
+      dots: true,
+      responsive: {
+        0: {
+          items: 1
+        },
+        600: {
+          items: 1
+        },
+        1000: {
+          items: 1
+        }
+      }
+    })
+  </script>
+
+  <section class="offer">
+    <div class="container flex mtop">
+      <div class="left">
+        <div class="img">
+          <img src="image/o1.jpg" alt="">
+        </div>
+      </div>
+      <div class="right">
+        <div class="img">
+          <img src="image/o2.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="customer">
+    <div class="container flex">
+      <div class="left">
+        <div class="heading">
+          <h5>We love our clients</h5>
+          <h1>WHAT THEY’RE SAYING</h1>
+        </div>
+
+        <div class="owl-carousel owl-theme">
+          <div class="box">
+            <div class="img">
+              <img src="image/t1.jpg" alt="">
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <span> Alexander - <label>Customer</label> </span>
+          </div>
+          <div class="box">
+            <div class="img">
+              <img src="image/t2.jpg" alt="">
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <span> Alexander - <label>Customer</label> </span>
+          </div>
+          <div class="box">
+            <div class="img">
+              <img src="image/t3.jpg" alt="">
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <span> Alexander - <label>Customer</label> </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="right">
+        <div class="heading">
+          <h5>From The Blogs</h5>
+          <h1>WHAT THEY’RE SAYING</h1>
+        </div>
+
+        <div class="content">
+          <div class="content_box flex">
+            <div class="date">
+              <label>MAY , 08 ,21</label>
+            </div>
+            <div class="date_box flex">
+              <div class="image">
+                <img src="image/p1.1.jpg" alt="">
+              </div>
+              <div class="text">
+                <h3>It is a...</h3>
+                <span>By flosun flower</span>
+              </div>
+            </div>
+          </div>
+          <div class="content_box flex">
+            <div class="date">
+              <label>MAY , 08 ,21</label>
+            </div>
+            <div class="date_box flex">
+              <div class="image">
+                <img src="image/p1.2.jpg" alt="">
+              </div>
+              <div class="text">
+                <h3>It is a...</h3>
+                <span>By flosun flower</span>
+              </div>
+            </div>
+          </div>
+          <div class="content_box flex">
+            <div class="date">
+              <label>MAY , 08 ,21</label>
+            </div>
+            <div class="date_box flex">
+              <div class="image">
+                <img src="image/p2.1.jpg" alt="">
+              </div>
+              <div class="text">
+                <h3>It is a...</h3>
+                <span>By flosun flower</span>
+              </div>
+            </div>
+          </div>
+          <div class="content_box flex">
+            <div class="date">
+              <label>MAY , 08 ,21</label>
+            </div>
+            <div class="date_box flex">
+              <div class="image">
+                <img src="image/p2.2.jpg" alt="">
+              </div>
+              <div class="text">
+                <h3>It is a...</h3>
+                <span>By flosun flower</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 0,
+      nav: true,
+      dots: false,
+      navText: ["<i class='far fa-long-arrow-alt-left'></i>", "<i class='far fa-long-arrow-alt-right'></i>"],
+      responsive: {
+        411: {
+          items: 1
+        },
+        768: {
+          items: 1
+        },
+        1000: {
+          items: 1
+        }
+      }
+    })
+  </script>
+
+  <section class="newletter mtop">
+    <div class="container flex">
+      <div class="left">
+        <h1>SEND NEWSLETTER</h1>
+        <p> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+      <div class="right flex">
+        <input type="text" placeholder="dotstudio@gmail.com">
+        <button>Subscribe</button>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="blog">
+    <div class="container">
+      <div class="heading">
+        <h5>From The Blogs</h5>
+        <h1>OUR LASTEST POSTS</h1>
+      </div>
+
+      <div class="content grid">
+        <div class="box">
+          <div class="img">
+            <img src="image/b1.jpg" alt="">
+          </div>
+          <div class="text">
+            <h2>It is a long established fact that a reader will</h2>
+            <small>By Flosun Flower May, 08 , 21</small>
+            <p> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <a href="#">Read More <i class='far fa-long-arrow-alt-right'></i></a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img">
+            <img src="image/b2.jpg" alt="">
+          </div>
+          <div class="text">
+            <h2>It is a long established fact that a reader will</h2>
+            <small>By Flosun Flower May, 08 , 21</small>
+            <p> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <a href="#">Read More <i class='far fa-long-arrow-alt-right'></i></a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img">
+            <img src="image/b3.jpg" alt="">
+          </div>
+          <div class="text">
+            <h2>It is a long established fact that a reader will</h2>
+            <small>By Flosun Flower May, 08 , 21</small>
+            <p> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <a href="#">Read More <i class='far fa-long-arrow-alt-right'></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer>
+    <div class="container top grid">
+      <div class="box">
+        <div class="log">
+          <h1>Flower <span>Sun</span> </h1>
+        </div>
+        <p> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <div class="icon flex">
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-youtube"></i>
+        </div>
+      </div>
+      <div class="box">
+        <h3>Information</h3>
+        <ul>
+          <li> Information</li>
+          <li> Our Company</li>
+          <li> Contact Us</li>
+          <li> Our Services</li>
+          <li> Why We?</li>
+          <li> Careers</li>
+        </ul>
+      </div>
+      <div class="box">
+        <h3>Quicklink</h3>
+        <ul>
+          <li> About
+          <li> Blog</li>
+          <li> Shop</li>
+          <li> Cart</li>
+          <li> Contact</li>
+        </ul>
+      </div>
+      <div class="box">
+        <h3>Support</h3>
+        <ul>
+          <li> Online Support</li>
+          <li> Shipping Policy</li>
+          <li> Return Policy</li>
+          <li> Privacy Policy</li>
+          <li> Terms of Service</li>
+        </ul>
+      </div>
+      <div class="box">
+        <h3>See Information</h3>
+        <ul>
+          <li> See Information</li>
+          <li> 123, ABC, Road ##, Main City, Your address goes here.</li>
+          <li> Phone: 01234 567 890</li>
+          <li> Email: https://example.com</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="legal">
+      <p>Copyright (c) 2021 Copyright Holder All Rights Reserved.</p>
+    </div>
+  </footer>
+</body>
+
+</html>

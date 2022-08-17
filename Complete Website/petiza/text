@@ -1,0 +1,34 @@
+/*----------------color-----------*/
+color: #FF7A00;
+background: #FF7A00;
+color: #5E5E5E;
+
+
+
+/*----------------font family-----------*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+font-family: 'Poppins', sans-serif;
+
+
+
+/*----------------image-----------*/
+<img src="https://img.icons8.com/pastel-glyph/50/FF7A00/dog--v4.png" />
+
+
+
+
+
+/*----------------icon-----------*/
+<i class="far fa-search"></i>
+<i class="far fa-user"></i>
+<i class="far fa-heart"></i>
+<i class="far fa-shopping-bag"></i>
+
+
+
+
+
+
+<i class="fa fa-map"></i>
+<i class="fa fa-phone"></i>
+<i class="fa fa-envelope"></i>

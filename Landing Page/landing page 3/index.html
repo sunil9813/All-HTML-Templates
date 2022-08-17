@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Furniture Landing Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <header>
+    <nav id="sideNav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="projects.html">Service</a></li>
+        <li><a href="contact.html"> Testimonial</a></li>
+        <li><a href="contact.html">Contact Me</a></li>
+      </ul>
+    </nav>
+    <i id="menuBtn" class="fa fa-bars"></i>
+    <div></div>
+
+    <div class="logo">
+      <img src="image/logo.png" alt="">
+    </div>
+
+    <div class="account flex">
+      <div class="input">
+        <input type="text" placeholder="Serarch Here..">
+        <i class="fa fa-search"></i>
+      </div>
+      <i class="fa fa-cart-plus"></i>
+    </div>
+  </header>
+
+  <script>
+    var menuBtn = document.getElementById('menuBtn');
+    var sideNav = document.getElementById('sideNav');
+
+    sideNav.style.left = "-250px";
+    menuBtn.onclick = function() {
+      if (sideNav.style.left == "-250px") {
+        sideNav.style.left = "0";
+      } else {
+        sideNav.style.left = "-250px"
+      }
+    }
+  </script>
+
+
+
+  <section>
+    <div class="content flex">
+      <div class="left">
+        <div class="para">
+          <h3>OUR WOODEN CONCEPTS</h3>
+          <h2> Sustainable <br>Furniture</span></h2>
+          <p> Duis
+            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <button>DISCOVER MORE</button>
+        </div>
+      </div>
+
+      <div class="right flex1">
+        <div class="img">
+          <img src="image/h3.jpg" class="slide">
+        </div>
+        <div class="thumb">
+          <img src="image/h4.jpg" onclick="img('image/h4.jpg')">
+          <img src=" image/h2.jpg" onclick="img('image/h2.jpg')">
+          <img src="image/h3.jpg" onclick="img('image/h3.jpg')">
+          <ul class="social">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-youtube"></i>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script type="text/javascript">
+    function img(anything) {
+      document.querySelector('.slide').src = anything;
+    }
+  </script>
+
+
+</body>
+
+</html>

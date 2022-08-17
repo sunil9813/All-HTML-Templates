@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #091921;
+  color: white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+section .colour {
+  position: absolute;
+  filter: blur(150px);
+}
+
+section .colour:nth-child(1) {
+  top: -350px;
+  width: 600px;
+  height: 600px;
+  background: #bf4ad4;
+}
+
+section .colour:nth-child(2) {
+  left: 100px;
+  width: 500px;
+  height: 500px;
+  bottom: -150px;
+  background: #ffa500;
+}
+
+section .colour:nth-child(3) {
+  right: 100px;
+  bottom: 50px;
+  width: 300px;
+  height: 300px;
+  background: #2b67f3;
+}
+
+.container {
+  position: relative;
+  backdrop-filter: blur(5px);
+  margin-top: 30px;
+}
+
+/*----------*/
+.content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-row-gap: 10px;
+  grid-column-gap: 10px;
+  place-items: Center;
+}
+
+.items {
+  position: relative;
+  width: 350px;
+  height: 400px;
+  padding: 40px;
+}
+
+.items::before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: linear-gradient(#e91e63, #ffc187);
+}
+
+.items::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: linear-gradient(#ffffff, #da00ff);
+}
+
+.box {
+  height: 100%;
+  padding: 30px;
+  position: relative;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 5px;
+  overflow: hidden;
+  z-index: 10;
+  backdrop-filter: blur(5px);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.box i {
+  font-size: 60px;
+  margin-top: 15px;
+}
+
+.box h2 {
+  font-size: 20px;
+  font-weight: 100;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  letter-spacing: 2px;
+  opacity: 0.9;
+  text-transform: uppercase;
+}
+
+.box hr {
+  border: none;
+  border-bottom: 1px solid white;
+}
+
+.box h3 {
+  font-size: 16px;
+  font-weight: 100;
+  margin-top: 40px;
+  opacity: 0.8;
+}
+
+.box p {
+  opacity: 0.7;
+  margin-top: 5px;
+}
+
+@media only screen and (max-width:768px) {
+  .content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width:511px) {
+  .content {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <nav class="flex">
+        <ul class="flex">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#"><i class="fas fa-ellipsis-h"></i></a></li>
+        </ul>
+        <div class="menu-bars" id="toggle">
+          <i class="fas fa-bars"></i>
+        </div>
+
+        <div class="logo">
+          <h2>Studio</h2>
+        </div>
+
+        <div class="account flex">
+          <i class="fas fa-search"></i>
+          <h3>Sign in</h3>
+          <button>Sign up</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+
+  <script>
+    const menuToggle = document.querySelector(".menu-bars");
+    const nav = document.querySelector("nav ul");
+
+
+    menuToggle.addEventListener("click", () => {
+      nav.classList.toggle("slide");
+    });
+  </script>
+
+
+
+  <section class="home">
+    <div class="container">
+      <div class="heading">
+        <h4>FEATURED</h4>
+      </div>
+
+      <div class="content grid  top">
+        <div class="box">
+          <div class="img">
+            <img src="image/b1.jpeg" alt="">
+          </div>
+          <div class="text">
+            <h2>Don’t be afraid</h2>
+            <p>Megan Anderson</p>
+            <p>Lauren Langford</p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img">
+            <img src="image/b2.jpeg" alt="">
+          </div>
+          <div class="text">
+            <h2>You have to fight to reach your dream</h2>
+            <p>Megan Anderson</p>
+            <p>Lauren Langford</p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img">
+            <img src="image/b3.jpeg" alt="">
+          </div>
+          <div class="text">
+            <h2>I always loved aesthetics</h2>
+            <p>Megan Anderson</p>
+            <p>Lauren Langford</p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img">
+            <img src="image/b4.jpeg" alt="">
+          </div>
+          <div class="text">
+            <h2>Creating deluxe drink is like playing a sport</h2>
+            <p>Megan Anderson</p>
+            <p>Lauren Langford</p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img">
+            <img src="image/b5.jpeg" alt="">
+          </div>
+          <div class="text">
+            <h2>You must grow like a tree</h2>
+            <p>Megan Anderson</p>
+            <p>Lauren Langford</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="creative top">
+    <div class="container">
+      <div class="heading">
+        <h4>LATEST POSTS </h4>
+      </div>
+
+      <div class="content flex">
+        <div class="left">
+          <div class="img">
+            <img src="image/c.jpeg" alt="">
+          </div>
+        </div>
+        <div class="right">
+          <label>CREATIVE</label>
+          <h1>I work best when my space is filled with inspiration</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+
+          <div class="icon flex1">
+            <div class="icon_box flex1">
+              <img src="image/c1.jpg" alt="">
+              <img src="image/c2.jpg" alt="">
+            </div>
+            <div class="text">
+              <h4> Victoria West, Lauren Langford</h4>
+              <span>September 30, 2020 ∙ 3 minutes read</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="wrapper mtop">
+    <div class="container grid">
+      <div class="box">
+        <div class="img">
+          <img src="image/b1.jpeg" alt="">
+        </div>
+        <div class="text">
+          <h2>Don’t be afraid</h2>
+          <p>Megan Anderson Lauren Langford</p>
+          <div class="story flex">
+            <label>STORY</label>
+          </div>
+        </div>
+      </div>
+      <div class="box">
+        <div class="img">
+          <img src="image/b2.jpeg" alt="">
+        </div>
+        <div class="text">
+          <h2>Anyone can hold the helm when the sea is calm</h2>
+          <p>Megan Anderson Lauren Langford</p>
+          <div class="story flex">
+            <label>HOME</label>
+            <label> <i class="fas fa-lock"></i> </label>
+          </div>
+        </div>
+      </div>
+      <div class="box">
+        <div class="img">
+          <img src="image/b6.jpeg" alt="">
+        </div>
+        <div class="text">
+          <h2>You have to fight to reach your dream</h2>
+          <p>Megan Anderson Lauren Langford</p>
+          <div class="story flex">
+            <label>PRODUCT</label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="wrapper wrapper2 mtop">
+    <div class="container  ">
+      <div class="content grid">
+        <div class="box">
+          <div class="img">
+            <img src="image/c3.jpeg" alt="">
+          </div>
+          <div class="text">
+            <h2>Don’t be afraid</h2>
+            <p>Megan Anderson Lauren Langford</p>
+            <div class="story flex">
+              <label>CREATIVE</label>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img">
+            <img src="image/c4.jpeg" alt="">
+          </div>
+          <div class="text">
+            <h2>Anyone can hold the helm when the sea is calm</h2>
+            <p>Megan Anderson Lauren Langford</p>
+            <div class="story flex">
+              <label>HOME</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button>Load More</button>
+    </div>
+  </section>
+
+
+  <section class="home home2">
+    <div class="container">
+      <div class="heading">
+        <h4>STORY</h4>
+      </div>
+
+      <div class="content grid  top">
+        <div class="box">
+          <div class="img">
+            <img src="image/b1.jpeg" alt="">
+          </div>
+          <div class="text">
+            <h2>Don’t be afraid</h2>
+            <p>Megan Anderson</p>
+            <p>Lauren Langford</p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img">
+            <img src="image/b6.jpeg" alt="">
+          </div>
+          <div class="text">
+            <h2>You have to fight to reach your dream</h2>
+            <p>Megan Anderson</p>
+            <p>Lauren Langford</p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img">
+            <img src="image/c3.jpeg" alt="">
+          </div>
+          <div class="text">
+            <h2>I always loved aesthetics</h2>
+            <p>Megan Anderson</p>
+            <p>Lauren Langford</p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img">
+            <img src="image/b3.jpeg" alt="">
+          </div>
+          <div class="text">
+            <h2>Creating deluxe drink is like playing a sport</h2>
+            <p>Megan Anderson</p>
+            <p>Lauren Langford</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="subscribe  top">
+    <div class="container flex">
+      <div class="left">
+        <h1>Subscribe to new posts</h1>
+      </div>
+      <div class="right">
+        <div class="input">
+          <input type="text" placeholder="Your email address">
+          <button>Subscribe</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container flex top">
+      <div class="left">
+        <div class="logo">
+          <h2>Studio</h2>
+        </div>
+        <p> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+        <div class="social">
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-youtube"></i>
+        </div>
+      </div>
+
+      <div class="right grid">
+        <div class="items">
+          <h3>ABOUT </h3>
+          <ul>
+            <li>ABOUT</li>
+            <li> Features</li>
+            <li> Style Guide
+            <li> Contact</li>
+            <li> Get Theme</li>
+          </ul>
+        </div>
+        <div class="items">
+          <h3>FEATURES </h3>
+          <ul>
+            <li> Account</li>
+            <li> Sign in</li>
+            <li> Sign up</li>
+            <li> Subscribe</li>
+          </ul>
+        </div>
+        <div class="items">
+          <h3>Authors </h3>
+          <ul>
+            <li> Authors</li>
+            <li> Tags</li>
+            <li> Light version</li>
+            <li> 404</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

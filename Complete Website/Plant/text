@@ -1,0 +1,65 @@
+/*----------------color-----------*/
+background: #518432;
+background: #ECECEC;
+color: #518432;
+color: #939593;
+
+
+
+/*----------------font family-----------*/
+
+
+
+/*----------------image-----------*/
+<img src="https://img.icons8.com/color/48/000000/nepal.png"/>
+
+
+
+
+/*----------------icon-----------*/
+<i class="far fa-search"></i>
+<i class="far fa-user"></i>
+<i class="far fa-heart"></i>
+
+
+<i class="far fa-shopping-bag"></i>
+<i class="far fa-heart"></i>
+<i class="far fa-eye"></i>
+
+
+<i class="far fa-star"></i>
+<i class="far fa-star"></i>
+<i class="far fa-star"></i>
+<i class="far fa-star"></i>
+<i class="far fa-star"></i>
+
+
+
+<i class="far fa-user"></i>
+<i class="far fa-shipping-fast"></i>
+<i class="far fa-usd-circle"></i>
+<i class="far fa-gift"></i>
+
+
+<i class="fas fa-map-marker-alt"></i>
+<i class="fas fa-phone-alt"></i>
+<i class="far fa-envelope"></i>
+
+<i class="fab fa-facebook-f"></i>
+<i class="fab fa-twitter"></i>
+<i class="fab fa-instagram"></i>
+<i class="fab fa-youtube"></i>
+<i class="fab fa-pinterest-p"></i>
+
+
+
+
+1093 Marigold Lane, Coral Way, Miami, Florida, 33169
+610-403-403
+company@example.com
+
+
+<li> Air Purifying Plants</li>
+<li> Green Gifting</li>
+<li> Garden Kits</li>
+<li>Pebbles</li>

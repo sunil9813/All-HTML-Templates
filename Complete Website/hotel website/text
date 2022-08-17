@@ -1,0 +1,53 @@
+/*----------------color-----------*/
+background: #C1B086;
+
+
+
+/*----------------font family-----------*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300;400;500;600;700;800;900&display=swap');
+font-family: 'Roboto Slab', serif;
+
+
+/*----------------image-----------*/
+<img src="https://img.icons8.com/external-flatart-icons-flat-flatarticons/48/000000/external-hotel-hotel-services-and-city-elements-flatart-icons-flat-flatarticons-1.png"/>
+
+
+<img src="https://img.icons8.com/color/48/000000/visa.png" />
+<img src="https://img.icons8.com/color/48/000000/mastercard.png" />
+<img src="https://img.icons8.com/color-glass/48/000000/paypal.png" />
+<img src="https://img.icons8.com/fluency/48/000000/amex.png" />
+
+/*----------------icon-----------*/
+<i class="fa fa-map"></i>
+<i class="fa fa-phone"></i>
+<i class="fa fa-envelope"></i>
+
+
+<i class="fas fa-swimming-pool"></i>
+<i class="fas fa-dumbbell"></i>
+<i class="fas fa-spa"></i>
+<i class="fas fa-ship"></i>
+<i class="fas fa-swimmer"></i>
+<i class="fas fa-microphone"></i>
+<i class="fas fa-water"></i>
+<i class="fas fa-umbrella-beach"></i>
+
+
+
+
+<li>Our Secret Island Boat Tour Is Just for You</li>
+<li>Chill and Escape in Our Natural Shelters</li>
+<li>September in Luviana Hotel</li>
+<li>Live Music Concerts at Luviana</li>
+
+
+<li>About Luviana</li>
+<li>Customer Care/Help</li>
+<li>Corporate Accounts</li>
+<li>Financial Information</li>
+<li>Terms & Conditions</li>
+
+
+<i class="far fa-envelope"></i>
+<i class="far fa-phone-alt"></i>
+<i class="far fa-comments"></i>

@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+section {
+  height: 100vh;
+  position: relative;
+  backdrop-filter: blur(10px);
+}
+
+section::after {
+  content: '';
+  position: absolute;
+  background-image: url("../h1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: -2;
+  filter: blur(8px);
+}
+
+.left {
+  width: 20%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 30px;
+  color: white;
+}
+
+.left .content {
+  max-width: 70%;
+  margin: auto;
+}
+
+.logo img {
+  width: 200px;
+  margin-bottom: 60px;
+}
+
+.left h3 {
+  font-weight: 400;
+  letter-spacing: 2px;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.right {
+  width: 80%;
+  color: white;
+}
+
+.navbar {
+  height: 10vh;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  display: inline-block;
+  font-size: 20px;
+  margin: 20px;
+}
+
+.menu_item {
+  padding-top: 50px;
+  padding: 30px;
+  height: 80vh;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.menu_item .img {
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+.menu_item img {
+  width: 300px;
+  height: auto;
+  margin-top: 20px;
+}
+
+.menu_content {
+  margin-top: 30px;
+}
+
+.menu_content .box {
+  width: 35.5%;
+  margin: 15px;
+}
+
+.menu_content .box:nth-child(1) {
+  width: 25%;
+}
+
+.menu_content .item {
+  margin-top: 15px;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.menu_content p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.menu_content span {
+  font-size: 14px;
+  line-height: 16px;
+  color: #dfd6da;
+}
+
+.menu_content .box h5 {
+  border-bottom: 2px solid white;
+  margin-top: 20px;
+}
+
+.menu_content .box:nth-child(3) .head {
+  border-bottom: 2px solid white;
+}
+
+.social {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.social li i {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  background: white;
+  color: black;
+  border-radius: 50%;
+}

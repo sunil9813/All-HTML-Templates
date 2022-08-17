@@ -1,0 +1,1586 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <title> Book Store</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- owl css-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" />
+  <!-- owl css-->
+
+  <!-- jquery  -->
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <!-- jquery  -->
+
+  <!-- owl js-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+  <!-- owl js-->
+</head>
+
+<body>
+
+  <section class="head">
+    <div class="container flex1">
+      <div class="box flex">
+        <p>MEMBERSHIP</p>
+        <p>COUPONS & DEALS</p>
+        <p>BESTSELLER</p>
+      </div>
+      <div class="box flex">
+        <p> <i class="far fa-user"></i> MY ACCOUNT</p>
+        <p> <i class="far fa-heart"></i> WISHLIST</p>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="search">
+    <div class="container flex1">
+      <div class="logo">
+        <img src="image/logo.png" alt="">
+      </div>
+      <div class="box flex">
+        <select>
+          <option>All Category</option>
+        </select>
+        <input placeholder="Search product">
+        <i class="fas fa-search"></i>
+      </div>
+      <div class="address">
+        <i class="fas fa-map-marker-alt"></i>
+        <i class="far fa-shopping-bag"></i>
+      </div>
+    </div>
+  </section>
+
+
+
+  <header>
+    <div class="container navbar flex1">
+      <div class="select">
+        <select>
+          <option>ALL DEPARTMENT</option>
+        </select>
+      </div>
+      <div class="nav-links">
+        <button class="close-nav" onclick="closemenu()"><i class="fas fa-times-circle"></i></button>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Service</a></li>
+          <li><a href="#">Support</a></li>
+          <li><a href="#">Community</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="menu-trigger"><button onclick="openmenu()"><i class="fas fa-bars"></i></button></div>
+
+      <div class="text">
+        <p>COVID 19 Upadte : We are open for business</p>
+      </div>
+    </div>
+  </header>
+
+  <script>
+    function openmenu() {
+      document.querySelector(".nav-links").style.display = "block";
+    }
+
+    function closemenu() {
+      document.querySelector(".nav-links").style.display = "none";
+    }
+    window.onresize = function() {
+      if (window.innerWidth > 600) {
+        document.querySelector(".nav-links").style.display = "block";
+      } else {
+        document.querySelector(".nav-links").style.display = "none";
+      }
+    }
+  </script>
+
+
+  <section class="home">
+    <div class="owl-carousel owl-theme">
+      <div class="item">
+        <div class="image">
+          <img src="image/slide3.png" alt="">
+        </div>
+        <div class="text">
+          <h1>Biggest <span>bookstore </span>in Europe </h1>
+          <p> Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <button>MEET OUR BESTSELLER</button>
+        </div>
+      </div>
+      <div class="item">
+        <div class="image">
+          <img src="image/slide2.png" alt="">
+        </div>
+        <div class="text">
+          <h1>Biggest <span>bookstore </span>in Europe </h1>
+          <p> Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <button>MEET OUR BESTSELLER</button>
+        </div>
+      </div>
+      <div class="item">
+        <div class="image">
+          <img src="image/slide1.png" alt="">
+        </div>
+        <div class="text">
+          <h1>Support <span>Local </span> bookstore </h1>
+          <p> Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <button>MEET OUR BESTSELLER</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <script>
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 0,
+      nav: false,
+      items: 1
+    })
+  </script>
+
+
+
+  <section class="oder">
+    <div class="container">
+      <div class="content grid top">
+        <div class="box">
+          <div class="left">
+            <h1>New <br> Realease </h1>
+            <button>Shop Now</button>
+          </div>
+          <div class="right">
+            <img src="image/order1.png" alt="">
+          </div>
+        </div>
+        <div class="box">
+          <div class="left">
+            <h1>Pre Order <br> Now. </h1>
+            <button>Shop Now</button>
+          </div>
+          <div class="right">
+            <img src="image/order2.png" alt="">
+          </div>
+        </div>
+        <div class="box">
+          <div class="left">
+            <h1>Top <br> Rated </h1>
+            <button>Shop Now</button>
+          </div>
+          <div class="right">
+            <img src="image/order3.png" alt="">
+          </div>
+        </div>
+      </div>
+
+      <div class="discount mtop">
+        <div class="text">
+          <p>MORE BANG FOR YOUR BOOK</p>
+          <h1>20% Off Select Books</h1>
+          <button>Shop Now</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="trending">
+    <div class="container top">
+      <div class="heading flex1">
+        <h1>Trending on Bookio</h1>
+        <a href="#">View all <i class="fas fa-long-arrow-alt-right"></i></a>
+      </div>
+
+      <div class="content grid2">
+        <div class="box">
+          <div class="img">
+            <img src="image/t1.png" alt="">
+            <div class="image_top flex1">
+              <div>
+                <label>Hot</label>
+              </div>
+              <div class="span">
+                <span class="far fa-heart"></span>
+              </div>
+            </div>
+
+            <div class="overlay flex1">
+              <div class="left">
+                <i class="fas fa-long-arrow-alt-right"></i>
+              </div>
+              <div class="right">
+                <i class="fas fa-eye"></i>
+              </div>
+            </div>
+          </div>
+          <div class="text">
+            <div class="rate">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p>By : Alex Ander</p>
+            <h4>The Art of Fashion</h4>
+            <h5>$80.00 - $190.00</h5>
+          </div>
+
+
+        </div>
+        <div class="box">
+          <div class="img">
+            <img src="image/t2.png" alt="">
+            <div class="image_top flex1">
+              <div>
+                <label>Hot</label>
+              </div>
+              <div class="span">
+                <span class="far fa-heart"></span>
+              </div>
+            </div>
+
+            <div class="overlay flex1">
+              <div class="left">
+                <i class="fas fa-long-arrow-alt-right"></i>
+              </div>
+              <div class="right">
+                <i class="fas fa-eye"></i>
+              </div>
+            </div>
+          </div>
+          <div class="text">
+            <div class="rate">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p>By : Alex Ander</p>
+            <h4>The Art of Fashion</h4>
+            <h5>$80.00 - $190.00</h5>
+          </div>
+
+
+        </div>
+        <div class="box">
+          <div class="img">
+            <img src="image/t3.png" alt="">
+            <div class="image_top flex1">
+              <div>
+                <label>Hot</label>
+              </div>
+              <div class="span">
+                <span class="far fa-heart"></span>
+              </div>
+            </div>
+
+            <div class="overlay flex1">
+              <div class="left">
+                <i class="fas fa-long-arrow-alt-right"></i>
+              </div>
+              <div class="right">
+                <i class="fas fa-eye"></i>
+              </div>
+            </div>
+          </div>
+          <div class="text">
+            <div class="rate">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p>By : Alex Ander</p>
+            <h4>The Art of Fashion</h4>
+            <h5>$80.00 - $190.00</h5>
+          </div>
+
+
+        </div>
+        <div class="box">
+          <div class="img">
+            <img src="image/t4.png" alt="">
+            <div class="image_top flex1">
+              <div>
+                <label>Hot</label>
+              </div>
+              <div class="span">
+                <span class="far fa-heart"></span>
+              </div>
+            </div>
+
+            <div class="overlay flex1">
+              <div class="left">
+                <i class="fas fa-long-arrow-alt-right"></i>
+              </div>
+              <div class="right">
+                <i class="fas fa-eye"></i>
+              </div>
+            </div>
+          </div>
+          <div class="text">
+            <div class="rate">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p>By : Alex Ander</p>
+            <h4>The Art of Fashion</h4>
+            <h5>$80.00 - $190.00</h5>
+          </div>
+
+
+        </div>
+        <div class="box">
+          <div class="img">
+            <img src="image/t5.png" alt="">
+            <div class="image_top flex1">
+              <div>
+                <label>Hot</label>
+              </div>
+              <div class="span">
+                <span class="far fa-heart"></span>
+              </div>
+            </div>
+
+            <div class="overlay flex1">
+              <div class="left">
+                <i class="fas fa-long-arrow-alt-right"></i>
+              </div>
+              <div class="right">
+                <i class="fas fa-eye"></i>
+              </div>
+            </div>
+          </div>
+          <div class="text">
+            <div class="rate">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p>By : Alex Ander</p>
+            <h4>The Art of Fashion</h4>
+            <h5>$80.00 - $190.00</h5>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="top_category top">
+    <div class="container">
+      <h1>Top Category</h1>
+      <div class="content">
+        <div class="owl-carousel owl-carousel2 owl-theme">
+          <div class="box">
+            <div class="box_img">
+              <div class="img">
+                <img src="image/c1.png" alt="">
+              </div>
+            </div>
+            <h3>ADVENTURE</h3>
+          </div>
+          <div class="box">
+            <div class="box_img">
+              <div class="img">
+                <img src="image/c2.png" alt="">
+              </div>
+            </div>
+            <h3>ADVENTURE</h3>
+          </div>
+          <div class="box">
+            <div class="box_img">
+              <div class="img">
+                <img src="image/c3.png" alt="">
+              </div>
+            </div>
+            <h3>ADVENTURE</h3>
+          </div>
+          <div class="box">
+            <div class="box_img">
+              <div class="img">
+                <img src="image/c4.png" alt="">
+              </div>
+            </div>
+            <h3>ADVENTURE</h3>
+          </div>
+          <div class="box">
+            <div class="box_img">
+              <div class="img">
+                <img src="image/c5.png" alt="">
+              </div>
+            </div>
+            <h3>ADVENTURE</h3>
+          </div>
+          <div class="box">
+            <div class="box_img">
+              <div class="img">
+                <img src="image/c6.png" alt="">
+              </div>
+            </div>
+            <h3>ADVENTURE</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <script>
+    $('.owl-carousel2').owlCarousel({
+      loop: true,
+      margin: 20,
+      nav: true,
+      dots: false,
+      responsive: {
+        411: {
+          items: 1
+        },
+        768: {
+          items: 2
+        },
+        1000: {
+          items: 5
+        }
+      }
+    })
+  </script>
+
+
+
+  <section class="trending trending2">
+    <div class="container top">
+      <div class="heading flex1">
+        <h1>Books of the Month</h1>
+        <a href="#">View all <i class="fas fa-long-arrow-alt-right"></i></a>
+      </div>
+
+      <div class="content">
+        <div class="owl-carousel owl-carousel2 owl-theme">
+          <div class="box flex1">
+            <div class="left">
+              <div class="img">
+                <img src="image/m1.png" alt="">
+                <div class="image_top flex1">
+                  <div>
+                    <label>-7%</label>
+                  </div>
+                </div>
+                <div class="overlay flex1">
+                  <div class="left">
+                    <i class="fas fa-long-arrow-alt-right"></i>
+                  </div>
+                  <div class="right">
+                    <i class="fas fa-eye"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="right mtop">
+              <div class="text">
+                <div class="rate">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <h2>Cup Cake Diares</h2>
+                <p>By : Alex Ander</p>
+                <h5>$80.00 </h5>
+
+                <ul>
+                  <li> <i class="fas fa-caret-right"></i> For kids</li>
+                  <li><i class="fas fa-caret-right"></i> First published in 2014</li>
+                  <li><i class="fas fa-caret-right"></i> Copyright by Wpbingo</li>
+                </ul>
+                <button class="btn2">ADD TO CART</button>
+              </div>
+            </div>
+          </div>
+          <div class="box flex1">
+            <div class="left">
+              <div class="img">
+                <img src="image/m2.png" alt="">
+                <div class="image_top flex1">
+                  <div>
+                    <label>-7%</label>
+                  </div>
+                </div>
+                <div class="overlay flex1">
+                  <div class="left">
+                    <i class="fas fa-long-arrow-alt-right"></i>
+                  </div>
+                  <div class="right">
+                    <i class="fas fa-eye"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="right mtop">
+              <div class="text">
+                <div class="rate">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <h2>Cup Cake Diares</h2>
+                <p>By : Alex Ander</p>
+                <h5>$80.00 </h5>
+
+                <ul>
+                  <li> <i class="fas fa-caret-right"></i> For kids</li>
+                  <li><i class="fas fa-caret-right"></i> First published in 2014</li>
+                  <li><i class="fas fa-caret-right"></i> Copyright by Wpbingo</li>
+                </ul>
+                <button class="btn2">ADD TO CART</button>
+              </div>
+            </div>
+          </div>
+          <div class="box flex1">
+            <div class="left">
+              <div class="img">
+                <img src="image/m3.png" alt="">
+                <div class="image_top flex1">
+                  <div>
+                    <label>-7%</label>
+                  </div>
+                </div>
+                <div class="overlay flex1">
+                  <div class="left">
+                    <i class="fas fa-long-arrow-alt-right"></i>
+                  </div>
+                  <div class="right">
+                    <i class="fas fa-eye"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="right mtop">
+              <div class="text">
+                <div class="rate">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <h2>Cup Cake Diares</h2>
+                <p>By : Alex Ander</p>
+                <h5>$80.00 </h5>
+
+                <ul>
+                  <li> <i class="fas fa-caret-right"></i> For kids</li>
+                  <li><i class="fas fa-caret-right"></i> First published in 2014</li>
+                  <li><i class="fas fa-caret-right"></i> Copyright by Wpbingo</li>
+                </ul>
+                <button class="btn2">ADD TO CART</button>
+              </div>
+            </div>
+          </div>
+          <div class="box flex1">
+            <div class="left">
+              <div class="img">
+                <img src="image/m4.png" alt="">
+                <div class="image_top flex1">
+                  <div>
+                    <label>-7%</label>
+                  </div>
+                </div>
+                <div class="overlay flex1">
+                  <div class="left">
+                    <i class="fas fa-long-arrow-alt-right"></i>
+                  </div>
+                  <div class="right">
+                    <i class="fas fa-eye"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="right mtop">
+              <div class="text">
+                <div class="rate">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <h2>Cup Cake Diares</h2>
+                <p>By : Alex Ander</p>
+                <h5>$80.00 </h5>
+
+                <ul>
+                  <li> <i class="fas fa-caret-right"></i> For kids</li>
+                  <li><i class="fas fa-caret-right"></i> First published in 2014</li>
+                  <li><i class="fas fa-caret-right"></i> Copyright by Wpbingo</li>
+                </ul>
+                <button class="btn2">ADD TO CART</button>
+              </div>
+            </div>
+          </div>
+          <div class="box flex1">
+            <div class="left">
+              <div class="img">
+                <img src="image/m5.png" alt="">
+                <div class="image_top flex1">
+                  <div>
+                    <label>-7%</label>
+                  </div>
+                </div>
+                <div class="overlay flex1">
+                  <div class="left">
+                    <i class="fas fa-long-arrow-alt-right"></i>
+                  </div>
+                  <div class="right">
+                    <i class="fas fa-eye"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="right mtop">
+              <div class="text">
+                <div class="rate">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <h2>Cup Cake Diares</h2>
+                <p>By : Alex Ander</p>
+                <h5>$80.00 </h5>
+
+                <ul>
+                  <li> <i class="fas fa-caret-right"></i> For kids</li>
+                  <li><i class="fas fa-caret-right"></i> First published in 2014</li>
+                  <li><i class="fas fa-caret-right"></i> Copyright by Wpbingo</li>
+                </ul>
+                <button class="btn2">ADD TO CART</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    $('.owl-carousel2').owlCarousel({
+      loop: true,
+      margin: 20,
+      nav: false,
+      dots: false,
+      responsive: {
+        411: {
+          items: 1
+        },
+        768: {
+          items: 1
+        },
+        1000: {
+          items: 2
+        }
+      }
+    })
+  </script>
+
+
+  <section class="oder oder2">
+    <div class="container">
+      <div class="discount mtop">
+        <div class="text">
+          <h1>Book Your <br> Own Adventure</h1>
+          <p>MORE BANG FOR YOUR BOOK</p>
+          <button>Shop Now</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="trending trending3 mtop">
+    <div class="container">
+      <div class="heading flex1">
+        <h1>Travel the World from Home</h1>
+        <a href="#">View all <i class="fas fa-long-arrow-alt-right"></i></a>
+      </div>
+
+      <div class="content flex">
+        <div class="content_left">
+          <div class="box">
+            <div class="img">
+              <img src="image/t1.png" alt="">
+              <div class="image_top flex1">
+                <div>
+                  <label>Hot</label>
+                </div>
+              </div>
+
+              <div class="overlay flex1">
+                <div class="left">
+                  <i class="fas fa-long-arrow-alt-right"></i>
+                </div>
+                <div class="right">
+                  <i class="fas fa-eye"></i>
+                </div>
+              </div>
+            </div>
+            <div class="text">
+              <div class="rate">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p>By : Alex Ander</p>
+              <h4>The Art of Fashion</h4>
+              <h5>$80.00 - $190.00</h5>
+            </div>
+          </div>
+        </div>
+        <div class="content_right grid">
+          <div class="box">
+            <div class="img">
+              <img src="image/w1.png" alt="">
+              <div class="image_top flex1">
+                <div>
+                  <label>Hot</label>
+                </div>
+                <div class="span">
+                  <span class="far fa-heart"></span>
+                </div>
+              </div>
+
+              <div class="overlay flex1">
+                <div class="left">
+                  <i class="fas fa-long-arrow-alt-right"></i>
+                </div>
+                <div class="right">
+                  <i class="fas fa-eye"></i>
+                </div>
+              </div>
+            </div>
+            <div class="text">
+              <div class="rate">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p>By : Alex Ander</p>
+              <h4>The Art of Fashion</h4>
+              <h5>$80.00 - $190.00</h5>
+            </div>
+          </div>
+          <div class="box">
+            <div class="img">
+              <img src="image/w2.png" alt="">
+              <div class="image_top flex1">
+                <div>
+                  <label>Hot</label>
+                </div>
+                <div class="span">
+                  <span class="far fa-heart"></span>
+                </div>
+              </div>
+
+              <div class="overlay flex1">
+                <div class="left">
+                  <i class="fas fa-long-arrow-alt-right"></i>
+                </div>
+                <div class="right">
+                  <i class="fas fa-eye"></i>
+                </div>
+              </div>
+            </div>
+            <div class="text">
+              <div class="rate">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p>By : Alex Ander</p>
+              <h4>The Art of Fashion</h4>
+              <h5>$80.00 - $190.00</h5>
+            </div>
+          </div>
+          <div class="box">
+            <div class="img">
+              <img src="image/w3.png" alt="">
+              <div class="image_top flex1">
+                <div>
+                  <label>Hot</label>
+                </div>
+                <div class="span">
+                  <span class="far fa-heart"></span>
+                </div>
+              </div>
+
+              <div class="overlay flex1">
+                <div class="left">
+                  <i class="fas fa-long-arrow-alt-right"></i>
+                </div>
+                <div class="right">
+                  <i class="fas fa-eye"></i>
+                </div>
+              </div>
+            </div>
+            <div class="text">
+              <div class="rate">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p>By : Alex Ander</p>
+              <h4>The Art of Fashion</h4>
+              <h5>$80.00 - $190.00</h5>
+            </div>
+          </div>
+          <div class="box">
+            <div class="img">
+              <img src="image/t1.png" alt="">
+              <div class="image_top flex1">
+                <div>
+                  <label>Hot</label>
+                </div>
+                <div class="span">
+                  <span class="far fa-heart"></span>
+                </div>
+              </div>
+
+              <div class="overlay flex1">
+                <div class="left">
+                  <i class="fas fa-long-arrow-alt-right"></i>
+                </div>
+                <div class="right">
+                  <i class="fas fa-eye"></i>
+                </div>
+              </div>
+            </div>
+            <div class="text">
+              <div class="rate">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p>By : Alex Ander</p>
+              <h4>The Art of Fashion</h4>
+              <h5>$80.00 - $190.00</h5>
+            </div>
+          </div>
+          <div class="box">
+            <div class="img">
+              <img src="image/w4.png" alt="">
+              <div class="image_top flex1">
+                <div>
+                  <label>Hot</label>
+                </div>
+                <div class="span">
+                  <span class="far fa-heart"></span>
+                </div>
+              </div>
+
+              <div class="overlay flex1">
+                <div class="left">
+                  <i class="fas fa-long-arrow-alt-right"></i>
+                </div>
+                <div class="right">
+                  <i class="fas fa-eye"></i>
+                </div>
+              </div>
+            </div>
+            <div class="text">
+              <div class="rate">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p>By : Alex Ander</p>
+              <h4>The Art of Fashion</h4>
+              <h5>$80.00 - $190.00</h5>
+            </div>
+          </div>
+          <div class="box">
+            <div class="img">
+              <img src="image/w5.png" alt="">
+              <div class="image_top flex1">
+                <div>
+                  <label>Hot</label>
+                </div>
+                <div class="span">
+                  <span class="far fa-heart"></span>
+                </div>
+              </div>
+
+              <div class="overlay flex1">
+                <div class="left">
+                  <i class="fas fa-long-arrow-alt-right"></i>
+                </div>
+                <div class="right">
+                  <i class="fas fa-eye"></i>
+                </div>
+              </div>
+            </div>
+            <div class="text">
+              <div class="rate">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p>By : Alex Ander</p>
+              <h4>The Art of Fashion</h4>
+              <h5>$80.00 - $190.00</h5>
+            </div>
+          </div>
+          <div class="box">
+            <div class="img">
+              <img src="image/w6.png" alt="">
+              <div class="image_top flex1">
+                <div>
+                  <label>Hot</label>
+                </div>
+                <div class="span">
+                  <span class="far fa-heart"></span>
+                </div>
+              </div>
+
+              <div class="overlay flex1">
+                <div class="left">
+                  <i class="fas fa-long-arrow-alt-right"></i>
+                </div>
+                <div class="right">
+                  <i class="fas fa-eye"></i>
+                </div>
+              </div>
+            </div>
+            <div class="text">
+              <div class="rate">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p>By : Alex Ander</p>
+              <h4>The Art of Fashion</h4>
+              <h5>$80.00 - $190.00</h5>
+            </div>
+          </div>
+          <div class="box">
+            <div class="img">
+              <img src="image/w1.png" alt="">
+              <div class="image_top flex1">
+                <div>
+                  <label>Hot</label>
+                </div>
+                <div class="span">
+                  <span class="far fa-heart"></span>
+                </div>
+              </div>
+
+              <div class="overlay flex1">
+                <div class="left">
+                  <i class="fas fa-long-arrow-alt-right"></i>
+                </div>
+                <div class="right">
+                  <i class="fas fa-eye"></i>
+                </div>
+              </div>
+            </div>
+            <div class="text">
+              <div class="rate">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p>By : Alex Ander</p>
+              <h4>The Art of Fashion</h4>
+              <h5>$80.00 - $190.00</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="top_category product">
+    <div class="container top">
+      <div class="content">
+        <div class="owl-carousel owl-carousel2 owl-theme">
+          <div class="item">
+            <img src="image/wt1.png" alt="">
+          </div>
+          <div class="item">
+            <img src="image/wt2.png" alt="">
+          </div>
+          <div class="item">
+            <img src="image/wt3.png" alt="">
+          </div>
+          <div class="item">
+            <img src="image/wt1.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    $('.owl-carousel2').owlCarousel({
+      loop: true,
+      margin: 20,
+      nav: true,
+      dots: false,
+      responsive: {
+        511: {
+          items: 1
+        },
+        768: {
+          items: 2
+        },
+        1000: {
+          items: 3
+        }
+      }
+    })
+  </script>
+
+  <section class="trending trending4">
+    <div class="container top">
+      <div class="heading flex1">
+        <h1>Bookio Top Books</h1>
+        <a href="#">View all <i class="fas fa-long-arrow-alt-right"></i></a>
+      </div>
+
+      <div class="content">
+        <div class="owl-carousel owl-carousel3 owl-theme">
+          <div class="box">
+            <div class="img">
+              <img src="image/t1.png" alt="">
+              <div class="image_top flex1">
+                <div>
+                  <label>Hot</label>
+                </div>
+                <div class="span">
+                  <span class="far fa-heart"></span>
+                </div>
+              </div>
+
+              <div class="overlay flex1">
+                <div class="left">
+                  <i class="fas fa-long-arrow-alt-right"></i>
+                </div>
+                <div class="right">
+                  <i class="fas fa-eye"></i>
+                </div>
+              </div>
+            </div>
+            <div class="text">
+              <div class="rate">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p>By : Alex Ander</p>
+              <h4>The Art of Fashion</h4>
+              <h5>$80.00 - $190.00</h5>
+            </div>
+
+
+          </div>
+          <div class="box">
+            <div class="img">
+              <img src="image/t2.png" alt="">
+              <div class="image_top flex1">
+                <div>
+                  <label>Hot</label>
+                </div>
+                <div class="span">
+                  <span class="far fa-heart"></span>
+                </div>
+              </div>
+
+              <div class="overlay flex1">
+                <div class="left">
+                  <i class="fas fa-long-arrow-alt-right"></i>
+                </div>
+                <div class="right">
+                  <i class="fas fa-eye"></i>
+                </div>
+              </div>
+            </div>
+            <div class="text">
+              <div class="rate">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p>By : Alex Ander</p>
+              <h4>The Art of Fashion</h4>
+              <h5>$80.00 - $190.00</h5>
+            </div>
+
+
+          </div>
+          <div class="box">
+            <div class="img">
+              <img src="image/t3.png" alt="">
+              <div class="image_top flex1">
+                <div>
+                  <label>Hot</label>
+                </div>
+                <div class="span">
+                  <span class="far fa-heart"></span>
+                </div>
+              </div>
+
+              <div class="overlay flex1">
+                <div class="left">
+                  <i class="fas fa-long-arrow-alt-right"></i>
+                </div>
+                <div class="right">
+                  <i class="fas fa-eye"></i>
+                </div>
+              </div>
+            </div>
+            <div class="text">
+              <div class="rate">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p>By : Alex Ander</p>
+              <h4>The Art of Fashion</h4>
+              <h5>$80.00 - $190.00</h5>
+            </div>
+
+
+          </div>
+          <div class="box">
+            <div class="img">
+              <img src="image/t4.png" alt="">
+              <div class="image_top flex1">
+                <div>
+                  <label>Hot</label>
+                </div>
+                <div class="span">
+                  <span class="far fa-heart"></span>
+                </div>
+              </div>
+
+              <div class="overlay flex1">
+                <div class="left">
+                  <i class="fas fa-long-arrow-alt-right"></i>
+                </div>
+                <div class="right">
+                  <i class="fas fa-eye"></i>
+                </div>
+              </div>
+            </div>
+            <div class="text">
+              <div class="rate">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p>By : Alex Ander</p>
+              <h4>The Art of Fashion</h4>
+              <h5>$80.00 - $190.00</h5>
+            </div>
+
+
+          </div>
+          <div class="box">
+            <div class="img">
+              <img src="image/t5.png" alt="">
+              <div class="image_top flex1">
+                <div>
+                  <label>Hot</label>
+                </div>
+                <div class="span">
+                  <span class="far fa-heart"></span>
+                </div>
+              </div>
+
+              <div class="overlay flex1">
+                <div class="left">
+                  <i class="fas fa-long-arrow-alt-right"></i>
+                </div>
+                <div class="right">
+                  <i class="fas fa-eye"></i>
+                </div>
+              </div>
+            </div>
+            <div class="text">
+              <div class="rate">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p>By : Alex Ander</p>
+              <h4>The Art of Fashion</h4>
+              <h5>$80.00 - $190.00</h5>
+            </div>
+          </div>
+          <div class="box">
+            <div class="img">
+              <img src="image/t1.png" alt="">
+              <div class="image_top flex1">
+                <div>
+                  <label>Hot</label>
+                </div>
+                <div class="span">
+                  <span class="far fa-heart"></span>
+                </div>
+              </div>
+
+              <div class="overlay flex1">
+                <div class="left">
+                  <i class="fas fa-long-arrow-alt-right"></i>
+                </div>
+                <div class="right">
+                  <i class="fas fa-eye"></i>
+                </div>
+              </div>
+            </div>
+            <div class="text">
+              <div class="rate">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p>By : Alex Ander</p>
+              <h4>The Art of Fashion</h4>
+              <h5>$80.00 - $190.00</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    $('.owl-carousel3').owlCarousel({
+      loop: true,
+      margin: 30,
+      nav: true,
+      dots: false,
+      responsive: {
+        511: {
+          items: 1
+        },
+        768: {
+          items: 2
+        },
+        1000: {
+          items: 5
+        }
+      }
+    })
+  </script>
+
+
+
+  <section class="wrapper top">
+    <div class="content">
+      <h4>WELCOME TO THE WONDEERFUL WORLD OF BOOKS</h4>
+      <h1>Cheap Books , <br>Fantastic Choice </h1>
+      <hr>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+        aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <button class="btn2">Learn more</button>
+      <div class="img">
+        <img src="image/o2.jpg" alt="">
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="trending4 clinet top">
+    <div class="container">
+      <h1>Happy Client Say !</h1>
+
+      <div class="content mtop">
+        <div class="owl-carousel owl-carousel3 owl-theme">
+          <div class="box">
+            <div class="flex1">
+              <div class="rates">
+                <div class="rate">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <h2>Great quality!</h2>
+              </div>
+              <div class="icon">
+                <i class="fas fa-quote-right"></i>
+              </div>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <div class="flex">
+              <div class="img">
+                <img src="image/clinet1.jpg" alt="">
+              </div>
+              <div class="text">
+                <h4>ANN SMITH</h4>
+                <label>Photographer</label>
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <div class="flex1">
+              <div class="rates">
+                <div class="rate">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <h2>Great quality!</h2>
+              </div>
+              <div class="icon">
+                <i class="fas fa-quote-right"></i>
+              </div>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <div class="flex">
+              <div class="img">
+                <img src="image/clinet2.jpg" alt="">
+              </div>
+              <div class="text">
+                <h4>ANN SMITH</h4>
+                <label>Photographer</label>
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <div class="flex1">
+              <div class="rates">
+                <div class="rate">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <h2>Great quality!</h2>
+              </div>
+              <div class="icon">
+                <i class="fas fa-quote-right"></i>
+              </div>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <div class="flex">
+              <div class="img">
+                <img src="image/clinet3.jpg" alt="">
+              </div>
+              <div class="text">
+                <h4>ANN SMITH</h4>
+                <label>Photographer</label>
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <div class="flex1">
+              <div class="rates">
+                <div class="rate">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <h2>Great quality!</h2>
+              </div>
+              <div class="icon">
+                <i class="fas fa-quote-right"></i>
+              </div>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <div class="flex">
+              <div class="img">
+                <img src="image/clinet4.jpg" alt="">
+              </div>
+              <div class="text">
+                <h4>ANN SMITH</h4>
+                <label>Photographer</label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    $('.owl-carousel3').owlCarousel({
+      loop: true,
+      margin: 30,
+      nav: true,
+      dots: false,
+      responsive: {
+        511: {
+          items: 1
+        },
+        768: {
+          items: 2
+        },
+        1000: {
+          items: 3
+        }
+      }
+    })
+  </script>
+
+
+  <section class="wrapper2 mtop">
+    <div class="container grid3">
+      <div class="box flex1">
+        <div class="img">
+          <img src="https://img.icons8.com/external-justicon-lineal-justicon/64/F1592B/external-book-elearning-and-education-justicon-lineal-justicon.png" />
+        </div>
+        <div class="text">
+          <h3>Bookio Press</h3>
+          <span>Publish your book with B&N</span>
+          <a href="#">Learn more</a>
+        </div>
+      </div>
+      <div class="box flex1">
+        <div class="img">
+          <img src="https://img.icons8.com/ios/50/F1592B/cash-in-hand.png" />
+        </div>
+        <div class="text">
+          <h3>Bookio Press</h3>
+          <span>Publish your book with B&N</span>
+          <a href="#">Learn more</a>
+        </div>
+      </div>
+      <div class="box flex1">
+        <div class="img">
+          <img src="https://img.icons8.com/ios/50/F1592B/hand-with-smartphone.png" />
+        </div>
+        <div class="text">
+          <h3>Bookio Press</h3>
+          <span>Publish your book with B&N</span>
+          <a href="#">Learn more</a>
+        </div>
+      </div>
+      <div class="box flex1">
+        <div class="img">
+          <img src="https://img.icons8.com/ios/50/F1592B/gift.png" />
+        </div>
+        <div class="text">
+          <h3>Bookio Press</h3>
+          <span>Publish your book with B&N</span>
+          <a href="#">Learn more</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer>
+    <div class="container grid3 top">
+      <div class="box">
+        <h3>NEED HELP?</h3>
+        <ul>
+          <li>Help Center</li>
+          <li>Shipping FAQs</li>
+          <li>Pick up in Store</li>
+          <li>Order Status</li>
+          <li>Product Recalls</li>
+          <li>Corrections & Updates</li>
+          <li>Gift Cards</li>
+        </ul>
+      </div>
+      <div class="box">
+        <h3>ABOUT US</h3>
+        <ul>
+          <li>Contact Us</li>
+          <li>Track Your Order</li>
+          <li>Returns Policy</li>
+          <li>Delivery Information</li>
+          <li>Loyalty Program</li>
+        </ul>
+      </div>
+      <div class="box">
+        <h3>CATEGORIES</h3>
+        <ul>
+          <li>Coupons</li>
+          <li>RX Prescription</li>
+          <li>Scholarship Program</li>
+          <li>Brand Directory</li>
+          <li>E-Catalogs/Requests</li>
+          <li>Order Form</li>
+          <li>Blog</li>
+        </ul>
+      </div>
+      <div class="box">
+        <h3>OUR NEWSLETTER </h3>
+        <li>Sign up for our latest news and offers:</li>
+        <div class="input flex1">
+          <input type=" text" placeholder="Your email address...">
+          <i class="far fa-envelope"></i>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

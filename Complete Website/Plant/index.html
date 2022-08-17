@@ -1,0 +1,1443 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.css">
+
+
+  <!--  owl css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+  <!--  owl css -->
+
+  <!--  jquery -->
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+  <!--  jquery -->
+</head>
+
+<body>
+
+  <section class="head">
+    <div class="container flex1">
+      <div class="box">
+        <h3>HELLO EVERYONE! 25% Off All Products</h3>
+      </div>
+
+      <div class="box flex">
+        <img src="https://img.icons8.com/color/48/000000/nepal.png" />
+        <select>
+          <option>NEPAL</option>
+        </select>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="head_second">
+    <div class="container flex1">
+      <div class="box flex">
+        <span class="fas fa-phone-square-alt"></span>
+        <h3>+123 456 7891</h3>
+      </div>
+      <div class="box">
+        <img src="image/logo.png" alt="">
+      </div>
+      <div class="box flex">
+        <div class="icon">
+          <i class="far fa-search"></i>
+          <i class="far fa-user"></i>
+          <i class="far fa-heart"></i>
+        </div>
+        <p><label class="fas fa-briefcase"></label> item</p>
+      </div>
+    </div>
+  </section>
+
+
+
+  <header class="header">
+    <div class="container">
+      <nav class="navbar">
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="#" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Services</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Contact</a>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <script>
+    const hamburger = document.querySelector(".hamburger");
+    const navMenu = document.querySelector(".nav-menu");
+
+    hamburger.addEventListener("click", mobileMenu);
+
+    function mobileMenu() {
+      hamburger.classList.toggle("active");
+      navMenu.classList.toggle("active");
+    }
+  </script>
+
+
+
+
+  <section class="home">
+    <div class="owl-carousel owl-theme">
+      <div class="item flex">
+        <div class="left  top">
+          <span>Welcome To Plantb</span>
+          <h1>Plants Gonna Make People Happy.</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </p>
+
+          <button>SHOP NOW</button>
+        </div>
+        <div class="right">
+          <img src="image/slide1.jpg" alt="">
+        </div>
+      </div>
+      <div class="item flex">
+        <div class="left  top">
+          <span>Welcome To Plantb</span>
+          <h1>Plants Gonna Make People Happy.</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </p>
+
+          <button>SHOP NOW</button>
+        </div>
+        <div class="right">
+          <img src="image/slide2.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <!--  owl js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+  <!--  owl js -->
+
+
+  <script>
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 0,
+      items: 1,
+      nav: true,
+      dots: true,
+      navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"],
+    })
+  </script>
+
+
+
+  <section class="categories top">
+    <div class="container">
+      <h2>Our Categories</h2>
+      <div class="owl-carousel owl-carousel2 owl-theme">
+        <div class="item">
+          <div class="img">
+            <img src="image/ca1.jpg" alt="">
+          </div>
+          <div class="text">
+            <h3>Herb Seeds</h3>
+          </div>
+        </div>
+        <div class="item">
+          <div class="img">
+            <img src="image/ca2.jpg" alt="">
+          </div>
+          <div class="text">
+            <h3>Herb Seeds</h3>
+          </div>
+        </div>
+        <div class="item">
+          <div class="img">
+            <img src="image/ca3.jpg" alt="">
+          </div>
+          <div class="text">
+            <h3>Herb Seeds</h3>
+          </div>
+        </div>
+        <div class="item">
+          <div class="img">
+            <img src="image/ca4.jpg" alt="">
+          </div>
+          <div class="text">
+            <h3>Herb Seeds</h3>
+          </div>
+        </div>
+        <div class="item">
+          <div class="img">
+            <img src="image/ca5.jpg" alt="">
+          </div>
+          <div class="text">
+            <h3>Herb Seeds</h3>
+          </div>
+        </div>
+        <div class="item">
+          <div class="img">
+            <img src="image/ca6.jpg" alt="">
+          </div>
+          <div class="text">
+            <h3>Herb Seeds</h3>
+          </div>
+        </div>
+        <div class="item">
+          <div class="img">
+            <img src="image/ca7.jpg" alt="">
+          </div>
+          <div class="text">
+            <h3>Herb Seeds</h3>
+          </div>
+        </div>
+        <div class="item">
+          <div class="img">
+            <img src="image/ca8.jpg" alt="">
+          </div>
+          <div class="text">
+            <h3>Herb Seeds</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <script>
+    $('.owl-carousel2').owlCarousel({
+      loop: true,
+      margin: 20,
+      nav: true,
+      dots: false,
+      navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"],
+
+      responsive: {
+        414: {
+          items: 2,
+          nav: false
+        },
+        600: {
+          items: 3
+        },
+        1000: {
+          items: 6
+        }
+      }
+    })
+  </script>
+
+
+
+  <section class="about top">
+    <div class="container flex">
+      <div class="left">
+        <img src="image/a.jpg" alt="">
+      </div>
+      <div class="right">
+        <span>A LITTLE STORY ABOUT US</span>
+        <h1>Plantb History</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+          aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+          aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <img src="image/sing.png" alt="">
+
+        <h3>MR.JOHN DOE - <span>CEO Sprouts</span> </h3>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="Products top">
+    <div class="container">
+      <div class="heading flex">
+        <h2>Top Products</h2>
+
+        <div class="button flex">
+          <button>Featured</button>
+          <button>Latest</button>
+          <button>Bestseller</button>
+        </div>
+      </div>
+
+
+      <div class="owl-carousel owl-carousel2 owl-theme mtop">
+        <div class="item">
+          <div class="image">
+            <img src="image/p1.jpg" class="main">
+            <img src="image/p1.1.jpg" class="hover_image">
+
+            <div class="img_text flex1">
+              <span>Sale</span>
+              <span>50%</span>
+            </div>
+
+            <div class="overlay">
+              <i class="far fa-shopping-bag"></i>
+              <i class="far fa-heart"></i>
+              <i class="far fa-eye"></i>
+            </div>
+          </div>
+
+          <div class="text">
+            <p>House Parlor Palm Plant</p>
+            <div class="rate flex">
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <h3>Rs. 400.00 <span>Rs800.00</span> </h3>
+          </div>
+        </div>
+        <div class="item">
+          <div class="image">
+            <img src="image/p2.jpg" class="main">
+            <img src="image/p2.1.jpg" class="hover_image">
+
+            <div class="img_text flex1">
+              <span>Sale</span>
+              <span>50%</span>
+            </div>
+
+            <div class="overlay">
+              <i class="far fa-shopping-bag"></i>
+              <i class="far fa-heart"></i>
+              <i class="far fa-eye"></i>
+            </div>
+          </div>
+
+          <div class="text">
+            <p>House Parlor Palm Plant</p>
+            <div class="rate flex">
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <h3>Rs. 400.00 <span>Rs800.00</span> </h3>
+          </div>
+        </div>
+        <div class="item">
+          <div class="image">
+            <img src="image/p3.jpg" class="main">
+            <img src="image/p3.1.jpg" class="hover_image">
+
+            <div class="img_text flex1">
+              <span>Sale</span>
+              <span>50%</span>
+            </div>
+
+            <div class="overlay">
+              <i class="far fa-shopping-bag"></i>
+              <i class="far fa-heart"></i>
+              <i class="far fa-eye"></i>
+            </div>
+          </div>
+
+          <div class="text">
+            <p>House Parlor Palm Plant</p>
+            <div class="rate flex">
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <h3>Rs. 400.00 <span>Rs800.00</span> </h3>
+          </div>
+        </div>
+        <div class="item">
+          <div class="image">
+            <img src="image/p4.jpg" class="main">
+            <img src="image/p4.1.jpg" class="hover_image">
+
+            <div class="img_text flex1">
+              <span>Sale</span>
+              <span>50%</span>
+            </div>
+
+            <div class="overlay">
+              <i class="far fa-shopping-bag"></i>
+              <i class="far fa-heart"></i>
+              <i class="far fa-eye"></i>
+            </div>
+          </div>
+
+          <div class="text">
+            <p>House Parlor Palm Plant</p>
+            <div class="rate flex">
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <h3>Rs. 400.00 <span>Rs800.00</span> </h3>
+          </div>
+        </div>
+        <div class="item">
+          <div class="image">
+            <img src="image/p5.jpg" class="main">
+            <img src="image/p5.1.jpg" class="hover_image">
+
+            <div class="img_text flex1">
+              <span>Sale</span>
+              <span>50%</span>
+            </div>
+
+            <div class="overlay">
+              <i class="far fa-shopping-bag"></i>
+              <i class="far fa-heart"></i>
+              <i class="far fa-eye"></i>
+            </div>
+          </div>
+
+          <div class="text">
+            <p>House Parlor Palm Plant</p>
+            <div class="rate flex">
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <h3>Rs. 400.00 <span>Rs800.00</span> </h3>
+          </div>
+        </div>
+        <div class="item">
+          <div class="image">
+            <img src="image/p6.jpg" class="main">
+            <img src="image/p6.1.jpg" class="hover_image">
+
+            <div class="img_text flex1">
+              <span>Sale</span>
+              <span>50%</span>
+            </div>
+
+            <div class="overlay">
+              <i class="far fa-shopping-bag"></i>
+              <i class="far fa-heart"></i>
+              <i class="far fa-eye"></i>
+            </div>
+          </div>
+
+          <div class="text">
+            <p>House Parlor Palm Plant</p>
+            <div class="rate flex">
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <h3>Rs. 400.00 <span>Rs800.00</span> </h3>
+          </div>
+        </div>
+        <div class="item">
+          <div class="image">
+            <img src="image/p7.jpg" class="main">
+            <img src="image/p7.1.jpg" class="hover_image">
+
+            <div class="img_text flex1">
+              <span>Sale</span>
+              <span>50%</span>
+            </div>
+
+            <div class="overlay">
+              <i class="far fa-shopping-bag"></i>
+              <i class="far fa-heart"></i>
+              <i class="far fa-eye"></i>
+            </div>
+          </div>
+
+          <div class="text">
+            <p>House Parlor Palm Plant</p>
+            <div class="rate flex">
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <h3>Rs. 400.00 <span>Rs800.00</span> </h3>
+          </div>
+        </div>
+        <div class="item">
+          <div class="image">
+            <img src="image/p8.jpg" class="main">
+            <img src="image/p8.1.jpg" class="hover_image">
+
+            <div class="img_text flex1">
+              <span>Sale</span>
+              <span>50%</span>
+            </div>
+
+            <div class="overlay">
+              <i class="far fa-shopping-bag"></i>
+              <i class="far fa-heart"></i>
+              <i class="far fa-eye"></i>
+            </div>
+          </div>
+
+          <div class="text">
+            <p>House Parlor Palm Plant</p>
+            <div class="rate flex">
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <h3>Rs. 400.00 <span>Rs800.00</span> </h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    $('.owl-carousel2').owlCarousel({
+      loop: true,
+      margin: 30,
+      nav: true,
+      dots: false,
+      navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"],
+      responsive: {
+        414: {
+          items: 1,
+          nav: false
+        },
+        768: {
+          items: 3
+        },
+        1000: {
+          items: 4
+        }
+      }
+    })
+  </script>
+
+
+  <section class="collection  top">
+    <div class="container grid">
+      <div class="box">
+        <img src="image/w1.jpg" alt="">
+      </div>
+      <div class="box">
+        <img src="image/w2.jpg" alt="">
+      </div>
+      <div class="box">
+        <img src="image/w3.jpg" alt="">
+      </div>
+    </div>
+  </section>
+
+
+  <section class="wrapper">
+    <div class="container grid top">
+      <div class="box">
+        <i class="far fa-user"></i>
+        <h4>24 X 7 Free Support</h4>
+        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+      </div>
+      <div class="box">
+        <i class="far fa-shipping-fast"></i>
+        <h4>Free Worldwide Shipping</h4>
+        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+      </div>
+      <div class="box">
+        <i class="far fa-usd-circle"></i>
+        <h4>Money Bank Guarantee</h4>
+        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+      </div>
+      <div class="box">
+        <i class="far fa-gift"></i>
+        <h4>Quality Guarantee</h4>
+        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="Products Products2 top">
+    <div class="container ">
+      <h2>New Products</h2>
+      <div class="content flex">
+        <div class="left mtop">
+          <div class="left_img">
+            <img src="image/product1.jpg" alt="">
+          </div>
+        </div>
+        <div class="right">
+          <div class="owl-carousel owl-carousel2 owl-theme mtop">
+            <div class="items grid">
+              <div class="item">
+                <div class="image">
+                  <img src="image/p1.jpg" class="main">
+                  <img src="image/p1.1.jpg" class="hover_image">
+
+                  <div class="img_text flex1">
+                    <span>Sale</span>
+                    <span>50%</span>
+                  </div>
+
+                  <div class="overlay">
+                    <i class="far fa-shopping-bag"></i>
+                    <i class="far fa-heart"></i>
+                    <i class="far fa-eye"></i>
+                  </div>
+                </div>
+
+                <div class="text">
+                  <p>House Parlor Palm Plant</p>
+                  <div class="rate flex">
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                  </div>
+                  <h3>Rs. 400.00 <span>Rs800.00</span> </h3>
+                </div>
+              </div>
+              <div class="item">
+                <div class="image">
+                  <img src="image/p2.jpg" class="main">
+                  <img src="image/p2.1.jpg" class="hover_image">
+
+                  <div class="img_text flex1">
+                    <span>Sale</span>
+                    <span>50%</span>
+                  </div>
+
+                  <div class="overlay">
+                    <i class="far fa-shopping-bag"></i>
+                    <i class="far fa-heart"></i>
+                    <i class="far fa-eye"></i>
+                  </div>
+                </div>
+
+                <div class="text">
+                  <p>House Parlor Palm Plant</p>
+                  <div class="rate flex">
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                  </div>
+                  <h3>Rs. 400.00 <span>Rs800.00</span> </h3>
+                </div>
+              </div>
+              <div class="item">
+                <div class="image">
+                  <img src="image/p3.jpg" class="main">
+                  <img src="image/p3.1.jpg" class="hover_image">
+
+                  <div class="img_text flex1">
+                    <span>Sale</span>
+                    <span>50%</span>
+                  </div>
+
+                  <div class="overlay">
+                    <i class="far fa-shopping-bag"></i>
+                    <i class="far fa-heart"></i>
+                    <i class="far fa-eye"></i>
+                  </div>
+                </div>
+
+                <div class="text">
+                  <p>House Parlor Palm Plant</p>
+                  <div class="rate flex">
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                  </div>
+                  <h3>Rs. 400.00 <span>Rs800.00</span> </h3>
+                </div>
+              </div>
+              <div class="item">
+                <div class="image">
+                  <img src="image/p4.jpg" class="main">
+                  <img src="image/p4.1.jpg" class="hover_image">
+
+                  <div class="img_text flex1">
+                    <span>Sale</span>
+                    <span>50%</span>
+                  </div>
+
+                  <div class="overlay">
+                    <i class="far fa-shopping-bag"></i>
+                    <i class="far fa-heart"></i>
+                    <i class="far fa-eye"></i>
+                  </div>
+                </div>
+
+                <div class="text">
+                  <p>House Parlor Palm Plant</p>
+                  <div class="rate flex">
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                  </div>
+                  <h3>Rs. 400.00 <span>Rs800.00</span> </h3>
+                </div>
+              </div>
+              <div class="item">
+                <div class="image">
+                  <img src="image/p5.jpg" class="main">
+                  <img src="image/p5.1.jpg" class="hover_image">
+
+                  <div class="img_text flex1">
+                    <span>Sale</span>
+                    <span>50%</span>
+                  </div>
+
+                  <div class="overlay">
+                    <i class="far fa-shopping-bag"></i>
+                    <i class="far fa-heart"></i>
+                    <i class="far fa-eye"></i>
+                  </div>
+                </div>
+
+                <div class="text">
+                  <p>House Parlor Palm Plant</p>
+                  <div class="rate flex">
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                  </div>
+                  <h3>Rs. 400.00 <span>Rs800.00</span> </h3>
+                </div>
+              </div>
+              <div class="item">
+                <div class="image">
+                  <img src="image/p6.jpg" class="main">
+                  <img src="image/p6.1.jpg" class="hover_image">
+
+                  <div class="img_text flex1">
+                    <span>Sale</span>
+                    <span>50%</span>
+                  </div>
+
+                  <div class="overlay">
+                    <i class="far fa-shopping-bag"></i>
+                    <i class="far fa-heart"></i>
+                    <i class="far fa-eye"></i>
+                  </div>
+                </div>
+
+                <div class="text">
+                  <p>House Parlor Palm Plant</p>
+                  <div class="rate flex">
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                  </div>
+                  <h3>Rs. 400.00 <span>Rs800.00</span> </h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    $('.owl-carousel2').owlCarousel({
+      loop: true,
+      margin: 30,
+      nav: false,
+      dots: false,
+      navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"],
+
+      responsive: {
+        0: {
+          items: 1
+        },
+        600: {
+          items: 1
+        },
+        1000: {
+          items: 1
+        }
+      }
+    })
+  </script>
+
+
+  <section class="content_hover mtop">
+    <div class="content flex">
+      <div class="img">
+        <img src="image/hover_img.jpg" alt="">
+        <div class="loader">
+          <span class="fas fa-plus"> </span>
+        </div>
+
+        <div class="hover_text">
+          <div class="hov_img">
+            <img src="image/p1.1.jpg" alt="">
+          </div>
+          <p>Designer indoor Cast...</p>
+          <p>Rs 1,000.00</p>
+          <button>Sold Out</button>
+        </div>
+      </div>
+      <div class="img img1">
+        <img src="image/hover_img1.jpg" alt="">
+
+        <div class="loader">
+          <span class="fas fa-plus"> </span>
+        </div>
+
+        <div class="hover_text">
+          <div class="hov_img">
+            <img src="image/p2.1.jpg" alt="">
+          </div>
+          <p>Designer indoor Cast...</p>
+          <p>Rs 1,000.00</p>
+          <button>Sold Out</button>
+        </div>
+      </div>
+      <div class="img img2">
+        <img src="image/hover_img2.jpg" alt="">
+
+        <div class="loader">
+          <span class="fas fa-plus"> </span>
+        </div>
+
+        <div class="hover_text">
+          <div class="hov_img">
+            <img src="image/p3.1.jpg" alt="">
+          </div>
+          <p>Designer indoor Cast...</p>
+          <p>Rs 1,000.00</p>
+          <button>Sold Out</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="customer">
+    <div class="container">
+      <div class="owl-carousel owl-theme">
+        <div class="item">
+          <div class="img">
+            <img src="image/c1.png">
+          </div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <h3>Mr.Jhon Doe <span>- Designer</span> </h3>
+        </div>
+        <div class="item">
+          <div class="img">
+            <img src="image/c2.png">
+          </div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <h3>Mr.Jhon Doe <span>- Designer</span> </h3>
+        </div>
+        <div class="item">
+          <div class="img">
+            <img src="image/c3.png">
+          </div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <h3>Mr.Jhon Doe <span>- Designer</span> </h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      items: 1,
+      margin: 0,
+      nav: true,
+      dots: false,
+      navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"],
+
+    })
+  </script>
+
+
+
+
+  <section class="Products Products2 Products3 top">
+    <div class="container ">
+      <h2>Best Products</h2>
+      <div class="content flex">
+        <div class="left mtop">
+          <div class="left_img">
+            <img src="image/product2.jpg" alt="">
+          </div>
+        </div>
+        <div class="right">
+          <div class="owl-carousel owl-carousel2 owl-theme mtop">
+            <div class="items grid">
+              <div class="item">
+                <div class="image">
+                  <img src="image/p1.jpg" class="main">
+                  <img src="image/p1.1.jpg" class="hover_image">
+
+                  <div class="img_text flex1">
+                    <span>Sale</span>
+                    <span>50%</span>
+                  </div>
+
+                  <div class="overlay">
+                    <i class="far fa-shopping-bag"></i>
+                    <i class="far fa-heart"></i>
+                    <i class="far fa-eye"></i>
+                  </div>
+                </div>
+
+                <div class="text">
+                  <p>House Parlor Palm Plant</p>
+                  <div class="rate flex">
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                  </div>
+                  <h3>Rs. 400.00 <span>Rs800.00</span> </h3>
+                </div>
+              </div>
+              <div class="item">
+                <div class="image">
+                  <img src="image/p2.jpg" class="main">
+                  <img src="image/p2.1.jpg" class="hover_image">
+
+                  <div class="img_text flex1">
+                    <span>Sale</span>
+                    <span>50%</span>
+                  </div>
+
+                  <div class="overlay">
+                    <i class="far fa-shopping-bag"></i>
+                    <i class="far fa-heart"></i>
+                    <i class="far fa-eye"></i>
+                  </div>
+                </div>
+
+                <div class="text">
+                  <p>House Parlor Palm Plant</p>
+                  <div class="rate flex">
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                  </div>
+                  <h3>Rs. 400.00 <span>Rs800.00</span> </h3>
+                </div>
+              </div>
+              <div class="item">
+                <div class="image">
+                  <img src="image/p3.jpg" class="main">
+                  <img src="image/p3.1.jpg" class="hover_image">
+
+                  <div class="img_text flex1">
+                    <span>Sale</span>
+                    <span>50%</span>
+                  </div>
+
+                  <div class="overlay">
+                    <i class="far fa-shopping-bag"></i>
+                    <i class="far fa-heart"></i>
+                    <i class="far fa-eye"></i>
+                  </div>
+                </div>
+
+                <div class="text">
+                  <p>House Parlor Palm Plant</p>
+                  <div class="rate flex">
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                  </div>
+                  <h3>Rs. 400.00 <span>Rs800.00</span> </h3>
+                </div>
+              </div>
+              <div class="item">
+                <div class="image">
+                  <img src="image/p4.jpg" class="main">
+                  <img src="image/p4.1.jpg" class="hover_image">
+
+                  <div class="img_text flex1">
+                    <span>Sale</span>
+                    <span>50%</span>
+                  </div>
+
+                  <div class="overlay">
+                    <i class="far fa-shopping-bag"></i>
+                    <i class="far fa-heart"></i>
+                    <i class="far fa-eye"></i>
+                  </div>
+                </div>
+
+                <div class="text">
+                  <p>House Parlor Palm Plant</p>
+                  <div class="rate flex">
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                  </div>
+                  <h3>Rs. 400.00 <span>Rs800.00</span> </h3>
+                </div>
+              </div>
+              <div class="item">
+                <div class="image">
+                  <img src="image/p5.jpg" class="main">
+                  <img src="image/p5.1.jpg" class="hover_image">
+
+                  <div class="img_text flex1">
+                    <span>Sale</span>
+                    <span>50%</span>
+                  </div>
+
+                  <div class="overlay">
+                    <i class="far fa-shopping-bag"></i>
+                    <i class="far fa-heart"></i>
+                    <i class="far fa-eye"></i>
+                  </div>
+                </div>
+
+                <div class="text">
+                  <p>House Parlor Palm Plant</p>
+                  <div class="rate flex">
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                  </div>
+                  <h3>Rs. 400.00 <span>Rs800.00</span> </h3>
+                </div>
+              </div>
+              <div class="item">
+                <div class="image">
+                  <img src="image/p6.jpg" class="main">
+                  <img src="image/p6.1.jpg" class="hover_image">
+
+                  <div class="img_text flex1">
+                    <span>Sale</span>
+                    <span>50%</span>
+                  </div>
+
+                  <div class="overlay">
+                    <i class="far fa-shopping-bag"></i>
+                    <i class="far fa-heart"></i>
+                    <i class="far fa-eye"></i>
+                  </div>
+                </div>
+
+                <div class="text">
+                  <p>House Parlor Palm Plant</p>
+                  <div class="rate flex">
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                  </div>
+                  <h3>Rs. 400.00 <span>Rs800.00</span> </h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script>
+    $('.owl-carousel2').owlCarousel({
+      loop: true,
+      items: 1,
+      margin: 30,
+      nav: false,
+      dots: false,
+      navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"],
+
+    })
+  </script>
+
+
+  <section class="categories top Products Products4">
+    <div class="container">
+      <h2>Top Rated</h2>
+      <div class="owl-carousel owl-carousel2 owl-theme mtop">
+        <div class="items">
+          <div class="item flex">
+            <div class="image">
+              <img src="image/p1.jpg" class="main">
+              <img src="image/p1.1.jpg" class="hover_image">
+            </div>
+            <div class="text">
+              <div class="rate flex">
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <p>House Parlor Palm Plant</p>
+              <h3>Rs. 800.00 <span>Rs. 1200.00</span> </h3>
+            </div>
+          </div>
+          <div class="item flex">
+            <div class="image">
+              <img src="image/p2.jpg" class="main">
+              <img src="image/p2.1.jpg" class="hover_image">
+            </div>
+            <div class="text">
+              <div class="rate flex">
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <p>House Parlor Palm Plant</p>
+              <h3>Rs. 800.00 <span>Rs. 1200.00</span> </h3>
+            </div>
+          </div>
+        </div>
+        <div class="items">
+          <div class="item flex">
+            <div class="image">
+              <img src="image/p4.jpg" class="main">
+              <img src="image/p4.1.jpg" class="hover_image">
+            </div>
+            <div class="text">
+              <div class="rate flex">
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <p>House Parlor Palm Plant</p>
+              <h3>Rs. 800.00 <span>Rs. 1200.00</span> </h3>
+            </div>
+          </div>
+          <div class="item flex">
+            <div class="image">
+              <img src="image/p5.jpg" class="main">
+              <img src="image/p5.1.jpg" class="hover_image">
+            </div>
+            <div class="text">
+              <div class="rate flex">
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <p>House Parlor Palm Plant</p>
+              <h3>Rs. 800.00 <span>Rs. 1200.00</span> </h3>
+            </div>
+          </div>
+        </div>
+        <div class="items">
+          <div class="item flex">
+            <div class="image">
+              <img src="image/p6.jpg" class="main">
+              <img src="image/p6.1.jpg" class="hover_image">
+            </div>
+            <div class="text">
+              <div class="rate flex">
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <p>House Parlor Palm Plant</p>
+              <h3>Rs. 800.00 <span>Rs. 1200.00</span> </h3>
+            </div>
+          </div>
+          <div class="item flex">
+            <div class="image">
+              <img src="image/p7.jpg" class="main">
+              <img src="image/p7.1.jpg" class="hover_image">
+            </div>
+            <div class="text">
+              <div class="rate flex">
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <p>House Parlor Palm Plant</p>
+              <h3>Rs. 800.00 <span>Rs. 1200.00</span> </h3>
+            </div>
+          </div>
+        </div>
+        <div class="items">
+          <div class="item flex">
+            <div class="image">
+              <img src="image/p1.jpg" class="main">
+              <img src="image/p1.1.jpg" class="hover_image">
+            </div>
+            <div class="text">
+              <div class="rate flex">
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <p>House Parlor Palm Plant</p>
+              <h3>Rs. 800.00 <span>Rs. 1200.00</span> </h3>
+            </div>
+          </div>
+          <div class="item flex">
+            <div class="image">
+              <img src="image/p2.jpg" class="main">
+              <img src="image/p2.1.jpg" class="hover_image">
+            </div>
+            <div class="text">
+              <div class="rate flex">
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <p>House Parlor Palm Plant</p>
+              <h3>Rs. 800.00 <span>Rs. 1200.00</span> </h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <script>
+    $('.owl-carousel2').owlCarousel({
+      loop: true,
+      margin: 20,
+      nav: true,
+      dots: false,
+      navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"],
+
+      responsive: {
+        414: {
+          items: 1,
+          nav: false
+        },
+        768: {
+          items: 2
+        },
+        1000: {
+          items: 3
+        }
+      }
+    })
+  </script>
+
+  <section class="categories blog top ">
+    <div class="container">
+      <h2>Latest News</h2>
+      <div class="owl-carousel owl-carousel2 owl-theme mtop">
+        <div class="item">
+          <img src="image/b1.jpg" alt="">
+          <h4>Vivamus Fringilla Scelerisque Justo Quis Egestas.</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+
+          <div class="flex1">
+            <span>Winter Infotech</span>
+            <a href="#">Read More</a>
+          </div>
+        </div>
+        <div class="item">
+          <img src="image/b2.jpg" alt="">
+          <h4>Vivamus Fringilla Scelerisque Justo Quis Egestas.</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+
+          <div class="flex1">
+            <span>Winter Infotech</span>
+            <a href="#">Read More</a>
+          </div>
+        </div>
+        <div class="item">
+          <img src="image/b3.jpg" alt="">
+          <h4>Vivamus Fringilla Scelerisque Justo Quis Egestas.</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+
+          <div class="flex1">
+            <span>Winter Infotech</span>
+            <a href="#">Read More</a>
+          </div>
+        </div>
+        <div class="item">
+          <img src="image/b4.jpg" alt="">
+          <h4>Vivamus Fringilla Scelerisque Justo Quis Egestas.</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+
+          <div class="flex1">
+            <span>Winter Infotech</span>
+            <a href="#">Read More</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <script>
+    $('.owl-carousel2').owlCarousel({
+      loop: true,
+      margin: 30,
+      nav: true,
+      dots: false,
+      navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"],
+      responsive: {
+        0: {
+          items: 1,
+          nav: false
+        },
+        768: {
+          items: 2
+        },
+        1000: {
+          items: 3
+        }
+      }
+    })
+  </script>
+
+
+
+
+  <section class="newsletter top">
+    <div class="container flex1">
+      <div class="left">
+        <h3>SIGN UP FOR NEWSLETTER</h3>
+      </div>
+
+      <div class="right  ">
+        <div class="input flex1">
+          <input type="text" placeholder="Email address..">
+          <button>Subscribe</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <footer>
+    <div class="container grid">
+      <div class="box">
+        <h3>CONTACT US </h3>
+        <ul>
+          <li>
+            <i class="fas fa-map-marker-alt"></i>
+            1093 Marigold Lane, Coral Way, Miami, Florida, 33169
+          </li>
+          <li>
+            <i class="fas fa-phone-alt"></i>
+            610-403-403
+          </li>
+          <li>
+            <i class="far fa-envelope"></i>
+            company@example.com
+          </li>
+        </ul>
+
+        <div class="social flex">
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-youtube"></i>
+          <i class="fab fa-pinterest-p"></i>
+        </div>
+      </div>
+
+      <div class="box">
+        <h3>CATEGORIES</h3>
+        <ul>
+          <li> Air Purifying Plants</li>
+          <li> Green Gifting</li>
+          <li> Garden Kits</li>
+          <li>Pebbles</li>
+        </ul>
+      </div>
+      <div class="box">
+        <h3>SERVICE</h3>
+        <ul>
+          <li>About Us</li>
+          <li>Contact </li>
+          <li>Privacy Policy </li>
+          <li>elivery Information</li>
+        </ul>
+      </div>
+      <div class="box">
+        <h3>SERVICE</h3>
+        <ul>
+          <li>Search </li>
+          <li>Wishlist </li>
+          <li>All Collections </li>
+          <li>All Products </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <section class="legal">
+    <div class="container">
+      <p>Copyright (c) 2021 Copyright Holder All Rights Reserved.</p>
+    </div>
+  </section>
+</body>
+
+</html>

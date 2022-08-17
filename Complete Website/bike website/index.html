@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <title>Bike Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.css">
+
+  <!--  animejs -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"> </script>
+  <!--  animejs -->
+
+
+  <!--  owl css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" />
+  <!--  owl css -->
+
+
+
+
+  <!--  jquery -->
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+  <!--  jquery -->
+
+</head>
+
+<body>
+  <nav class="nav">
+    <div class="container flex1">
+      <div class="logo">
+        <img src="image/logo.png">
+      </div>
+      <div class="menu">
+        <div class="main_list" id="mainListDiv">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">my work</a></li>
+            <li><a href="#">disegn</a></li>
+            <li><a href="#">contact</a></li>
+          </ul>
+        </div>
+        <div class="media_button">
+          <i class="fas fa-bars" id="mediaButton"></i>
+        </div>
+      </div>
+
+      <div class="account flex1">
+        <i class="far fa-unlock-alt"></i>
+        <p>Login / Register</p>
+      </div>
+    </div>
+  </nav>
+  <script>
+    var mainListDiv = document.getElementById("mainListDiv"),
+      mediaButton = document.getElementById("mediaButton");
+
+    mediaButton.onclick = function() {
+      mainListDiv.classList.toggle("show_list");
+      mediaButton.classList.toggle("active");
+    };
+  </script>
+
+
+
+  <section class="home">
+    <div class="content flex">
+      <div class="left">
+        <div class="time_box flex">
+          <div class="time">
+            <h1>69 :</h1>
+            <span>DAYS</span>
+          </div>
+          <div class="time">
+            <h1>24 :</h1>
+            <span>HOURS</span>
+          </div>
+          <div class="time">
+            <h1>28 :</h1>
+            <span>MINUTES</span>
+          </div>
+          <div class="time">
+            <h1>13 </h1>
+            <span>SECONDS</span>
+          </div>
+
+        </div>
+        <h2>Lunching New Bike</h2>
+        <p> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+        <div class="button flex">
+          <button class="btn1">Learn More</button>
+          <button class="btn2">Buy Now</button>
+        </div>
+      </div>
+      <div class="right">
+        <div class="ani_image">
+          <img src="image/bike.png" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="latest top">
+    <div class="scontainer">
+      <div class="heading">
+        <h1>Latest Popular Bike</h1>
+        <div class="lines flex1">
+          <div class="line"> <i class="fas fa-circle"></i> </div>
+          <button>50% OFF</button>
+          <div class="line line2"> <i class="fas fa-circle"></i></div>
+        </div>
+      </div>
+
+
+      <div class="content grid  top">
+        <div class="box">
+          <div class="img">
+            <img src="image/l1.png" alt="">
+            <div class="flex1">
+              <label>50%</label>
+              <i class="fas fa-heart"></i>
+            </div>
+          </div>
+
+          <div class="detalis">
+            <h3>Aerion Carbon Helmet</h3>
+            <p>(Fashion , Twin Disc)</p>
+            <h2> $699 <span>$799</span> </h2>
+            <button>Buy Now</button>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img">
+            <img src="image/l2.png" alt="">
+            <div class="flex1">
+              <label>50%</label>
+              <i class="fas fa-heart"></i>
+            </div>
+          </div>
+
+          <div class="detalis">
+            <h3>Aerion Carbon Helmet</h3>
+            <p>(Fashion , Twin Disc)</p>
+            <h2> $699 <span>$799</span> </h2>
+            <button>Buy Now</button>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img">
+            <img src="image/l3.png" alt="">
+            <div class="flex1">
+              <label>50%</label>
+              <i class="fas fa-heart"></i>
+            </div>
+          </div>
+
+          <div class="detalis">
+            <h3>Aerion Carbon Helmet</h3>
+            <p>(Fashion , Twin Disc)</p>
+            <h2> $699 <span>$799</span> </h2>
+            <button>Buy Now</button>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img">
+            <img src="image/l4.png" alt="">
+            <div class="flex1">
+              <label>50%</label>
+              <i class="fas fa-heart"></i>
+            </div>
+          </div>
+
+          <div class="detalis">
+            <h3>Aerion Carbon Helmet</h3>
+            <p>(Fashion , Twin Disc)</p>
+            <h2> $699 <span>$799</span> </h2>
+            <button>Buy Now</button>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img">
+            <img src="image/l5.png" alt="">
+            <div class="flex1">
+              <label>50%</label>
+              <i class="fas fa-heart"></i>
+            </div>
+          </div>
+
+          <div class="detalis">
+            <h3>Aerion Carbon Helmet</h3>
+            <p>(Fashion , Twin Disc)</p>
+            <h2> $699 <span>$799</span> </h2>
+            <button>Buy Now</button>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img">
+            <img src="image/l6.png" alt="">
+            <div class="flex1">
+              <label>50%</label>
+              <i class="fas fa-heart"></i>
+            </div>
+          </div>
+
+          <div class="detalis">
+            <h3>Aerion Carbon Helmet</h3>
+            <p>(Fashion , Twin Disc)</p>
+            <h2> $699 <span>$799</span> </h2>
+            <button>Buy Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="slider top">
+    <div class="scontainer">
+      <div class="owl-carousel owl-theme">
+        <div class="item flex">
+          <div class="left">
+            <p>(Fashion,Twin Disc)</p>
+            <h1>KLM 125 Duke</h1>
+            <span></span>
+            <ul>
+              <li>- Engine Cc : 370.0cc</li>
+              <li>- Max Power : 14.5 bhp @ 9250 rpm</li>
+              <li>- Tank Capacity : 10.2 L</li>
+              <li>- Wheelbase : 1366 mm</li>
+              <li>- Cooling : Liquid Cooled</li>
+              <li>- Max Torque : 12 Nm @ 8000 rpm</li>
+            </ul>
+            <h2>Price : $1999.99</h2>
+            <button class="btn2">Buy Now</button>
+          </div>
+          <div class="right">
+            <div class="ani_image">
+              <img src="image/bike2.png" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="item flex">
+          <div class="left">
+            <p>(Fashion,Twin Disc)</p>
+            <h1>KLM 125 Duke</h1>
+            <span></span>
+            <ul>
+              <li>- Engine Cc : 370.0cc</li>
+              <li>- Max Power : 14.5 bhp @ 9250 rpm</li>
+              <li>- Tank Capacity : 10.2 L</li>
+              <li>- Wheelbase : 1366 mm</li>
+              <li>- Cooling : Liquid Cooled</li>
+              <li>- Max Torque : 12 Nm @ 8000 rpm</li>
+            </ul>
+            <h2>Price : $1999.99</h2>
+            <button class="btn2">Buy Now</button>
+          </div>
+          <div class="right">
+            <div class="ani_image">
+              <img src="image/bike2.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+
+
+  <script>
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: true,
+      dots: false,
+      navText: ["<i class='far fa-chevron-left'></i>", "<i class='far fa-chevron-right'></i>"],
+      responsive: {
+        0: {
+          items: 1
+        },
+        600: {
+          items: 1
+        },
+        1000: {
+          items: 1
+        }
+      }
+    })
+  </script>
+
+
+
+
+
+  <section class="Popular latest slider ">
+    <div class="scontainer">
+      <div class="heading">
+        <h1>Latest Popular Bike</h1>
+        <div class="lines flex1">
+          <div class="line"> <i class="fas fa-circle"></i> </div>
+          <button>50% OFF</button>
+          <div class="line line2"> <i class="fas fa-circle"></i></div>
+        </div>
+      </div>
+
+      <div class="owl-carousel owl-theme content">
+        <div class="item ">
+          <div class="box">
+            <div class="img">
+              <img src="image/l1.png" alt="">
+              <div class="flex1">
+                <label>50%</label>
+                <i class="fas fa-heart"></i>
+              </div>
+            </div>
+
+            <div class="detalis">
+              <h3>Aerion Carbon Helmet</h3>
+              <p>(Fashion , Twin Disc)</p>
+              <h2> $699 <span>$799</span> </h2>
+              <button>Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="item ">
+          <div class="box">
+            <div class="img">
+              <img src="image/l2.png" alt="">
+              <div class="flex1">
+                <label>50%</label>
+                <i class="fas fa-heart"></i>
+              </div>
+            </div>
+
+            <div class="detalis">
+              <h3>Aerion Carbon Helmet</h3>
+              <p>(Fashion , Twin Disc)</p>
+              <h2> $699 <span>$799</span> </h2>
+              <button>Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="item ">
+          <div class="box">
+            <div class="img">
+              <img src="image/l3.png" alt="">
+              <div class="flex1">
+                <label>50%</label>
+                <i class="fas fa-heart"></i>
+              </div>
+            </div>
+
+            <div class="detalis">
+              <h3>Aerion Carbon Helmet</h3>
+              <p>(Fashion , Twin Disc)</p>
+              <h2> $699 <span>$799</span> </h2>
+              <button>Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="item ">
+          <div class="box">
+            <div class="img">
+              <img src="image/l4.png" alt="">
+              <div class="flex1">
+                <label>50%</label>
+                <i class="fas fa-heart"></i>
+              </div>
+            </div>
+
+            <div class="detalis">
+              <h3>Aerion Carbon Helmet</h3>
+              <p>(Fashion , Twin Disc)</p>
+              <h2> $699 <span>$799</span> </h2>
+              <button>Buy Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 20,
+      nav: true,
+      dots: false,
+      navText: ["<i class='far fa-chevron-left'></i>", "<i class='far fa-chevron-right'></i>"],
+      responsive: {
+        0: {
+          items: 1
+        },
+        768: {
+          items: 2
+        },
+        1000: {
+          items: 3
+        }
+      }
+    })
+  </script>
+
+
+
+  <section class="wrapper top">
+    <div class="scontainer">
+      <div class="text">
+        <p> (World's Thinnest SUPER DUKE)</p>
+        <h1> 1290 Super Duke Gt 2019</h1>
+        <h3> Price : $5168.00</h3>
+        <button class="btn2">Buy Now</button>
+      </div>
+      <div class="ani_image">
+        <img src="image/bike3.png" alt="">
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="latest Assesories top">
+    <div class="scontainer">
+      <div class="heading">
+        <h1>Choose Bike Assesories</h1>
+        <div class="lines flex1">
+          <div class="line"> <i class="fas fa-circle"></i> </div>
+          <button>25% OFF</button>
+          <div class="line line2"> <i class="fas fa-circle"></i></div>
+        </div>
+      </div>
+
+
+      <div class="content grid  top">
+        <div class="box">
+          <div class="img">
+            <img src="image/a1.png" alt="">
+            <div class="flex1">
+              <label>50%</label>
+              <i class="fas fa-heart"></i>
+            </div>
+          </div>
+          <div class="detalis">
+            <h3>Aerion Carbon Helmet</h3>
+            <p>(Fashionable )</p>
+            <h2> $699 <span>$799</span> </h2>
+            <button>Buy Now</button>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img">
+            <img src="image/a2.png" alt="">
+            <div class="flex1">
+              <label>50%</label>
+              <i class="fas fa-heart"></i>
+            </div>
+          </div>
+          <div class="detalis">
+            <h3>Aerion Carbon Helmet</h3>
+            <p>(Fashionable )</p>
+            <h2> $699 <span>$799</span> </h2>
+            <button>Buy Now</button>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img">
+            <img src="image/a3.png" alt="">
+            <div class="flex1">
+              <label>50%</label>
+              <i class="fas fa-heart"></i>
+            </div>
+          </div>
+          <div class="detalis">
+            <h3>Aerion Carbon Helmet</h3>
+            <p>(Fashionable )</p>
+            <h2> $699 <span>$799</span> </h2>
+            <button>Buy Now</button>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img">
+            <img src="image/a4.png" alt="">
+            <div class="flex1">
+              <label>50%</label>
+              <i class="fas fa-heart"></i>
+            </div>
+          </div>
+          <div class="detalis">
+            <h3>Aerion Carbon Helmet</h3>
+            <p>(Fashionable )</p>
+            <h2> $699 <span>$799</span> </h2>
+            <button>Buy Now</button>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img">
+            <img src="image/a5.png" alt="">
+            <div class="flex1">
+              <label>50%</label>
+              <i class="fas fa-heart"></i>
+            </div>
+          </div>
+          <div class="detalis">
+            <h3>Aerion Carbon Helmet</h3>
+            <p>(Fashionable )</p>
+            <h2> $699 <span>$799</span> </h2>
+            <button>Buy Now</button>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img">
+            <img src="image/a6.png" alt="">
+            <div class="flex1">
+              <label>50%</label>
+              <i class="fas fa-heart"></i>
+            </div>
+          </div>
+          <div class="detalis">
+            <h3>Aerion Carbon Helmet</h3>
+            <p>(Fashionable )</p>
+            <h2> $699 <span>$799</span> </h2>
+            <button>Buy Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="shipping">
+    <div class="scontainer grid">
+      <div class="box flex">
+        <div class="img">
+          <i class="fas fa-shipping-fast"></i>
+        </div>
+        <div class="text">
+          <h3>Free Shipping & Return</h3>
+          <p>Worldwide Free Shiping on
+            Oder Over $200</p>
+        </div>
+      </div>
+      <div class="box flex">
+        <div class="img">
+          <i class="far fa-hourglass"></i>
+        </div>
+        <div class="text">
+          <h3> 27/7 Support</h3>
+          <p>Worldwide Free Shiping on
+            Oder Over $200</p>
+        </div>
+      </div>
+      <div class="box flex">
+        <div class="img">
+          <i class="fas fa-shield-alt"></i>
+        </div>
+        <div class="text">
+          <h3> 100% Secure Payments</h3>
+          <p>Worldwide Free Shiping on
+            Oder Over $200</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer>
+    <div class="scontainer grid">
+      <div class="box">
+        <div class="logo">
+          <img src="image/logo.png" alt="">
+        </div>
+        <p> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <h1>+ 123 456 7897</h1>
+        <small>Email : support@example.com</small>
+      </div>
+
+      <div class="box">
+        <h3>Customer Services</h3>
+        <div class="flex1">
+          <ul>
+            <li>Help</li>
+            <li>Contact Us</li>
+            <li>Warranty</li>
+            <li>Terms & Conditions</li>
+            <li>Shopping information</li>
+            <li>Gift Vocher</li>
+          </ul>
+          <ul>
+            <li>My Account</li>
+            <li>Arder Status </li>
+            <li>Payment</li>
+            <li>Oders </li>
+            <li>Cancellation </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="box">
+        <h3>Let's stay in touch</h3>
+        <div class="input flex1">
+          <input type="email" placeholder="Email Address">
+          <i class='far fa-long-arrow-right'></i>
+        </div>
+        <p>Get updates on sales specials and more</p>
+        <div class="social_meadia">
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-youtube"></i>
+          <i class="fab fa-google"></i>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    /*
+    anime({
+      targets: '.ani_image',
+      translateX: 70,
+      direction: 'alternate',
+      loop: true,
+      easing: 'easeInOutSine'
+    });
+  </script>
+</body>
+
+</html>

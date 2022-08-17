@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <header>
+    <div class="logo flex">
+      <img src="image/logo.png" alt="">
+      <h2>FOOD MOOD</h2>
+    </div>
+    <nav id="sideNav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="projects.html">Service</a></li>
+        <li><a href="contact.html"> Testimonial</a></li>
+        <li><a href="contact.html">Contact Me</a></li>
+      </ul>
+    </nav>
+    <i id="menuBtn" class="fa fa-bars"></i>
+  </header>
+
+  <script>
+    var menuBtn = document.getElementById('menuBtn');
+    var sideNav = document.getElementById('sideNav');
+
+    sideNav.style.right = "-250px";
+    menuBtn.onclick = function() {
+      if (sideNav.style.right == "-250px") {
+        sideNav.style.right = "0";
+      } else {
+        sideNav.style.right = "-250px"
+      }
+    }
+    var scroll = new SmoothScroll('a[href*="#"]');
+  </script>
+
+  <br> <br> <br>
+  <section class="home center">
+    <div class="container">
+      <div class="content flex ">
+        <div class="left">
+          <h5>01</h5>
+          <div class="line"> </div>
+          <img src="image/home.png" alt="">
+          <div class="icon">
+            <i class="fa fa-long-arrow-left"></i>
+            <i class="fa fa-long-arrow-right"></i>
+          </div>
+        </div>
+        <div class="right centerl">
+          <h1>GOOD <br>FOOD </h1>
+          <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <button>contact Us</button>
+          <button class="btn">orderNow</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="about">
+    <div class="content flex">
+      <div class="left ">
+        <div class="heading flex">
+          <h1>ABOUT OUR FOOD</h1>
+          <div class="line1"> </div>
+        </div>
+        <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <button class="btn">read more</button>
+      </div>
+      <div class="right">
+        <img src="image/a.png" alt="">
+      </div>
+    </div>
+  </section>
+
+  <section class="dishs top">
+    <div class="container flex">
+      <div class="left grid">
+        <div class="box">
+          <img src="image/d.png" alt="">
+        </div>
+        <div class="box">
+          <img src="image/d.png" alt="">
+        </div>
+        <div class="box">
+          <img src="image/d.png" alt="">
+        </div>
+        <div class="box">
+          <img src="image/d.png" alt="">
+        </div>
+      </div>
+      <div class="right">
+        <div class="heading flex top">
+          <h1>ABOUT OUR FOOD</h1>
+          <div class="line1"> </div>
+        </div>
+        <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <button class="btn">see more</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="dishs_item top">
+    <div class="container">
+      <div class="heading flex">
+        <h1>WHAT'S HOT</h1>
+        <div class="line1"> </div>
+      </div>
+      <p> Excepteur sint occaecat cupidatat non proident. </p>
+      <hr>
+      <div class="items grid center mtop">
+        <div class="box">
+          <div class="img">
+            <img src="image/d1.png" alt="">
+          </div>
+          <div class="text">
+            <h3>$30</h3>
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            <button class="btn">read more</button>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img">
+            <img src="image/d2.png" alt="">
+          </div>
+          <div class="text">
+            <h3>$30</h3>
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            <button class="btn">read more</button>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img">
+            <img src="image/d3.png" alt="">
+          </div>
+          <div class="text">
+            <h3>$30</h3>
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            <button class="btn">read more</button>
+          </div>
+        </div>
+      </div>
+      <hr>
+    </div>
+  </section>
+
+  <section class="offer top ">
+    <div class="wrapper ">
+      <div class="container flex">
+        <div class="left"> <img src="image/o1.png" alt=""> </div>
+        <div class="right mtop">
+          <h2> <span>50%</span> OFF ON EVER FOOD <br> DOWNLOAD NOW OUR APP </h2>
+          <p> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <div class="img">
+            <img src="image/o2.png" alt="">
+            <img src="image/o3.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="cutsomer top">
+    <div class="container">
+      <div class="heading flex">
+        <h1>WHAT'S HOT</h1>
+        <div class="line1"> </div>
+      </div>
+      <div class="box">
+        <div class="text flex">
+          <img src="image/c1.jpg" alt="">
+          <h3>Alex Ander</h3>
+        </div>
+        <p> Duis
+          aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+      <div class="dots center flex1">
+        <span> </span>
+        <span> </span>
+        <span> </span>
+        <span> </span>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact mtop">
+    <div class="container">
+      <h1>Get In Touch</h1>
+      <div class="content flex1">
+        <div class="left">
+          <form>
+            <input type="text" placeholder="Name">
+            <input type="text" placeholder="Phone Number">
+            <input type="text" placeholder="Email">
+            <textarea name="name" rows="5" cols="80">Message</textarea>
+            <button>SEND</button>
+          </form>
+        </div>
+        <div class="right mtop">
+          <i class="fa fa-map"></i><label>Kathmandu, Nepal</label><br>
+          <i class="fa fa-phone"></i><label>+977 981325682</label><br>
+          <i class="fa fa-envelope"></i><label>youremail@gmail.com</label><br>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="newsletter">
+
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="items grid">
+        <div class="box">
+          <div class="logo">
+            <h2>food mood</h2>
+            <img src="image/logo.png" alt="">
+          </div>
+        </div>
+
+        <div class="box">
+          <h2>Qucik Link</h2>
+          <ul>
+            <li>home</li>
+            <li>about</li>
+            <li>contact</li>
+            <li>blog</li>
+            <li>service</li>
+          </ul>
+        </div>
+        <div class="box">
+          <h2>Follow Us</h2>
+          <div class="icon flex">
+            <img src="https://img.icons8.com/color/48/000000/facebook-new.png" />
+            <img src="https://img.icons8.com/fluent/48/000000/instagram-new.png" />
+            <img src="https://img.icons8.com/color/48/000000/twitter-circled--v1.png" />
+            <img src="https://img.icons8.com/color/48/000000/linkedin.png" />
+          </div>
+          <p> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div class="box">
+          <h2>our newsletter </h2>
+          <div class="container flex1">
+            <input type="text">
+            <i class="fa fa-paper-plane"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="legal">Copyright (c) 2021 Copyright Holder All Rights Reserved | This template is made by <i class="fa fa-heart"></i> Dot Studio</p>
+  </footer>
+</body>
+
+</html>

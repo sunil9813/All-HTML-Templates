@@ -1,0 +1,24 @@
+/*----------------color-----------*/
+background: #0A46A6;
+background: #ecf2f9;
+
+
+
+/*----------------font family-----------*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+font-family: 'Open Sans', sans-serif;
+font-family: 'Pacifico', cursive;
+
+
+/*----------------image-----------*/
+<img src="https://img.icons8.com/ios-filled/50/ffffff/database-export.png"/>
+
+<img src="https://img.icons8.com/ios-filled/50/4a90e2/database.png"/>
+<img src="https://img.icons8.com/ios-filled/50/4a90e2/email-open.png"/>
+<img src="https://img.icons8.com/ios-filled/50/4a90e2/flow-chart.png"/>
+<img src="https://img.icons8.com/ios-filled/50/4a90e2/change-user-male.png"/>
+/*----------------icon-----------*/
+<i class="fa fa-map"></i>
+<i class="fa fa-phone"></i>
+<i class="fa fa-envelope"></i>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <style media="screen">
+    /* design for the sideNav menu*/
+    #sideNav {
+      width: 250px;
+      height: 100vh;
+      position: fixed;
+      right: -250px;
+      top: 0;
+      background: #f67c92;
+      z-index: 2;
+      transition: 0.5s;
+    }
+
+    nav ul li {
+      list-style: none;
+      margin: 50px 20px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #fff;
+    }
+
+    #menuBtn {
+      width: 50px;
+      position: fixed;
+      right: 65px;
+      top: 35px;
+      z-index: 2;
+      cursor: pointer;
+    }
+  </style>
+  <!--  <link href="style.css" rel="stylesheet" /> -->
+</head>
+
+<body>
+  <!-- Header Section -->
+
+
+  <nav id="sideNav">
+    <img src="logo.png" class="logo">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Me</a></li>
+      <li><a href="projects.html">My Projects</a></li>
+      <li><a href="contact.html">Contact Me</a></li>
+    </ul>
+  </nav>
+  <img src="menu.png" id="menuBtn">
+
+
+
+
+
+
+
+
+
+  <!-- HAMBURGER MENU JAVASCRIPT -->
+  <script>
+    var menuBtn = document.getElementById('menuBtn');
+    var sideNav = document.getElementById('sideNav');
+
+    sideNav.style.right = "-250px";
+    menuBtn.onclick = function() {
+      if (sideNav.style.right == "-250px") {
+        sideNav.style.right = "0";
+      } else {
+        sideNav.style.right = "-250px"
+      }
+
+    }
+
+    var scroll = new SmoothScroll('a[href*="#"]');
+  </script>
+</body>
+
+</html>

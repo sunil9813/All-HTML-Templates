@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css" integrity="sha384-3B6NwesSXE7YJlcLI9RpRqGf2p/EgVH8BgoKTaUrmKNDkHPStTQ3EyoYjCGXaOTS" crossorigin="anonymous" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Food Order</title>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <section class="head">
+      <div class="container flex">
+        <div class="left">
+          <span>FEEL LIKE EATING</span>
+          <span>CHOOSE LOCATION</span>
+        </div>
+        <div class="right flex">
+          <div class="icon">
+            <i class="fa-brands fa-facebook-square"></i>
+            <i class="fa-brands fa-twitter-square"></i>
+            <i class="fa-brands fa-google-plus-square"></i>
+          </div>
+          <div class="login">
+            <h4>LOGIN / REGSITER</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <header class="nav">
+      <div class="container flex">
+        <div class="logo">
+          <img src="./images/logo.png" alt="" />
+        </div>
+        <div class="main_list" id="mainListDiv">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Pages</a></li>
+            <li><a href="#">RESTAURANTS</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="media_button">
+          <i class="fa fa-bars" id="mediaButton"></i>
+        </div>
+        <div class="button">
+          <button class="primary-btn">REGISTER RESTAURANT</button>
+        </div>
+      </div>
+    </header>
+
+    <script>
+      var mainListDiv = document.getElementById("mainListDiv"),
+        mediaButton = document.getElementById("mediaButton")
+
+      mediaButton.onclick = function () {
+        mainListDiv.classList.toggle("show_list")
+        mediaButton.classList.toggle("active")
+      }
+    </script>
+
+    <section class="home">
+      <div class="container">
+        <h1>Order <span>Food Online From</span> the Best Restaurants</h1>
+        <form class="flex">
+          <input type="text" placeholder="Restaurants Name" />
+          <input type="text" placeholder="Search Loactions" />
+          <input type="submit" value="Search" />
+        </form>
+        <div class="content flex">
+          <div class="box">
+            <div class="img">
+              <img src="images/fact-icon1.png" alt="" />
+            </div>
+            <div class="text">
+              <h2>137</h2>
+              <span>Restaurant</span>
+            </div>
+          </div>
+          <div class="box">
+            <div class="img">
+              <img src="images/fact-icon2.png" alt="" />
+            </div>
+            <div class="text">
+              <h2>158</h2>
+              <span>People Served</span>
+            </div>
+          </div>
+          <div class="box">
+            <div class="img">
+              <img src="images/fact-icon3.png" alt="" />
+            </div>
+            <div class="text">
+              <h2>659K</h2>
+              <span>Happy Service</span>
+            </div>
+          </div>
+          <div class="box">
+            <div class="img">
+              <img src="images/fact-icon4.png" alt="" />
+            </div>
+            <div class="text">
+              <h2>235</h2>
+              <span>Regular users</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="wrapper">
+      <div class="container">
+        <div class="heading">
+          <h3>Website for Restaurant and Cafe</h3>
+          <h1>TOP RESTAURANTS</h1>
+          <p>Things that get tricky are things like burgers and fries, or things that are deep-fried. We do have a couple of burger restaurants that are capable of doing a good job transporting but it's Fries are almost impossible.</p>
+        </div>
+
+        <div class="content grid top">
+          <div class="box">
+            <img src="images/top-restaurant1.png" alt="" />
+          </div>
+          <div class="box">
+            <img src="images/top-restaurant2.png" alt="" />
+          </div>
+          <div class="box">
+            <img src="images/top-restaurant3.png" alt="" />
+          </div>
+          <div class="box">
+            <img src="images/top-restaurant4.png" alt="" />
+          </div>
+          <div class="box">
+            <img src="images/top-restaurant5.png" alt="" />
+          </div>
+          <div class="box">
+            <img src="images/top-restaurant6.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="foodItem">
+      <div class="container">
+        <div class="heading">
+          <h3>Your Favourite Food</h3>
+          <h1>CHOOSE & ENJOY</h1>
+        </div>
+
+        <div class="content grid2 mtop">
+          <div class="box">
+            <div class="img">
+              <img src="images/popular-dish-img1.jpg" alt="" />
+              <div class="overlay">
+                <i class="far fa-star btn1"> 4.25</i>
+                <i class="far fa-heart"> 20</i>
+              </div>
+            </div>
+            <div class="text">
+              <h3>Maenaam Thai Restaurant</h3>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+
+              <div class="flex order">
+                <h2>$85.00</h2>
+                <button class="sen-btn">ORDER NOW</button>
+              </div>
+              <div class="bottom">
+                <img src="images/restaurant-logo1.png" alt="" />
+                <div>
+                  <p>Fabio al Porto Ristorante</p>
+                  <span>5th Avenue New York 68</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <div class="img">
+              <img src="images/popular-dish-img2.jpg" alt="" />
+              <div class="overlay">
+                <i class="far fa-star btn1"> 4.25</i>
+                <i class="far fa-heart"> 20</i>
+              </div>
+            </div>
+            <div class="text">
+              <h3>Maenaam Thai Restaurant</h3>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+
+              <div class="flex order">
+                <h2>$85.00</h2>
+                <button class="sen-btn">ORDER NOW</button>
+              </div>
+              <div class="bottom">
+                <img src="images/restaurant-logo1.png" alt="" />
+                <div>
+                  <p>Fabio al Porto Ristorante</p>
+                  <span>5th Avenue New York 68</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <div class="img">
+              <img src="images/popular-dish-img3.jpg" alt="" />
+              <div class="overlay">
+                <i class="far fa-star btn1"> 4.25</i>
+                <i class="far fa-heart"> 20</i>
+              </div>
+            </div>
+            <div class="text">
+              <h3>Maenaam Thai Restaurant</h3>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+
+              <div class="flex order">
+                <h2>$85.00</h2>
+                <button class="sen-btn">ORDER NOW</button>
+              </div>
+              <div class="bottom">
+                <img src="images/restaurant-logo1.png" alt="" />
+                <div>
+                  <p>Fabio al Porto Ristorante</p>
+                  <span>5th Avenue New York 68</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="foodmenu">
+      <div class="container">
+        <div class="heading">
+          <h3>Your Favourite Food</h3>
+          <h1>POPULAR THIS MONTH</h1>
+          <h4>In Your City</h4>
+        </div>
+
+        <div class="content flex mtop">
+          <div class="left boxshadow">
+            <div class="owl-carousel owl-theme">
+              <div class="item">
+                <div class="img">
+                  <img src="images/dish-caro1.jpg" alt="" />
+                </div>
+                <div class="text">
+                  <div class="para flex">
+                    <img src="images/restaurant-logo4.png" alt="" />
+                    <div>
+                      <h3>Centarl Caffe Pizzeria</h3>
+                      <span>venue New York</span>
+                    </div>
+                  </div>
+                  <div class="price">
+                    <h2>Korean Bibimbap Yamyam</h2>
+                    <h5>$10.00 - $30.00</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="img">
+                  <img src="images/dish-caro1.jpg" alt="" />
+                </div>
+                <div class="text">
+                  <div class="para flex">
+                    <img src="images/restaurant-logo4.png" alt="" />
+                    <div>
+                      <h3>Centarl Caffe Pizzeria</h3>
+                      <span>venue New York</span>
+                    </div>
+                  </div>
+                  <div class="price">
+                    <h2>Korean Bibimbap Yamyam</h2>
+                    <h5>$10.00 - $30.00</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="img">
+                  <img src="images/dish-caro1.jpg" alt="" />
+                </div>
+                <div class="text">
+                  <div class="para flex">
+                    <img src="images/restaurant-logo4.png" alt="" />
+                    <div>
+                      <h3>Centarl Caffe Pizzeria</h3>
+                      <span>venue New York</span>
+                    </div>
+                  </div>
+                  <div class="price">
+                    <h2>Korean Bibimbap Yamyam</h2>
+                    <h5>$10.00 - $30.00</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="right boxshadow">
+            <div class="menulist flex">
+              <div class="box flex1 row">
+                <img src="images/round-pic1.jpg" alt="" />
+                <div class="items">
+                  <h5>$10.00 - $30.00</h5>
+                  <h2>Tequila & Lime hake</h2>
+                </div>
+              </div>
+              <div class="para flex1 row">
+                <img src="images/restaurant-logo2.png" alt="" />
+                <div class="para-text">
+                  <h3>Centarl Caffe Pizzeria</h3>
+                  <span>venue New York</span>
+                </div>
+              </div>
+            </div>
+            <div class="menulist flex">
+              <div class="box flex1 row">
+                <img src="images/round-pic2.jpg" alt="" />
+                <div class="items">
+                  <h5>$10.00 - $30.00</h5>
+                  <h2>Tequila & Lime hake</h2>
+                </div>
+              </div>
+              <div class="para flex1 row">
+                <img src="images/restaurant-logo3.png" alt="" />
+                <div class="para-text">
+                  <h3>Centarl Caffe Pizzeria</h3>
+                  <span>venue New York</span>
+                </div>
+              </div>
+            </div>
+            <div class="menulist flex">
+              <div class="box flex1 row">
+                <img src="images/round-pic3.jpg" alt="" />
+                <div class="items">
+                  <h5>$10.00 - $30.00</h5>
+                  <h2>Tequila & Lime hake</h2>
+                </div>
+              </div>
+              <div class="para flex1 row">
+                <img src="images/restaurant-logo4 (1).png" alt="" />
+                <div class="para-text">
+                  <h3>Centarl Caffe Pizzeria</h3>
+                  <span>venue New York</span>
+                </div>
+              </div>
+            </div>
+            <div class="menulist flex">
+              <div class="box flex1 row">
+                <img src="images/round-pic4.jpg" alt="" />
+                <div class="items">
+                  <h5>$10.00 - $30.00</h5>
+                  <h2>Tequila & Lime hake</h2>
+                </div>
+              </div>
+              <div class="para flex1 row">
+                <img src="images/restaurant-logo5.png" alt="" />
+                <div class="para-text">
+                  <h3>Centarl Caffe Pizzeria</h3>
+                  <span>venue New York</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js" integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+      $(".owl-carousel").owlCarousel({
+        loop: true,
+        margin: 20,
+        nav: false,
+        dots: true,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          600: {
+            items: 1,
+          },
+          1000: {
+            items: 1,
+          },
+        },
+      })
+    </script>
+    <section class="featured top">
+      <div class="container">
+        <div class="heading">
+          <h3>Website for Restaurant and Cafe</h3>
+          <h1>FEATURED RESTURENTS</h1>
+        </div>
+
+        <div class="content flex">
+          <div class="left row">
+            <div class="box flex1">
+              <div class="img">
+                <img src="images/featured-restaurant-img1.jpg" alt="" />
+              </div>
+              <div class="text">
+                <div class="row1">
+                  <span>5th Avenue New York 68</span>
+                  <h3>Tuna Roast Source</h3>
+                  <i class="far fa-star btn1"> 4.25</i>
+                </div>
+                <div class="price flex1">
+                  <h2>$85.00</h2>
+                  <i class="far fa-circle-check"> </i><label>Min order $ 50</label>
+
+                  <i class="fa-solid fa-person-biking"> </i><label>20 Min</label>
+                </div>
+              </div>
+            </div>
+            <div class="box flex1">
+              <div class="img">
+                <img src="images/featured-restaurant-img2.jpg" alt="" />
+              </div>
+              <div class="text">
+                <div class="row1">
+                  <span>5th Avenue New York 68</span>
+                  <h3>Tuna Roast Source</h3>
+                  <i class="far fa-star btn1"> 4.25</i>
+                </div>
+                <div class="price flex1">
+                  <h2>$85.00</h2>
+                  <i class="far fa-circle-check"> </i><label>Min order $ 50</label>
+
+                  <i class="fa-solid fa-person-biking"> </i><label>20 Min</label>
+                </div>
+              </div>
+            </div>
+            <div class="box flex1">
+              <div class="img">
+                <img src="images/featured-restaurant-img3.jpg" alt="" />
+              </div>
+              <div class="text">
+                <div class="row1">
+                  <span>5th Avenue New York 68</span>
+                  <h3>Tuna Roast Source</h3>
+                  <i class="far fa-star btn1"> 4.25</i>
+                </div>
+                <div class="price flex1">
+                  <h2>$85.00</h2>
+                  <i class="far fa-circle-check"> </i><label>Min order $ 50</label>
+
+                  <i class="fa-solid fa-person-biking"> </i><label>20 Min</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="right row">
+            <div class="owl-carousel owl-theme">
+              <div class="box">
+                <div class="img">
+                  <img src="images/featured-restaurant-gallery1.jpg" alt="" />
+                </div>
+                <div class="text flex1">
+                  <div class="icon">
+                    <i class="fa fa-play"></i>
+                  </div>
+                  <div class="row3">
+                    <div class="row1">
+                      <span>5th Avenue New York 68</span>
+                      <h3>Tuna Roast Source</h3>
+                      <i class="far fa-star btn1"> 4.25</i>
+                    </div>
+                    <div class="price flex1">
+                      <h2>$85.00</h2>
+                      <i class="far fa-circle-check"> </i><label>Min order $ 50</label>
+
+                      <i class="fa-solid fa-person-biking"> </i><label>20 Min</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="box">
+                <div class="img">
+                  <img src="images/featured-restaurant-gallery2.jpg" alt="" />
+                </div>
+                <div class="text flex1">
+                  <div class="icon">
+                    <i class="fa fa-play"></i>
+                  </div>
+                  <div class="row3">
+                    <div class="row1">
+                      <span>5th Avenue New York 68</span>
+                      <h3>Tuna Roast Source</h3>
+                      <i class="far fa-star btn1"> 4.25</i>
+                    </div>
+                    <div class="price flex1">
+                      <h2>$85.00</h2>
+                      <i class="far fa-circle-check"> </i><label>Min order $ 50</label>
+
+                      <i class="fa-solid fa-person-biking"> </i><label>20 Min</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      $(".owl-carousel").owlCarousel({
+        loop: true,
+        margin: 0,
+        nav: false,
+        dots: false,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          600: {
+            items: 1,
+          },
+          1000: {
+            items: 1,
+          },
+        },
+      })
+    </script>
+
+    <section class="food-items featured top">
+      <div class="container">
+        <div class="heading">
+          <h3>Your Favourite Food</h3>
+          <h1>CHOOSE YOUR FOOD</h1>
+        </div>
+        <div class="content grid3 top">
+          <div class="box flex1 boxshadow">
+            <div class="img">
+              <img src="images/most-popular-img1-1.png" alt="" />
+            </div>
+            <div class="text">
+              <div class="row1">
+                <span>5th Avenue New York 68</span>
+                <h3>Domino's Pizza</h3>
+                <i class="far fa-star btn1"> 4.25</i>
+              </div>
+              <h4><span> Type of Food : </span> Apple Juice, BB.Q, Beet Roast</h4>
+              <div class="price flex1">
+                <i class="far fa-circle-check"> </i>
+                <label>Min order $ 50</label>
+                <i class="fa-solid fa-person-biking"> </i><label>20 Min</label>
+              </div>
+              <i class="fa-brands fa-cc-mastercard"> </i>
+              <label>Accepts cash & online payament</label> <br />
+              <br />
+              <button>Order Now</button>
+            </div>
+          </div>
+          <div class="box flex1 boxshadow">
+            <div class="img">
+              <img src="images/most-popular-img1-2.png" alt="" />
+            </div>
+            <div class="text">
+              <div class="row1">
+                <span>5th Avenue New York 68</span>
+                <h3>Domino's Pizza</h3>
+                <i class="far fa-star btn1"> 4.25</i>
+              </div>
+              <h4><span> Type of Food : </span> Apple Juice, BB.Q, Beet Roast</h4>
+              <div class="price flex1">
+                <i class="far fa-circle-check"> </i>
+                <label>Min order $ 50</label>
+                <i class="fa-solid fa-person-biking"> </i><label>20 Min</label>
+              </div>
+              <i class="fa-brands fa-cc-mastercard"> </i>
+              <label>Accepts cash & online payament</label> <br />
+              <br />
+              <button>Order Now</button>
+            </div>
+          </div>
+          <div class="box flex1 boxshadow">
+            <div class="img">
+              <img src="images/most-popular-img1-3.png" alt="" />
+            </div>
+            <div class="text">
+              <div class="row1">
+                <span>5th Avenue New York 68</span>
+                <h3>Domino's Pizza</h3>
+                <i class="far fa-star btn1"> 4.25</i>
+              </div>
+              <h4><span> Type of Food : </span> Apple Juice, BB.Q, Beet Roast</h4>
+              <div class="price flex1">
+                <i class="far fa-circle-check"> </i>
+                <label>Min order $ 50</label>
+                <i class="fa-solid fa-person-biking"> </i><label>20 Min</label>
+              </div>
+              <i class="fa-brands fa-cc-mastercard"> </i>
+              <label>Accepts cash & online payament</label> <br />
+              <br />
+              <button>Order Now</button>
+            </div>
+          </div>
+          <div class="box flex1 boxshadow">
+            <div class="img">
+              <img src="images/most-popular-img1-4.png" alt="" />
+            </div>
+            <div class="text">
+              <div class="row1">
+                <span>5th Avenue New York 68</span>
+                <h3>Domino's Pizza</h3>
+                <i class="far fa-star btn1"> 4.25</i>
+              </div>
+              <h4><span> Type of Food : </span> Apple Juice, BB.Q, Beet Roast</h4>
+              <div class="price flex1">
+                <i class="far fa-circle-check"> </i>
+                <label>Min order $ 50</label>
+                <i class="fa-solid fa-person-biking"> </i><label>20 Min</label>
+              </div>
+              <i class="fa-brands fa-cc-mastercard"> </i>
+              <label>Accepts cash & online payament</label> <br />
+              <br />
+              <button>Order Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="download">
+      <div class="container flex1">
+        <div class="img">
+          <img src="images/app-mockup.png" alt="" />
+        </div>
+        <div class="text row">
+          <h3>The Best Food Delivery App</h3>
+          <p>We have a launch team that focuses on one city at a time. At the end of the day, we're a marketplace. In order to make an effective marketplace, you need critical mass. We need enough restaurants that quality and variety</p>
+          <div class="image flex1">
+            <img src="images/app-download-btn1.png" alt="" />
+            <img src="images/app-download-btn2.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container grid2">
+        <div class="box">
+          <img src="images/logo (1).png" alt="" />
+          <p>Food Ordering is a Premium HTML Template. Best choice for your online store. Let purchase it to enjoy now</p>
+          <div class="social">
+            <i class="fab fa-facebook-f icon"></i>
+            <i class="fab fa-google"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-pinterest"></i>
+          </div>
+        </div>
+
+        <div class="box">
+          <h3>INFORMATION</h3>
+          <ul>
+            <li><i class="fa fa-angle-double-right"></i> Careers</li>
+            <li><i class="fa fa-angle-double-right"></i> Investor Relations</li>
+            <li><i class="fa fa-angle-double-right"></i> Press Releases</li>
+            <li><i class="fa fa-angle-double-right"></i> Shop with Points</li>
+            <li><i class="fa fa-angle-double-right"></i> More Branches</li>
+          </ul>
+        </div>
+
+        <div class="box">
+          <h3>CUSTOMER CARE</h3>
+          <ul>
+            <li><i class="fa fa-angle-double-right"></i>Returns</li>
+            <li><i class="fa fa-angle-double-right"></i>Shipping Info</li>
+            <li><i class="fa fa-angle-double-right"></i>Gift Cards</li>
+            <li><i class="fa fa-angle-double-right"></i>Size Guide</li>
+            <li><i class="fa fa-angle-double-right"></i>Money Back</li>
+          </ul>
+        </div>
+
+        <div class="box">
+          <h3>GET IN TOUCH</h3>
+          <ul>
+            <li><i class="fa fa-map-location"></i> 123 New Design Str, ABC Building, melbourne, Australia.</li>
+            <li><i class="fa fa-phone"></i> (0044) 8647 1234 587</li>
+            <li><i class="fa fa-envelope"></i> hello@yourdomain.com</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <p class="legal">© 2021 GORKCODER. All Rights Reserved</p>
+  </body>
+</html>

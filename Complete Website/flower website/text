@@ -1,0 +1,56 @@
+/*----------------color-----------*/
+color: #E72D69;
+
+
+/*----------------font family-----------*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ephesis&family=Great+Vibes&display=swap');
+
+
+font-family: 'Poppins', sans-serif;
+font-family: 'Great Vibes', cursive;
+
+/*----------------image-----------*/
+
+
+/*----------------icon-----------*/
+<i class="fas fa-shopping-cart"></i>
+<i class="fas fa-search"></i>
+<i class="fas fa-bars"></i>
+
+<i class="far fa-star"></i>
+
+
+<i class="fas fa-recycle"></i>
+<i class="far fa-heart"></i>
+<i class="far fa-eye"></i>
+
+
+
+<i class="fab fa-facebook-f"></i>
+<i class="fab fa-instagram"></i>
+<i class="fab fa-twitter"></i>
+<i class="fab fa-youtube"></i>
+
+
+Information
+Our Company
+Contact Us
+Our Services
+Why We?
+Careers
+
+
+
+About
+Blog
+Shop
+Cart
+Contact
+
+
+Online Support
+Shipping Policy
+Return Policy
+Privacy Policy
+Terms of Service

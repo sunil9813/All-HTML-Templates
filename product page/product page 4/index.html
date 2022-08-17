@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <h1><i class=" fa fa-shopping-cart"></i></h1>
+  <section>
+    <div class="item">
+      <img src="image/p1.png">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, quo, modi ea voluptas tempora vero cumque incidunt eum animi</p>
+      <h6>$345.89</h6>
+      <span></span>
+      <button>Add-cart</button>
+    </div>
+    <div class="item">
+      <img src="image/p2.png">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, quo, modi ea voluptas tempora vero cumque incidunt eum animi</p>
+      <h6>$345.89</h6>
+      <span></span>
+      <button>Add-cart</button>
+    </div>
+    <div class="item">
+      <img src="image/p3.png">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, quo, modi ea voluptas tempora vero cumque incidunt eum animi</p>
+      <h6>$345.89</h6>
+      <span></span>
+      <button>Add-cart</button>
+    </div>
+    <div class="item">
+      <img src="image/p4.png">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, quo, modi ea voluptas tempora vero cumque incidunt eum animi</p>
+      <h6>$345.89</h6>
+      <span></span>
+      <button>Add-cart</button>
+    </div>
+  </section>
+  <div class="select">
+
+  </div>
+
+
+
+
+  <script>
+    var noti = document.querySelector('h1');
+    var select = document.querySelector('.select');
+    var button = document.getElementsByTagName('button');
+    for (var but of button) {
+      but.addEventListener('click', (e) => {
+        var add = Number(noti.getAttribute('data-count') || 0);
+        noti.setAttribute('data-count', add + 1);
+        noti.classList.add('zero')
+
+        // image --animation to cart ---//
+        var image = e.target.parentNode.querySelector('img');
+        var span = e.target.parentNode.querySelector('span');
+        var s_image = image.cloneNode(false);
+        span.appendChild(s_image);
+        span.classList.add("active");
+        setTimeout(() => {
+          span.classList.remove("active");
+          span.removeChild(s_image);
+        }, 500);
+
+
+        // copy and paste //
+        var parent = e.target.parentNode;
+        var clone = parent.cloneNode(true);
+        select.appendChild(clone);
+        clone.lastElementChild.innerText = "Buy-now";
+
+        if (clone) {
+          noti.onclick = () => {
+            select.classList.toggle('display');
+          }
+        }
+      })
+    }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,569 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.container {
+  max-width: 85%;
+  margin: auto;
+}
+
+.flex {
+  display: flex;
+}
+
+header {
+  height: 10vh;
+  background: #fff;
+  color: black;
+  line-height: 10vh;
+  box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+  margin-top: 10px;
+}
+
+.logo h2 {
+  font-size: 25px;
+  letter-spacing: 2px;
+}
+
+.header .cart {
+  position: relative;
+}
+
+.header .cart i {
+  font-size: 25px;
+}
+
+.header .cart span {
+  position: absolute;
+  left: 45%;
+  top: 40%;
+  background: red;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  color: white;
+  font-size: 14px;
+}
+
+.header .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hamburger {
+  display: none;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  transition: all 0.3s ease-in-out;
+  background-color: #000;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-item {
+  margin-left: 30px;
+}
+
+.nav-link {
+  font-size: 16px;
+}
+
+@media only screen and (max-width: 768px) {
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 5rem;
+    flex-direction: column;
+    background-color: #fff;
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
+
+  .nav-link {
+    font-size: 20px;
+    color: black;
+  }
+
+  .nav-item {
+    margin: 25px 0;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .header .cart {
+    display: none;
+  }
+}
+
+/*---------header-----------*/
+/*---------home-----------*/
+.left, .right {
+  width: 50%;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.top {
+  margin-top: 10%;
+}
+
+.mtop {
+  margin-top: 5%;
+}
+
+.home {
+  background-image: url("../image/home.jpg");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover;
+  width: 100%;
+  height: 90vh;
+}
+
+.home .left {
+  padding-top: 15%;
+}
+
+.home a {
+  background: black;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.home h1 {
+  font-size: 70px;
+  margin-top: 40px;
+  line-height: 70px;
+  margin-bottom: 30px;
+}
+
+button {
+  background: none;
+  border: 2px solid black;
+  padding: 15px 40px;
+  border-radius: 50px;
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/*---------home-----------*/
+/*---------wrapper-----------*/
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 3fr);
+  grid-gap: 20px;
+}
+
+.wrapper .box {
+  position: relative;
+}
+
+.wrapper .text {
+  position: absolute;
+  top: 0;
+  padding: 70px;
+}
+
+.wrapper h1 {
+  font-size: 40px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+.wrapper a {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+/*---------wrapper-----------*/
+/*---------product-----------*/
+.center {
+  text-align: center;
+}
+
+.heading {
+  position: relative;
+  text-align: center;
+}
+
+.heading::after {
+  position: absolute;
+  content: '';
+  width: 50px;
+  height: 2px;
+  background: #d5388b;
+  margin-left: -20px;
+  margin-top: 10px;
+}
+
+.product label {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #d5388b;
+  text-align: center;
+  line-height: 50px;
+  color: white;
+  margin: 10px;
+}
+
+.product .hot {
+  background: #f5cc16;
+}
+
+.product .sale {
+  background: #0c9367;
+}
+
+.product .box h4 {
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+.product .box h4 span {
+  text-decoration: line-through;
+}
+
+.product .content {
+  grid-template-columns: repeat(4, 1fr);
+  grid-row-gap: 40px;
+}
+
+/*---------product-----------*/
+/*---------categories-----------*/
+.categories {
+  background: #eff5fe;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.categories .box {
+  position: relative;
+}
+
+.categories h3 {
+  position: absolute;
+  bottom: 0;
+  padding: 20px;
+  font-weight: 400;
+}
+
+/*---------categories-----------*/
+/*---------offer-----------*/
+.offer {
+  text-align: center;
+}
+
+.offer .left, .right {
+  padding: 20px;
+  position: relative;
+}
+
+.offer .text {
+  position: absolute;
+  top: 0;
+  color: white;
+  padding: 20px;
+  left: 0;
+  right: 0;
+}
+
+.offer h2 {
+  font-size: 35px;
+  font-weight: 300;
+  margin-top: 30px;
+}
+
+.offer h1 {
+  font-size: 55px;
+  text-align: center;
+}
+
+.offer button {
+  background: white;
+  border: none;
+}
+
+/*---------offer-----------*/
+/*---------blog-----------*/
+.blog img {
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.blog h4 {
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+
+.blog p {
+  font-size: 15px;
+  opacity: 0.6;
+}
+
+.blog .link {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.blog a {
+  text-decoration: underline;
+}
+
+.blog span {
+  opacity: 0.6;
+  font-size: 12px;
+}
+
+/*---------blog-----------*/
+/*---------brand-----------*/
+.brand {
+  background: #eff5fe;
+  padding-bottom: 40px;
+  padding-top: 40px;
+}
+
+.brand .container {
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.brand img {
+  height: auto;
+  margin-top: 20px;
+}
+
+/*---------brand-----------*/
+/*---------footer-----------*/
+footer {
+  background: black;
+  color: white;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer li {
+  display: inline-block;
+}
+
+.subscribe {
+  padding-top: 40px;
+}
+
+.subscribe .input {
+  background: white;
+  border-radius: 50px 50px 50px 50px;
+}
+
+.subscribe input {
+  width: 100%;
+  border: none;
+  background: none;
+  padding: 5px;
+  outline: none;
+  border-radius: 50px;
+  padding: 15px;
+}
+
+.input span {
+  background: red;
+  width: 100px;
+  line-height: 40px;
+  border-radius: 0 50px 50px 0;
+  padding: 5px;
+}
+
+.subscribe li {
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+.subscribe p {
+  color: grey;
+  margin-top: 10px;
+}
+
+footer hr {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  opacity: 0.5;
+  background: grey;
+}
+
+footer .content {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+footer .heading {
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+footer .heading::after {
+  background: crimson;
+  margin-left: 0;
+  margin-top: 0px;
+  left: 0;
+}
+
+footer .content ul li {
+  margin-bottom: 20px;
+  opacity: 0.5;
+  display: block;
+}
+
+footer h4 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+footer .content p {
+  opacity: 0.5;
+}
+
+footer .items {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .items p {
+  line-height: 40px;
+  opacity: 0.5;
+}
+
+/*---------footer-----------*/
+@media only screen and (max-width: 768px) {
+
+  /*---------home-----------*/
+  .left, .right {
+    width: 100%;
+  }
+
+  .home {
+    background-position: center;
+    height: 60vh;
+  }
+
+  /*---------home-----------*/
+  /*---------wrapper-----------*/
+  .grid {
+    grid-template-columns: repeat(2, 3fr);
+  }
+
+  .wrapper .text {
+    padding: 50px;
+  }
+
+  /*---------wrapper-----------*/
+  /*---------product-----------*/
+  .product .content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /*---------product-----------*/
+  /*---------offer-----------*/
+  .offer .container {
+    flex-direction: column;
+  }
+
+  /*---------offer-----------*/
+  /*---------footer-----------*/
+  footer .content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  footer .item {
+    grid-template-columns: repeat(4, 4fr);
+  }
+}
+
+@media only screen and (max-width: 511px) {
+
+  /*---------wrapper-----------*/
+  .grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  /*---------wrapper-----------*/
+  /*---------product-----------*/
+  .product .content {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  /*---------product-----------*/
+  /*---------offer-----------*/
+  .offer h2 {
+    font-size: 25px;
+  }
+
+  .offer h1 {
+    font-size: 35px;
+  }
+
+  /*---------offer-----------*/
+  /*---------footer-----------*/
+  footer .content {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  footer .items {
+    flex-direction: column;
+  }
+
+  footer .item {
+    grid-template-columns: repeat(4, 4fr);
+  }
+}

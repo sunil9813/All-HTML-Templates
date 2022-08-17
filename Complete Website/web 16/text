@@ -1,0 +1,37 @@
+/*----------------color-----------*/
+background: linear-gradient(to right, rgba(141, 11, 183, 0.8), rgba(33, 63, 148, 0.8));
+background: #f02a1e;
+
+
+/*----------------font family-----------*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+font-family: 'Poppins', sans-serif;
+
+
+
+/*----------------image-----------*/
+<img src="https://img.icons8.com/ios/50/000000/wheel.png"/>
+<img src="https://img.icons8.com/carbon-copy/100/ffffff/toyota.png"/>
+/*----------------icon-----------*/
+<span class="fas fa-dharmachakra"></span>
+<span class="fa fa-heart"></span>
+
+<i class="fas fa-map-marker-alt"></i>
+<i class="fa fa-phone"></i>
+<i class="fa fa-envelope"></i>
+
+<i class="fab fa-google-play"> Play Store</i>
+<i class="fab fa-app-store-ios"> App Store</i>
+
+
+<i class="fab fa-cc-mastercard"></i>
+<i class="fab fa-cc-visa"></i>
+<i class="fab fa-cc-amex"></i>
+<i class="fab fa-cc-paypal"></i>
+<i class="fab fa-cc-discover"></i>
+
+
+<i class="fab fa-facebook"></i>
+<i class="fab fa-twitter"></i>
+<i class="fab fa-youtube"></i>
+<i class="fab fa-instagram"></i>

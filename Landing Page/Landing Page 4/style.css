@@ -1,0 +1,163 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.flex1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.home {
+  height: 100vh;
+  background: rgb(255, 63, 233);
+  background: linear-gradient(139deg, rgba(255, 63, 233, 1) 11%, rgba(64, 0, 173, 1) 83%);
+}
+
+.container {
+  max-width: 90%;
+  margin: auto;
+}
+
+header .container {
+  padding-top: 40px;
+}
+
+header img {
+  width: 150px;
+}
+
+.topnav {
+  overflow: hidden;
+}
+
+.topnav a {
+  color: #fff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.left img {
+  width: 70%;
+}
+
+.left {
+  width: 75%;
+  color: white;
+}
+
+.right {
+  width: 30%;
+  color: white;
+  text-align: right;
+}
+
+h2 {
+  margin-top: -5%;
+  letter-spacing: 3px;
+  font-weight: 400;
+}
+
+h2 span {
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 80px;
+  font-weight: 800;
+  line-height: 82px;
+}
+
+p {
+  font-size: 18px;
+  word-spacing: 2px;
+  opacity: 0.9;
+}
+
+.icon {
+  margin-top: 40%;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+ul i {
+  width: 30px;
+  height: 30px;
+  background: white;
+  color: darkblue;
+  text-align: center;
+  line-height: 30px !important;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 768px) {
+  .topnav a {
+    display: none;
+  }
+
+  .topnav {
+    justify-content: center;
+  }
+
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+
+  .topnav.responsive {
+    position: relative;
+  }
+
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: right;
+  }
+
+  .topnav.responsive a:nth-child(1) {
+    margin-top: 50px;
+  }
+
+  .home {
+    height: auto;
+  }
+
+  .home_container {
+    flex-direction: column;
+  }
+
+  .left, .right {
+    width: 100%;
+  }
+
+  .home_container img {
+    width: 100% !important;
+  }
+
+  .right {
+    text-align: center;
+  }
+
+  .icon {
+    margin: 0;
+  }
+}

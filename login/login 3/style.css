@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  height: 100vh;
+  overflow: hidden;
+}
+
+img {
+  width: auto;
+  height: auto;
+}
+
+.left, .right {
+  width: 50%;
+  position: relative;
+}
+
+.left img {
+  width: 100%;
+  height: 100vh;
+}
+
+.flex {
+  display: flex;
+}
+
+.button {
+  position: absolute;
+  right: 0;
+  top: 40%;
+  z-index: 1;
+}
+
+input,
+button {
+  border: none;
+  outline: none;
+}
+
+.button button {
+  background: white;
+  width: 150px;
+  height: 60px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 50px 0 0 50px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.button button a {
+  color: black;
+}
+
+.button button:nth-last-child(1) a {
+  color: white;
+}
+
+.button button:nth-last-child(1) {
+  background: black;
+}
+
+.right {
+  padding: 50px 100px 50px 100px;
+}
+
+.logo img {
+  width: 200px;
+  margin-bottom: 100px;
+}
+
+.right p {
+  margin: 10px 0 20px 0;
+  color: grey;
+}
+
+.box {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+i {
+  color: grey;
+}
+
+.box:nth-child(1),
+.box:nth-child(2) {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+input {
+  padding: 10px;
+  font-size: 15px;
+}
+
+.box button {
+  padding: 15px 50px;
+  background: #E9B102;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+a {
+  text-decoration: none;
+  color: deepskyblue;
+}
+
+h3 {
+  margin: 50px 0 20px 0;
+}

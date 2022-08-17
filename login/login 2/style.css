@@ -1,0 +1,118 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("../background.jpg");
+  background-size: cover;
+  height: 100vh;
+  display: grid;
+  place-items: Center;
+  overflow: hidden;
+}
+
+.container {
+  text-align: center;
+  background: white;
+  padding: 20px;
+  width: 400px;
+  border-radius: 10px;
+}
+
+.account {
+  text-align: center;
+  background: linear-gradient(90deg, #007bff, #0052ea);
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+  margin-top: -15%;
+  margin-bottom: 50px;
+}
+
+.account h2 {
+  margin-bottom: 30px;
+}
+
+.account i {
+  transition: 0.5s;
+  cursor: pointer;
+  width: 60px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 5px;
+}
+
+.account i:hover {
+  transform: translateY(-5px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.flex {
+  display: flex;
+}
+
+.flex1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.box {
+  margin-top: 30px;
+  text-align: left;
+}
+
+.box i {
+  margin-top: 15px;
+}
+
+input {
+  transition: 0.5s;
+  padding: 15px;
+  width: 100%;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+input:focus {
+  border-bottom: 1px solid #15b7e8;
+}
+
+.checkbox input {
+  width: auto;
+  margin-top: 5px;
+}
+
+.checkbox p {
+  margin-left: 10px;
+  font-size: 18px;
+  opacity: 0.5;
+}
+
+button {
+  padding: 13px 50px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  background: #007bff;
+  color: white;
+  font-size: 16px;
+}
+
+i,
+a {
+  color: #005BEF;
+  text-decoration: none;
+}
+
+.box:nth-last-child(2) {
+  margin-bottom: 10%;
+}
+
+label {
+  color: grey;
+  text-align: center;
+}

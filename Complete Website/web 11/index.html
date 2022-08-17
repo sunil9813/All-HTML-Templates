@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header>
+    <div class="head_container flex">
+      <div class="left">
+        <div class="top">
+          <div class="logo flex">
+            <img src="https://img.icons8.com/ios-filled/50/ffffff/database-export.png" />
+            <h2>HOSTS</h2>
+          </div>
+
+          <nav id="sideNav">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Me</a></li>
+              <li><a href="projects.html">Service</a></li>
+              <li><a href="contact.html"> Testimonial</a></li>
+              <li><a href="contact.html">Contact Me</a></li>
+            </ul>
+          </nav>
+          <i id="menuBtn" class="fa fa-bars"></i>
+        </div>
+        <div class="bottom">
+          <h1>UNLIMITED <br> WEB HOSTING</h1>
+          <p> Duis
+            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <button class="btn1">read more</button>
+          <button class="btn2">contact us</button>
+        </div>
+      </div>
+      <div class="right">
+        <img src="image/h1.jpg" alt="">
+      </div>
+    </div>
+  </header>
+
+  <script>
+    var menuBtn = document.getElementById('menuBtn');
+    var sideNav = document.getElementById('sideNav');
+
+    sideNav.style.right = "-250px";
+    menuBtn.onclick = function() {
+      if (sideNav.style.right == "-250px") {
+        sideNav.style.right = "0";
+      } else {
+        sideNav.style.right = "-250px"
+      }
+    }
+    var scroll = new SmoothScroll('a[href*="#"]');
+  </script>
+
+
+
+
+  <section class="features ltop">
+    <div class="container">
+      <div class="heading flex">
+        <h2>our features</h2>
+        <i class="fa fa-circle"></i>
+      </div>
+
+      <div class="content center">
+        <div class="boxs flex">
+          <div class="box box1">
+            <img src="https://img.icons8.com/ios-filled/50/4a90e2/database.png" />
+            <div class="text">
+              <h3>Sate-of-the-art infrastructure</h3>
+              <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur . Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+          </div>
+          <div class="box box2">
+            <img src="https://img.icons8.com/ios-filled/50/4a90e2/email-open.png" />
+            <div class="text">
+              <h3>Sate-of-the-art infrastructure</h3>
+              <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur . Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+          </div>
+        </div>
+        <div class="boxs flex">
+          <div class="box box2">
+            <img src="https://img.icons8.com/ios-filled/50/4a90e2/flow-chart.png" />
+            <div class="text">
+              <h3>advanced programming & database </h3>
+              <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur . Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+          </div>
+          <div class="box box1">
+            <img src="https://img.icons8.com/ios-filled/50/4a90e2/change-user-male.png" />
+            <div class="text">
+              <h3>advanced programming & database </h3>
+              <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur . Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+          </div>
+        </div>
+        <button class="btn2">read more</button>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="about">
+    <div class="container flex">
+      <div class="left">
+        <img src="image/a.png" alt="">
+        <i class="fa fa-play"></i>
+      </div>
+      <div class="right ltop">
+        <div class="heading flex">
+          <h2>abou us</h2>
+          <i class="fa fa-circle"></i>
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+          aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <button class="btn2">read more</button>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="price mtop">
+    <div class="container">
+      <div class="heading flex1">
+        <h2>about us</h2>
+        <i class="fa fa-circle"></i>
+      </div>
+
+      <div class="content flex center">
+        <div class="box">
+          <h1> <span>$</span>149</h1>
+          <h3>STARTER</h3>
+          <p> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <button class="btn2">read more</button>
+        </div>
+        <div class="box active">
+          <h1> <span>$</span>149</h1>
+          <h3>STARTER</h3>
+          <p> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <button class="btn2">read more</button>
+        </div>
+        <div class="box">
+          <h1> <span>$</span>149</h1>
+          <h3>STARTER</h3>
+          <p> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <button class="btn2">read more</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="Testimonial mtop">
+    <div class="container">
+      <div class="heading flex1">
+        <h2>Testimonial </h2>
+        <i class="fa fa-circle"></i>
+      </div>
+
+      <div class="content flex">
+        <div class="box">
+          <div class="img flex">
+            <img src="image/c1.jpg" alt="">
+            <div class="name">
+              <h3>Alex Ander</h3>
+              <span>CUSTOMER</span>
+            </div>
+          </div>
+          <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div class="box box1">
+          <div class="img flex">
+            <img src="image/c2.jpg" alt="">
+            <div class="name">
+              <h3>Alex Ander</h3>
+              <span>CUSTOMER</span>
+            </div>
+          </div>
+          <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="award center ltop">
+    <div class="container">
+      <img src="https://img.icons8.com/emoji/96/000000/military-medal-emoji.png" />
+
+      <h2>100/90 Award Winning Support</h2>
+      <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+  </section>
+
+
+  <footer>
+    <div class="container ltop">
+      <div class="address center  ">
+        <i class="fa fa-map"></i>
+        <label>Kathmandu,Nepal</label>
+        <i class="fa fa-phone"></i>
+        <label>Call:+977 981325482 </label>
+        <i class="fa fa-envelope"></i>
+        <label>Email: youremail@gmail.com</label>
+      </div>
+
+      <div class="content mtop">
+        <div class="box">
+          <h3>USEFUL LINK</h3>
+          <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Service</li>
+            <li>Contact Us</li>
+          </ul>
+        </div>
+        <div class="box">
+          <h3>PRODUCT </h3>
+          <ul>
+            <li>Webhosting</li>
+            <li>Wordpress Hosting</li>
+          </ul>
+        </div>
+        <div class="box">
+          <ul>
+            <li>Reseler Hosting</li>
+            <li>Dedicated Hosting</li>
+          </ul>
+        </div>
+        <div class="box">
+          <ul>
+            <li>Reseler Hosting</li>
+            <li>Dedicated Hosting</li>
+          </ul>
+        </div>
+        <div class="box">
+          <h3>NEWSLETTER</h3>
+          <div class="input flex">
+            <input type="text">
+            <input type="submit" placeholder="SUBSCRIBE">
+          </div>
+          <i class="fa fa-facebook"></i>
+          <i class="fa fa-instagram"></i>
+          <i class="fa fa-twitter"></i>
+          <i class="fa fa-youtube"></i>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <p class="legal">Copyright (c) 2021 Copyright Holder All Rights Reserved | This template is made by <i class="fa fa-heart"></i> Dot Studio</p>
+</body>
+
+</html>

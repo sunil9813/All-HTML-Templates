@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header class="flex">
+    <div class="header_top">
+      <div class="top">
+        <nav id="sideNav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="projects.html">Service</a></li>
+            <li><a href="contact.html"> Testimonial</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+          </ul>
+        </nav>
+        <i id="menuBtn" class="fa fa-bars"></i>
+
+        <div class="logo">
+          <h2>PHOTO STUDIO</h2>
+        </div>
+      </div>
+      <div class="bottom">
+        <h1>PHOTOGRAPHY STUDIO</h1>
+        <button>read more</button>
+      </div>
+    </div>
+    <div class="img">
+      <img src="image/h1.jpeg" alt="">
+    </div>
+  </header>
+
+  <script>
+    var menuBtn = document.getElementById('menuBtn');
+    var sideNav = document.getElementById('sideNav');
+
+    sideNav.style.right = "-250px";
+    menuBtn.onclick = function() {
+      if (sideNav.style.left == "-250px") {
+        sideNav.style.left = "0";
+      } else {
+        sideNav.style.left = "-250px"
+      }
+    }
+    var scroll = new SmoothScroll('a[href*="#"]');
+  </script>
+
+
+
+  <section class="about">
+    <div class="about_bg flex">
+      <div class="left_img">
+        <img src="image/a.jpeg" alt="">
+      </div>
+      <div class="left_text center">
+        <div class="heading">
+          <h2>ABOUT US</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <button>read more</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="portfolio center mtop">
+    <div class="container">
+      <div class="heading">
+        <h2>portfolio</h2>
+      </div>
+      <div class="gallery grid ltop">
+        <div class="img gallery__item-1">
+          <img src="image/g1.jpeg" alt="">
+        </div>
+        <div class="img gallery__item-2">
+          <img src="image/g5.jpeg" alt="">
+        </div>
+        <div class="img gallery__item-3">
+          <img src="image/g3.jpeg" alt="">
+        </div>
+        <div class="img gallery__item-4">
+          <img src="image/g4.jpeg" alt="">
+        </div>
+        <div class="img gallery__item-5">
+          <img src="image/g2.jpeg" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="team flex center">
+    <div class="left_text">
+      <div class="heading">
+        <h2>our creative team</h2>
+        <p> Duis
+          aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <button>read more</button>
+      </div>
+    </div>
+    <div class="left_img">
+      <div class="items">
+        <div class="boxs flex1">
+          <div class="box">
+            <div class="img">
+              <img src="image/c1.jpg" alt="">
+            </div>
+            <div class="icon">
+              <div class="text">
+                <h3>Alex Ander</h3>
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-youtube"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-instagram"></i>
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <div class="img">
+              <img src="image/c2.jpg" alt="">
+            </div>
+            <div class="icon">
+              <div class="text">
+                <h3>Alex Ander</h3>
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-youtube"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-instagram"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="boxs flex1">
+          <div class="box">
+            <div class="img">
+              <img src="image/c3.jpg" alt="">
+            </div>
+            <div class="icon">
+              <div class="text">
+                <h3>Alex Ander</h3>
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-youtube"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-instagram"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact ">
+    <div class="content flex">
+      <div class="left_img">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14131.036667732067!2d85.32395955!3d27.69383745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sne!2snp!4v1627520045612!5m2!1sne!2snp" width="600" height="450"
+          style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+      <div class="left_text">
+        <div class="heading">
+          <h2>GET in touch</h2>
+          <i class="fa fa-map"></i>
+          <label>Kathmandu,Nepal</label> <br>
+
+          <i class="fa fa-phone"></i>
+          <label>Call: +977 984563214</label> <br>
+
+          <i class="fa fa-envelope"></i>
+          <label>Email: yourdemo@gmail.com</label> <br>
+
+
+          <span class="fa fa-facebook"></span>
+          <span class="fa fa-youtube"></span>
+          <span class="fa fa-twitter"></span>
+          <span class="fa fa-instagram"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer>
+    <div class="container center">
+      <div class="grid">
+        <div class="box">
+          <h2>PHOTOGRAPHY</h2>
+          <i class="fa fa-camera"></i>
+        </div>
+        <div class="box">
+          <h2>INFO</h2>
+          <p> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div class="box">
+          <h2>Quick Links</h2>
+
+          <ul>
+            <li>Home</li>
+            <li>Portfolio</li>
+            <li>About</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <p class="legal">Copyright (c) 2021 Copyright Holder All Rights Reserved | This template is made by <i class="fa fa-heart"></i> Dot Studio</p>
+
+</body>
+
+</html>

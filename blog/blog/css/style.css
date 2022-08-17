@@ -1,0 +1,458 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Grechen+Fuemen&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
+  background: #1F2833;
+  color: white;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex1 {
+  display: flex;
+}
+
+.container {
+  max-width: 90%;
+  margin: auto;
+}
+
+/*--------header--------*/
+nav {
+  padding: 20px 0;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li a {
+  color: rgb(255, 254, 254);
+  text-decoration: none;
+  font-size: 18px;
+  margin-right: 20px;
+}
+
+.menu-bars {
+  display: none;
+  flex-direction: column;
+  height: 20px;
+  justify-content: space-between;
+  position: relative;
+  z-index: 999;
+}
+
+.menu-bars input {
+  position: absolute;
+  width: 40px;
+  height: 28px;
+  left: -5px;
+  top: -3px;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.logo h2 {
+  font-family: 'Grechen Fuemen', cursive;
+  font-size: 50px;
+}
+
+.account i {
+  margin: 5px;
+  line-height: 55px;
+}
+
+.account h3 {
+  margin: 20px 20px 0 20px;
+}
+
+button {
+  padding: 20px 40px;
+  border-radius: 50px;
+  background: #CB73FF;
+  font-weight: bold;
+  color: white;
+  font-size: 20px;
+  border: none;
+}
+
+nav ul.slide {
+  transform: translateY(0);
+}
+
+@media only screen and (max-width: 768px) {
+  .menu-bars {
+    display: flex;
+  }
+
+  nav ul {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 40vh;
+    flex-direction: column;
+    align-items: center;
+    background: #1F2833;
+    z-index: 1;
+    transform: translateY(-100%);
+    transition: all 1s;
+  }
+}
+
+/*--------header--------*/
+/*--------home--------*/
+.grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 30px;
+}
+
+.mtop {
+  margin-top: 50px;
+}
+
+.top {
+  margin-top: 100px;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.home {
+  position: relative;
+}
+
+.home .box {
+  padding: 20px;
+  border-radius: 30px;
+}
+
+.box h2 {
+  font-size: 20px;
+  margin: 10px 0 10px 0;
+  line-height: 30px;
+}
+
+.home .box img {
+  border-radius: 20px;
+}
+
+.home .box:nth-child(1) {
+  background: #D7F8FF;
+  height: 350px;
+}
+
+.home .box:nth-child(2) {
+  background: #FCE6F0;
+  height: 340px;
+}
+
+.home .box:nth-child(3) {
+  background: #FFEAB9;
+  height: 280px;
+}
+
+.home .box:nth-child(4) {
+  background: #D2F8F0;
+}
+
+.home .box:nth-child(5) {
+  background: #FDDFD8;
+}
+
+.heading {
+  position: absolute;
+  top: 0;
+  left: -40px;
+  transform: rotate(-90deg);
+}
+
+.heading h4 {
+  letter-spacing: 10px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.box {
+  transition: 0.7s;
+  cursor: pointer;
+  color: black;
+}
+
+.box:hover {
+  transform: translateY(-10px);
+}
+
+/*--------home--------*/
+/*--------creative--------*/
+.left, .right {
+  width: 49%;
+}
+
+.creative {
+  position: relative;
+}
+
+.creative .heading {
+  top: 40%;
+  left: -5%;
+}
+
+.creative .left img {
+  border-radius: 50px;
+  height: 80vh;
+}
+
+label {
+  background: #344052;
+  padding: 10px;
+  border-radius: 50px;
+  letter-spacing: 3px;
+  font-size: 13px;
+}
+
+.creative .right {
+  padding: 50px;
+}
+
+.creative h1 {
+  font-size: 60px;
+  margin: 30px 0 30px 0;
+}
+
+.creative p {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 30px;
+  margin-bottom: 50px;
+}
+
+.creative .icon img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.creative .icon img:nth-child(2) {
+  margin-left: -20px;
+  z-index: -1;
+  margin-right: 20px;
+}
+
+/*--------creative--------*/
+/*--------wrapper--------*/
+.wrapper {
+  padding: 50px;
+}
+
+.wrapper .grid {
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+}
+
+.wrapper img {
+  border-radius: 30px 30px 0 0;
+}
+
+.wrapper .img {
+  height: 400px;
+}
+
+.wrapper .text {
+  background: #D2F8F0;
+  padding: 30px 20px 20px 20px;
+  margin-top: -20px;
+  height: 150px;
+  border-radius: 0 0 30px 30px;
+}
+
+.wrapper .story {
+  margin-top: 20px;
+}
+
+.wrapper label {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.wrapper .box:nth-child(2) .text {
+  background: #FCE6F0;
+}
+
+.wrapper .box:nth-child(3) .text {
+  background: #D7F8FF;
+}
+
+/*--------wrapper--------*/
+/*--------wrapper2--------*/
+.wrapper2 .grid {
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 50px;
+  text-align: left;
+}
+
+.wrapper2 .img {
+  height: 60vh;
+}
+
+.wrapper2 {
+  text-align: center;
+}
+
+.wrapper2 button {
+  margin-top: 30px;
+}
+
+/*--------wrapper2--------*/
+/*--------home2--------*/
+.home2 .heading {
+  left: -20px;
+}
+
+.home2 .grid {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.home2 .box:nth-child(1) img {
+  background: #D7F8FF;
+  height: 250px;
+}
+
+.home2 .box:nth-child(2) img {
+  height: 200px;
+}
+
+.home2 .box:nth-child(4) {
+  height: 300px;
+}
+
+/*--------home2--------*/
+/*--------subscribe--------*/
+.subscribe h1 {
+  font-size: 50px;
+}
+
+.subscribe .input {
+  background: #344052;
+  float: right;
+  border-radius: 50px;
+  padding: 10px;
+}
+
+input {
+  background: none;
+  border: none;
+  outline: none;
+  padding: 20px;
+  color: white;
+}
+
+/*--------subscribe--------*/
+/*--------footer--------*/
+footer {
+  color: white;
+}
+
+footer .container {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding-top: 50px;
+}
+
+footer p {
+  margin: 20px 0 20px 0;
+  padding: 0 300px 0 0;
+}
+
+footer i {
+  font-size: 20px;
+  margin: 0 20px 0 0;
+}
+
+footer .grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+ul {
+  list-style: none;
+}
+
+footer h3 {
+  font-size: 16px;
+  letter-spacing: 2px;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+footer li {
+  margin: 20px 0 20px 0;
+  font-weight: bold;
+}
+
+/*--------footer--------*/
+@media only screen and (max-width:768px) {
+
+  /*------------home-------*/
+  .heading,
+  .account {
+    display: none;
+  }
+
+  .home2 .grid,
+  .wrapper .grid,
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .home .box {
+    height: auto !important;
+  }
+
+  /*------------home-------*/
+  /*------------creative-------*/
+  footer .container,
+  .subscribe .container,
+  .creative .content {
+    flex-direction: column;
+  }
+
+  .left, .right {
+    width: 100%;
+  }
+
+  /*------------creative-------*/
+  /*------------wrapper2-------*/
+  .wrapper2 .grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  /*------------wrapper2-------*/
+  /*------------subscribe-------*/
+  .subscribe .right .input {
+    float: left;
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  .subscribe button {
+    float: right;
+  }
+
+  /*------------subscribe-------*/
+  footer .right {
+    margin-top: 30px;
+  }
+}

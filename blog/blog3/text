@@ -1,0 +1,21 @@
+/*----------------color-----------*/
+background: #58BCB3;
+
+
+/*----------------font family-----------*/
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+font-family: 'Oswald', sans-serif;
+
+
+
+/*----------------image-----------*/
+DESIGN
+THE EASIEST WAY TO BREAK OUT ON TOP
+This section contains many common flower varieties that can often be found...
+
+/*----------------icon-----------*/
+<i class="fab fa-facebook-f"></i>
+<i class="fab fa-twitter"></i>
+<i class="fab fa-instagram"></i>
+<i class="fab fa-youtube"></i>
+<i class="fas fa-search"></i>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <title>Product Home Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <section class="head">
+    <div class="container flex">
+      <div class="logo">
+        <img src="image/nike.png" alt="">
+      </div>
+      <div class="box">
+        <ul>
+          <li>Home</li>
+          <li>Product</li>
+          <li>about</li>
+          <li>contact</li>
+        </ul>
+      </div>
+      <div class="search">
+        <i class="fas fa-search"></i>
+        <i class="far fa-shopping-cart"></i>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="home">
+    <div class="container flex">
+      <div class="title">
+        <h1>JUST <br> DO <br> IT</h1>
+        <p> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+      <div class="box">
+        <img src="image/p2.png" class="slide">
+      </div>
+      <div class="price">
+        <h3>NIKE ZOOM AIR</h3>
+        <h2>$260</h2>
+        <a href="#">Read More</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="bottom">
+    <div class="container">
+      <div class="item flex">
+        <div class="image">
+          <img src="image/p2.png" onclick="img('image/p2.png')">
+        </div>
+        <div class="para">
+          <p>NIKE ZOOM AIR</p>
+          <div class="start">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <span>$260.00</span>
+          <div class="add flex">
+            <label>Read More</label>
+            <span class="fas fa-plus"></span>
+          </div>
+        </div>
+      </div>
+      <div class="item flex">
+        <div class="image">
+          <img src="image/p3.png" onclick="img('image/p3.png')">
+        </div>
+        <div class="para">
+          <p>NIKE ZOOM AIR</p>
+          <div class="start">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <span>$260.00</span>
+          <div class="add flex">
+            <label>Read More</label>
+            <span class="fas fa-plus"></span>
+          </div>
+        </div>
+      </div>
+      <div class="item flex">
+        <div class="image">
+          <img src="image/p4.png" onclick="img('image/p4.png')">
+        </div>
+        <div class="para">
+          <p>NIKE ZOOM AIR</p>
+          <div class="start">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <span>$260.00</span>
+          <div class="add flex">
+            <label>Read More</label>
+            <span class="fas fa-plus"></span>
+          </div>
+        </div>
+      </div>
+      <div class="item flex">
+        <div class="image">
+          <img src="image/p5.png" onclick="img('image/p5.png')">
+        </div>
+        <div class="para">
+          <p>NIKE ZOOM AIR</p>
+          <div class="start">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <span>$260.00</span>
+          <div class="add flex">
+            <label>Read More</label>
+            <span class="fas fa-plus"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    function img(anything) {
+      document.querySelector('.slide').src = anything;
+    }
+
+    function change(change) {
+      const line = document.querySelector('.home');
+      line.style.background = change;
+    }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Landing Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+  </script>
+
+
+  <section class="home">
+    <header>
+      <div class="container">
+        <div class="content flex1">
+          <div class="logo">
+            <img src="h.png" alt="">
+          </div>
+          <div class="topnav" id="myTopnav">
+            <a href="# ">Home</a>
+            <a href="# ">News</a>
+            <a href="# ">Contact</a>
+            <a href="# ">About</a>
+            <a href="# ">Menu</a>
+            <a href="# ">FAQ</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+
+    <div class="container">
+      <div class="home_container flex1">
+        <div class="left">
+          <div class="img">
+            <img src="h1.png" alt="">
+          </div>
+          <h2> <span>CREATIVE</span> <br> AND PASSIONATED </h2>
+        </div>
+        <div class="right">
+          <div class="text">
+            <h1>FLUID <br> DESIGN </h1>
+            <p> Duis
+              aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+
+          <div class="icon">
+            <h4>www.dotstudio.com</h4>
+            <ul>
+              <li> <i class="fa fa-facebook"></i> </li>
+              <li> <i class="fa fa-instagram"></i> </li>
+              <li> <i class="fa fa-twitter"></i> </li>
+              <li> <i class="fa fa-youtube"></i> </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+/*----------------color-----------*/
+color: #C7A17A;
+background: #C7A17A;
+background: #F4F1EE;
+
+
+
+/*----------------font family-----------*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+font-family: 'Poppins', sans-serif;
+font-family: 'Oswald', sans-serif;
+
+/*----------------image-----------*/
+
+
+/*----------------icon-----------*/
+<i class="fas fa-phone-square"></i>
+<i class="fas fa-map-marker-alt"></i>
+
+
+<i class="fab fa-facebook-f"></i>
+<i class="fab fa-twitter"></i>
+<i class="fab fa-youtube"></i>
+<i class="fab fa-instagram"></i>
+<i class="fab fa-google-plus-g"></i>

@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Hotell Website</title>
+  </head>
+
+  <body>
+    <!--<header>
+      <div class="container flexSB">
+        <div class="logo">
+          <h1>Hotell</h1>
+        </div>
+        <nav class="overlay" id="myNav">
+          <ul class="overlay-content flexSB">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Destination</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="contact flexSB">
+          <i class="fas fa-phone-alt icon"></i>
+          <span> 123-456-7898</span>
+        </div>
+      </div>
+    </header>-->
+    <nav class="nav">
+      <div class="container flexSB">
+        <div class="logo">
+          <h1>Hotell</h1>
+        </div>
+        <div class="menu">
+          <div class="main_list" id="mainListDiv">
+            <ul class="flexSB">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Destination</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="media_button">
+          <i class="fas fa-bars" id="mediaButton"></i>
+        </div>
+
+        <div class="contact flexSB">
+          <i class="fas fa-phone-alt icon"></i>
+          <span> 123-456-7898</span>
+        </div>
+      </div>
+    </nav>
+    <script type="text/javascript">
+      var mainListDiv = document.getElementById("mainListDiv")
+      mediaButton = document.getElementById("mediaButton")
+
+      mediaButton.onclick = function () {
+        mainListDiv.classList.toggle("show_list")
+        mediaButton.classList.toggle("active")
+      }
+    </script>
+
+    <section class="home">
+      <div class="container">
+        <h1>
+          Once a year go someplace <br />
+          you've never been before.
+        </h1>
+        <button>See video</button>
+      </div>
+    </section>
+
+    <section class="book">
+      <div class="container grid1">
+        <input type="date" placeholder="Date Arrival" />
+        <input type="date" placeholder="Date Departure" />
+        <input type="text" placeholder="# of Person" />
+        <button class="primary-btn">Find Now</button>
+      </div>
+    </section>
+
+    <section class="serives">
+      <div class="container">
+        <div class="heading">
+          <h2>our services</h2>
+        </div>
+
+        <div class="owl-carousel owl-theme content">
+          <div class="box">
+            <div class="img">
+              <img src="./images/services/trekking.png" alt="" />
+            </div>
+            <div class="text">
+              <h3>Trekking</h3>
+              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+              <a href="/">LEARN MORE</a>
+            </div>
+          </div>
+          <div class="box">
+            <div class="img">
+              <img src="./images/services/map.png" alt="" />
+            </div>
+            <div class="text">
+              <h3>The Map</h3>
+              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+              <a href="/">LEARN MORE</a>
+            </div>
+          </div>
+          <div class="box">
+            <div class="img">
+              <img src="./images/services/suitcases.png" alt="" />
+            </div>
+            <div class="text">
+              <h3>Suitcas</h3>
+              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+              <a href="/">LEARN MORE</a>
+            </div>
+          </div>
+          <div class="box">
+            <div class="img">
+              <img src="./images/services/vacations.png" alt="" />
+            </div>
+            <div class="text">
+              <h3>Island Hoping</h3>
+              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+              <a href="/">LEARN MORE</a>
+            </div>
+          </div>
+          <div class="box">
+            <div class="img">
+              <img src="./images/services/around.png" alt="" />
+            </div>
+            <div class="text">
+              <h3>World Round</h3>
+              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+              <a href="/">LEARN MORE</a>
+            </div>
+          </div>
+          <div class="box">
+            <div class="img">
+              <img src="./images/services/plane.png" alt="" />
+            </div>
+            <div class="text">
+              <h3>Travel with Plane</h3>
+              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+              <a href="/">LEARN MORE</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js" integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+      $(".owl-carousel").owlCarousel({
+        loop: true,
+        margin: 30,
+        nav: true,
+        dots: false,
+        navText: ["<span>Prev</span>", "<span>Next</span>"],
+        responsive: {
+          0: {
+            items: 1,
+          },
+          768: {
+            items: 2,
+          },
+          1000: {
+            items: 3,
+          },
+        },
+      })
+    </script>
+
+    <section class="about top flex2">
+      <div class="container flexSB">
+        <div class="left row">
+          <img src="./images/homebg.webp" alt="" />
+        </div>
+        <div class="right">
+          <div class="heading">
+            <h2>ABOUT HOTELL</h2>
+          </div>
+          <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+          <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="blog top serives">
+      <div class="container">
+        <div class="heading">
+          <h2>BLOG POSTS</h2>
+        </div>
+
+        <div class="owl-carousel owl-theme">
+          <div class="box">
+            <div class="images">
+              <img src="./images/blog/b1.jpg" alt="" />
+              <i class="fa fa-pen icon"></i>
+            </div>
+            <div class="text">
+              <h3>Far far away, behind the word mountains, far from the countries</h3>
+              <a href="/">READ MORE</a>
+            </div>
+          </div>
+          <div class="box">
+            <div class="images">
+              <img src="./images/blog/b2.jpg" alt="" />
+              <i class="fa fa-pen icon"></i>
+            </div>
+            <div class="text">
+              <h3>Far far away, behind the word mountains, far from the countries</h3>
+              <a href="/">READ MORE</a>
+            </div>
+          </div>
+          <div class="box">
+            <div class="images">
+              <img src="./images/blog/b3.jpg" alt="" />
+              <i class="fa fa-pen icon"></i>
+            </div>
+            <div class="text">
+              <h3>Far far away, behind the word mountains, far from the countries</h3>
+              <a href="/">READ MORE</a>
+            </div>
+          </div>
+          <div class="box">
+            <div class="images">
+              <img src="./images/blog/b4.jpg" alt="" />
+              <i class="fa fa-pen icon"></i>
+            </div>
+            <div class="text">
+              <h3>Far far away, behind the word mountains, far from the countries</h3>
+              <a href="/">READ MORE</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="customer top serives">
+      <div class="container">
+        <div class="heading heading2 flexSB">
+          <h2>TESTIMONIALS</h2>
+          <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+        </div>
+        <div class="owl-carousel owl-theme">
+          <div class="box">
+            <i class="fa fa-quote-left icon"></i>
+            <div class="text">
+              <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+            </div>
+            <div class="user flex">
+              <div class="img">
+                <img src="./images/t1.jpg" alt="" />
+              </div>
+              <div class="details">
+                <h4>Jhone Doe</h4>
+                <span>Creative Directior</span>
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <i class="fa fa-quote-left icon"></i>
+            <div class="text">
+              <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+            </div>
+            <div class="user flex">
+              <div class="img">
+                <img src="./images/t2.jpg" alt="" />
+              </div>
+              <div class="details">
+                <h4>Jhone Doe</h4>
+                <span>Creative Directior</span>
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <i class="fa fa-quote-left icon"></i>
+            <div class="text">
+              <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+            </div>
+            <div class="user flex">
+              <div class="img">
+                <img src="./images/t3.jpg" alt="" />
+              </div>
+              <div class="details">
+                <h4>Jhone Doe</h4>
+                <span>Creative Directior</span>
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <i class="fa fa-quote-left icon"></i>
+            <div class="text">
+              <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+            </div>
+            <div class="user flex">
+              <div class="img">
+                <img src="./images/t4.jpg" alt="" />
+              </div>
+              <div class="details">
+                <h4>Jhone Doe</h4>
+                <span>Creative Directior</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js" integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+      $(".owl-carousel").owlCarousel({
+        loop: true,
+        margin: 30,
+        nav: true,
+        dots: false,
+        navText: ["<span>Prev</span>", "<span>Next</span>"],
+        responsive: {
+          0: {
+            items: 1,
+          },
+          768: {
+            items: 2,
+          },
+          1000: {
+            items: 3,
+          },
+        },
+      })
+    </script>
+
+    <section class="post top">
+      <div class="container">
+        <div class="heading heading2 flexSB">
+          <h2>INSTGRAM</h2>
+          <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+        </div>
+      </div>
+      <div class="owl-carousel owl-theme">
+        <div class="box">
+          <img src="./images/post/p1.webp" alt="" />
+          <div class="overlay">
+            <i class="fab fa-instagram"></i>
+          </div>
+        </div>
+        <div class="box">
+          <img src="./images/post/p2.webp" alt="" />
+          <div class="overlay">
+            <i class="fab fa-instagram"></i>
+          </div>
+        </div>
+        <div class="box">
+          <img src="./images/post/p3.webp" alt="" />
+          <div class="overlay">
+            <i class="fab fa-instagram"></i>
+          </div>
+        </div>
+        <div class="box">
+          <img src="./images/post/p4.webp" alt="" />
+          <div class="overlay">
+            <i class="fab fa-instagram"></i>
+          </div>
+        </div>
+        <div class="box">
+          <img src="./images/post/p2.webp" alt="" />
+          <div class="overlay">
+            <i class="fab fa-instagram"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      $(".owl-carousel").owlCarousel({
+        loop: true,
+        margin: 0,
+        nav: true,
+        dots: false,
+        navText: false,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          600: {
+            items: 3,
+          },
+          1000: {
+            items: 4,
+          },
+        },
+      })
+    </script>
+
+    <footer>
+      <div class="container grid1">
+        <div class="box">
+          <h3>Home</h3>
+          <ul>
+            <li>About us</li>
+            <li>Places</li>
+            <li>Services</li>
+            <li>Destination</li>
+            <li>Terms</li>
+            <li>Privacy</li>
+          </ul>
+        </div>
+        <div class="box">
+          <h3>Practice Area</h3>
+          <ul>
+            <li>Travel</li>
+            <li>Popular places</li>
+            <li>Destination</li>
+            <li>Tour</li>
+            <li>Family Vacation</li>
+          </ul>
+        </div>
+        <div class="box">
+          <h3>Services</h3>
+          <ul>
+            <li>Tour</li>
+            <li>Swimming</li>
+            <li>Kayak</li>
+            <li>Surfing</li>
+          </ul>
+        </div>
+        <div class="box">
+          <h3>Contact</h3>
+          <ul>
+            <li>43 Raymouth Rd. Baltemoer, London 3910</li>
+            <li>+1(123)-456-7890</li>
+            <li>+1(123)-456-7890</li>
+            <li>info@mydomain.com</li>
+          </ul>
+          <h3>Connect</h3>
+          <i class="fab fa-instagram icon"></i>
+          <i class="fab fa-twitter icon"></i>
+          <i class="fab fa-facebook-f icon"></i>
+          <i class="fab fa-linkedin icon"></i>
+          <i class="fab fa-pinterest icon"></i>
+          <i class="fab fa-dribbble icon"></i>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

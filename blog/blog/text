@@ -1,0 +1,54 @@
+/*----------------color-----------*/
+background: #1F2833;
+
+
+background: #D7F8FF;
+background: #FCE6F0;
+background: #FFEAB9;
+background: #D2F8F0;
+background: #FDDFD8;
+
+/*----------------font family-----------*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400&display=swap');
+font-family: 'Roboto', sans-serif;
+
+@import url('https://fonts.googleapis.com/css2?family=Grechen+Fuemen&display=swap');
+font-family: 'Grechen Fuemen', cursive;
+
+
+
+
+/*----------------image-----------*/
+Don’t be afraid
+You have to fight to reach your dream
+I always loved aesthetics
+Creating deluxe drink is like playing a sport
+You must grow like a tree
+
+Anyone can hold the helm when the sea is calm
+
+ABOUT
+Features
+Style Guide
+Contact
+Get Theme
+FEATURES
+Account
+Sign in
+Sign up
+Subscribe
+SUPPORT
+Authors
+Tags
+Light version
+404
+
+
+
+
+/*----------------icon-----------*/
+<i class="fas fa-ellipsis-h"></i>
+<i class="fab fa-facebook-f"></i>
+<i class="fab fa-twitter"></i>
+<i class="fab fa-facebook"></i>
+<i class="fab fa-youtube"></i>

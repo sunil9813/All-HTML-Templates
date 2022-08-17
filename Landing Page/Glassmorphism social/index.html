@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Social Icon Glassmorphism</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <section>
+    <div class="colour"></div>
+    <div class="colour"></div>
+    <div class="colour"></div>
+    <div class="container">
+      <div class="content">
+        <div class="items">
+          <div class="box">
+            <i class="fa fa-facebook-f"></i>
+            <h2>FACEBOOK</h2>
+            <hr>
+            <h3>YOUR NAME HERE</h3>
+            <p>www.facebook.com</p>
+          </div>
+        </div>
+        <div class="items">
+          <div class="box">
+            <i class="fa fa-instagram"></i>
+            <h2>INSTAGRAM</h2>
+            <hr>
+            <h3>YOUR NAME HERE</h3>
+            <p>www.instagram.com</p>
+          </div>
+        </div>
+        <div class="items">
+          <div class="box">
+            <i class="fa fa-twitter"></i>
+            <h2>twitter</h2>
+            <hr>
+            <h3>YOUR NAME HERE</h3>
+            <p>www.twitter.com</p>
+          </div>
+        </div>
+        <div class="items">
+          <div class="box">
+            <i class="fa fa-youtube"></i>
+            <h2>INSTAGRAM</h2>
+            <hr>
+            <h3>YOUR NAME HERE</h3>
+            <p>www.youtube.com</p>
+          </div>
+        </div>
+        <div class="items">
+          <div class="box">
+            <i class="fa fa-linkedin"></i>
+            <h2>linkedin</h2>
+            <hr>
+            <h3>YOUR NAME HERE</h3>
+            <p>www.linkedin.com</p>
+          </div>
+        </div>
+        <div class="items">
+          <div class="box">
+            <i class="fa fa-whatsapp"></i>
+            <h2>whatsapp</h2>
+            <hr>
+            <h3>YOUR NAME HERE</h3>
+            <p>www.linkedin.com</p>
+          </div>
+        </div>
+        <div class="items">
+          <div class="box">
+            <i class="fa fa-snapchat"></i>
+            <h2>whatsapp</h2>
+            <hr>
+            <h3>YOUR NAME HERE</h3>
+            <p>www.snapchat.com</p>
+          </div>
+        </div>
+        <div class="items">
+          <div class="box">
+            <i class="fa fa-skype"></i>
+            <h2>whatsapp</h2>
+            <hr>
+            <h3>YOUR NAME HERE</h3>
+            <p>www.skype.com</p>
+          </div>
+        </div>
+      </div>
+  </section>
+  <script src="vanilla-tilt.js"></script>
+
+  <script>
+    VanillaTilt.init(document.querySelector(".box"), {
+      max: 15,
+      speed: 400,
+      glare: true,
+      "max-glare": 0.2,
+    });
+    VanillaTilt.init(document.querySelectorAll(".box"));
+  </script>
+
+</body>
+
+</html>

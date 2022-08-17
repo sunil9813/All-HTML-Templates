@@ -1,0 +1,27 @@
+/*----------------color-----------*/
+background: #F7941D;
+
+background: #A34318;
+
+
+/*----------------font family-----------*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+font-family: 'Open Sans', sans-serif;
+font-family: 'Pacifico', cursive;
+
+
+/*----------------image-----------*/
+
+
+
+/*----------------icon-----------*/
+<i class="fa fa-map"></i>
+<i class="fa fa-phone"></i>
+<i class="fa fa-envelope"></i>
+
+
+<i class="fa fa-facebook"></i>
+<i class="fa fa-youtube"></i>
+<i class="fa fa-twitter"></i>
+<i class="fa fa-instagram"></i>

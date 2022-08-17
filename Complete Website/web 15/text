@@ -1,0 +1,21 @@
+/*----------------color-----------*/
+background: #7cbac9;
+
+
+/*----------------font family-----------*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+font-family: 'Poppins', sans-serif;
+
+
+/*----------------image-----------*/
+<img src="https://img.icons8.com/color/48/000000/mastercard.png"/>
+<img src="https://img.icons8.com/color/48/000000/paypal.png"/>
+<img src="https://img.icons8.com/fluency/48/000000/visa.png"/>
+<img src="https://img.icons8.com/color/48/000000/amex.png"/>
+
+
+
+ /*----------------icon-----------*/
+<i class="fa fa-map"></i>
+<i class="fa fa-phone"></i>
+<i class="fa fa-envelope"></i>

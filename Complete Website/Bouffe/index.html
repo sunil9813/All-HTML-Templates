@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <title>Bouffe</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <nav class="navbar flex1">
+        <div class="logo">
+          <h2>Bouffe</h2>
+        </div>
+        <ul class="nav-menu">
+          <li> <a href="#">Home</a></li>
+          <li> <a href="#">Services</a></li>
+          <li> <a href="#">Blog</a></li>
+          <li> <a href="#">About</a></li>
+          <li> <a href="#">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+
+        <div class="account">
+          <i class="fas fa-shopping-cart"></i>
+          <i class="far fa-user"></i>
+          <i class="fas fa-search"></i>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <script>
+    const hamburger = document.querySelector(".hamburger");
+    const navMenu = document.querySelector(".nav-menu");
+
+    hamburger.addEventListener("click", mobileMenu);
+
+    function mobileMenu() {
+      hamburger.classList.toggle("active");
+      navMenu.classList.toggle("active");
+    }
+
+    window.addEventListener("scroll", function() {
+      var header = document.querySelector("header");
+      header.classList.toggle("sticky", window.scrollY > 0);
+    })
+  </script>
+
+  <section class="home">
+    <div class="container">
+      <div class="left">
+        <span>
+          First Quality Wine <br>
+          Still Distillery Of Bread Wine</span>
+        <h1>A Promise of Excellence </h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+        <hr>
+        <a href="#">READ MORE</a>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="history mtop">
+    <div class="container">
+      <div class="left mtop">
+        <h5>OUR HISTORY</h5>
+        <h1>We created a new wine art with your taste. We provide with best quality of wine. Try it once, you love it!</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+        <span>Dot Studio</span>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="about">
+    <div class="container">
+      <div class="left  top">
+        <h5>ABOUT US </h5>
+        <h1>You cannot shine in a party without a wine in your hand. Discover our flavors. </h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+        <button>ABOUT THE WINE</button>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="menu">
+    <div class="container  top ">
+      <div class="heading">
+        <h5>BOUFFE WINES </h5>
+        <h1>Our Wine Families </h1>
+        <p>Discovering the win is a constant learning process. The versatility of our wine range introduces and accompanies all those who want to discover this very special world. </p>
+      </div>
+
+      <div class="content grid mtop">
+        <div class="box">
+          <div class="img ">
+            <img src="image/p2.jpg" alt="">
+          </div>
+
+          <div class="text">
+            <h2>Dark Carpet</h2>
+            <p> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <a href="#">ORDER NOW</a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img ">
+            <img src="image/p2.jpg" alt="">
+          </div>
+
+          <div class="text">
+            <h2>Dark Carpet</h2>
+            <p> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <a href="#">ORDER NOW</a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img ">
+            <img src="image/p2.jpg" alt="">
+          </div>
+
+          <div class="text">
+            <h2>Dark Carpet</h2>
+            <p> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <a href="#">ORDER NOW</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="wrapper top">
+    <div class="container">
+      <h1 class="heading">Number of ways to create a new art of wine with your friends. Just demand, we in a minute provide a variety of wine. Experience a new flavour.</h1>
+      <div class="img top">
+        <img src="image/v1.png" alt="">
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="blog">
+    <div class="container grid top">
+      <div class="box">
+        <div class="img">
+          <img src="image/b1.jpg" alt="">
+          <div class="img_text">
+            <p>GUIDES</p>
+          </div>
+        </div>
+        <div class="tetx">
+          <h2>Wines created by friends from different places</h2>
+          <div class="para flex1">
+            <span>December 10,2021</span>
+            <span>10 Comments</span>
+            <span>5 Min Read</span>
+          </div>
+        </div>
+      </div>
+      <div class="box">
+        <div class="img">
+          <img src="image/b2.jpg" alt="">
+          <div class="img_text">
+            <p>GUIDES</p>
+          </div>
+        </div>
+        <div class="tetx">
+          <h2>Wines created by friends from different places</h2>
+          <div class="para flex1">
+            <span>December 10,2021</span>
+            <span>10 Comments</span>
+            <span>5 Min Read</span>
+          </div>
+        </div>
+      </div>
+      <div class="box">
+        <div class="img">
+          <img src="image/b3.jpg" alt="">
+          <div class="img_text">
+            <p>GUIDES</p>
+          </div>
+        </div>
+        <div class="tetx">
+          <h2>Wines created by friends from different places</h2>
+          <div class="para flex1">
+            <span>December 10,2021</span>
+            <span>10 Comments</span>
+            <span>5 Min Read</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="newletter top">
+    <div class="container">
+      <div class="heading mtop">
+        <h5>SUBSCRIBE TO OUR NEWSLETTER </h5>
+        <h1>Happiness is an extra scoop of a soup. Discover the most delicious recipes.
+        </h1>
+        <div class="input flex mtop">
+          <input type="text" name="" value="" placeholder="Your email address">
+          <input type="submit" value="SIGN UP">
+        </div>
+        <div class="term flex">
+          <input type="checkbox">
+          <p>I have agree to the the terms & conditions </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="post top">
+    <div class="container">
+      <div class="grid  top">
+        <div class="img">
+          <img src="image/i1.jpg" alt="">
+        </div>
+        <div class="img">
+          <img src="image/i2.jpg" alt="">
+        </div>
+        <div class="img">
+          <img src="image/i3.jpg" alt="">
+        </div>
+        <div class="img">
+          <img src="image/i4.jpg" alt="">
+        </div>
+        <div class="img">
+          <img src="image/i6.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container top grid">
+      <div class="box">
+        <h2>Bouffe</h2>
+      </div>
+      <div class="box">
+        <h3>BOUFFE ADDRESS</h3>
+        <label>Via Stella Street, 22 Loria</label> <br><br>
+        <label>Modena MO, Italy</label> <br><br>
+        <label>+390 59 223 912</label> <br><br>
+      </div>
+      <div class="box">
+        <h3>CONTACT US </h3>
+        <label>P. +1 530 347 4607</label> <br><br>
+        <label> M. +1 693 269 9812</label> <br><br>
+        <label>Info@boufferestaurant.com</label> <br><br>
+      </div>
+      <div class="box">
+        <h3>SOCIAL MEDIA</h3>
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-youtube"></i>
+        <i class="fab fa-linkedin-in"></i>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

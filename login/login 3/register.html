@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css">
+
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+</head>
+
+<body>
+
+  <section>
+    <div class="container flex">
+      <div class="left">
+        <div class="owl-carousel owl-theme">
+          <div class="item">
+            <img src="image/img3.jpg" alt="">
+          </div>
+          <div class="item">
+            <img src="image/img2.jpg" alt="">
+          </div>
+          <div class="item">
+            <img src="image/img1.jpg" alt="">
+          </div>
+        </div>
+        <div class="button">
+          <button> <a href=" index.html"> Login</a></button> <br>
+          <button> <a href=" register.html"> Register</a> </button>
+        </div>
+      </div>
+      <div class="right">
+        <div class="logo">
+          <img src="image/logo.png" alt="">
+        </div>
+
+        <h1>Register</h1>
+        <p>Create an account free and enjoy it </p>
+
+        <form>
+          <div class="box">
+            <input type="email" placeholder="Username">
+            <i class="far fa-user"></i>
+          </div>
+          <div class="box">
+            <input type="email" placeholder="Email Address">
+            <i class="far fa-envelope"></i>
+          </div>
+          <div class="box">
+            <input type="password" placeholder="Password">
+            <i class="far fa-lock"></i>
+          </div>
+
+          <div class="box">
+            <button>Log In</button>
+          </div>
+        </form>
+        <div class="social">
+          <h3>Or Login With:</h3>
+          <div class="icon">
+            <img src="https://img.icons8.com/color/48/000000/facebook-circled--v1.png" />
+            <img src="https://img.icons8.com/color/48/000000/twitter-circled--v1.png" />
+            <img src="https://img.icons8.com/color/48/000000/linkedin-circled--v2.png" />
+            <img src="https://img.icons8.com/color/48/000000/pinterest--v1.png" />
+            <img src="https://img.icons8.com/color/48/000000/github--v1.png" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+
+  <script>
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 0,
+      nav: false,
+      autoplay: true,
+      autoplayTimeout: 4000,
+      autoplayHoverPause: true,
+      items: 1
+    })
+  </script>
+</body>
+
+</html>
